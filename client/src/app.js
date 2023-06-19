@@ -1,2 +1,6 @@
-import { tagCloud } from './js/GoogleTag.js';
-tagCloud();
+import { tagClouds } from './js/GoogleTag.js';
+import { removeLoadingAnimation } from './js/animations.js';
+
+
+removeLoadingAnimation();
+tagClouds();

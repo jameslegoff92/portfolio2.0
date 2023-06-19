@@ -16,6 +16,8 @@ const devopsCloudArray = [
     'bash', 'docker', 'jenkins', 'nexus', 'linux', 'aws', 'digital ocean', 'heroku'
 ];
 
-export const tagCloudFrontend = TagCloud(frontendCloud, frontendCloudArray);
-export const tagCloudBackend = TagCloud(backendCloud, backendCloudArray);
-export const tagCloudDevops = TagCloud(devopsCloud, devopsCloudArray);
+export const tagClouds = () => { 
+    TagCloud(frontendCloud, frontendCloudArray);
+    TagCloud(backendCloud, backendCloudArray);
+    TagCloud(devopsCloud, devopsCloudArray);
+} 
