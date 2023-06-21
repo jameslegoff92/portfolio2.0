@@ -1,15 +1,10 @@
 import { tagClouds } from './js/GoogleTag.js';
 import { removeLoadingAnimation } from './js/animations.js';
-import Masonry from 'masonry-js';
+import { setProjectsLayout } from './js/masonry.js';
+import { setMobileNavControl } from './js/mobileNavigation.js';
 
-
+setMobileNavControl();
 removeLoadingAnimation();
 tagClouds();
+setProjectsLayout();
 
-var elem = document.querySelector('.grid');
-var msnry = new Masonry( elem, {
-  columnWidth: '.grid-item',
-  itemSelector: '.grid-item',
-  gutter: 10,
-  percentPosition: true,
-});

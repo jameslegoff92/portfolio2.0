@@ -21,10 +21,51 @@
       <div>L</div>
     </div>
   </div> -->
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav-container">
+    <button id="close-nav" class="mobile-nav-btn">
+      <img src="/assets/shared/close.png" alt="mobile close button">
+    </button>
+    <ul class="mobile-nav">
+      <li class="mobile-nav__item">
+        <a class="mobile-nav__link" href="#about"> About </a>
+      </li>
+      <li class="mobile-nav__item">
+        <a class="mobile-nav__link" href="#skills-section"> Skills </a>
+      </li>
+      <li class="mobile-nav__item">
+        <a class="mobile-nav__link" href="#projects"> Projects </a>
+      </li>
+      <li class="mobile-nav__item">
+        <a class="mobile-nav__link" href="#contact-section"> Contact </a>
+      </li>
+    </ul>
+
+    <div class="icons" >
+      <a class="icons__icon" href="">
+        <img src="assets/shared/twitter-logo-negative.svg" alt="">
+      </a> 
+
+      <a class="icons__icon" href="">
+        <img src="assets/shared/google-logo-negative.svg" alt="">
+      </a> 
+
+      <a class="icons__icon" href="">
+        <img src="assets/shared/github-logo-negative.svg" alt="">
+      </a> 
+
+      <a class="icons__icon" href="">
+        <img src="assets/shared/medium-logo-negative.svg" alt="">
+      </a> 
+    </div>
+  </nav>
+
+
   <div class="container">
     <div>
       <nav class="nav-container">
-        <button class="mobile-nav-btn">
+        <button id="open-nav" class="mobile-nav-btn">
           <img src="/assets/shared/mobile-menu-button.svg" alt="mobile menu">
         </button>
         <span class="internationalization">
@@ -33,7 +74,7 @@
       </nav>
     </div>
 
-    <header>
+    <header class="header">
       <h1 class="portfolio-title">
         <span>
           de
@@ -66,7 +107,7 @@
 
 
       <div class="container container--sm">
-        <p class="intro-title">
+        <p id="about" class="intro-title">
           Prologue,
         </p>
 
@@ -108,8 +149,8 @@
       </div>
     </header>
 
-    <main>
-      <div class="skills">
+    <main class="main">
+      <div id="skills-section" class="skills">
         <section class="frontend-cloud">
           <h2 class="skills__heading skills__heading--1"> frontend </h2>
         </section>
@@ -121,7 +162,7 @@
         </section>
       </div>
 
-      <div class="grid">
+      <div id="projects" class="grid">
         <a class="grid-item grid-item1" href="">
           <img src="/assets/shared/devfinder-thumbnail.svg" alt="">
         </a>
@@ -147,27 +188,39 @@
         </a>
       </div>
     </main>
-    <div>
-      <h3>
-        Ready to build something amazing?
-      </h3>
-      <p>
-        fill out the form or click the "Say Hi" button
-      </p>
 
-      <form action="">
-        <label for="">
-          My name is <input type="text" placeholder="your name">
+    <div id="contact-section">
+      <section class="contact">
+        <h3 class="contact__heading">
+          Ready to build something amazing?
+        </h3>
+        <p class="contact__text">
+          Fill out the form or click "Say Hi" to get in touch.
+        </p>
+      </section>
+
+      <form class="form" action="">
+        <label class="form__label form__label--name" for="">
+          My name is <input class="form__input" type="text" placeholder="Enter your name">
         </label>
-        <label for="">
-          From <input type="text" placeholder="Company name or website">
-        </label>
-        <label for="">
-          I'd like to discuss project <input type="text" placeholder="Describe your project idea (optional)">
-        </label>
-        <label for="">
-          You can reach me at <input type="text" placeholder="provide here">
-        </label>
+
+        <label class="form__label form__label--company" for="">
+          From <input class="form__input" type="text" placeholder="Company name or website">
+        </label> <br>
+
+        <label class="form__label" for="">
+          I'd like to discuss project <input class="form__input" type="text"
+            placeholder="Describe your project idea (optional)">
+        </label> <br>
+
+        <label class="form__label" for="">
+          You can reach me at <input class="form__input" type="text" placeholder="Provide email here">
+        </label> <br>
+
+        <div class="btn-container">
+          <a class="btn btn--link" href=""> Say Hi! </a>
+          <button class="btn" type="submit"> Send Inquiry </button>
+        </div>
       </form>
     </div>
   </div>

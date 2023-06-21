@@ -1,5 +1,9 @@
 @use 'variables' as *;
 
+:root {
+  font-size: 100%;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -14,8 +18,6 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
 }
-
-
 
 span {
   margin: 0;
@@ -39,14 +41,71 @@ span {
   font-size: 0.75rem;
 }
 
+.header {
+  margin-bottom: $mg-700;
+}
+
+.main {
+  margin-bottom: $mg-700;
+}
+
 
 /***
   TABLE OF CONTENTS
+  1. Mobile Navigation
+  1. Icons
   1. NAVIGATION
   2. HEADER
   3. SKILLS
   4. PROJECTS
+  5. Contact
+  6. FORM
 ***/
+
+/***
+  Mobile Navigation
+***/
+.mobile-nav-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 20px 0;
+  position: fixed;
+  text-align: center;
+  width: 125px;
+  z-index: 3;
+}
+
+.mobile-nav__item {
+  list-style: none;
+}
+
+.mobile-nav__item:not(:last-child) {
+  margin-bottom: $mg-400;
+}
+
+.mobile-nav__link {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/***
+  icons
+***/
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons__icon {
+  margin-bottom: $mg-200;
+}
 
 
 /***
@@ -57,13 +116,20 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: $mg-400;
   padding-top: 20px;
 }
 
 .mobile-nav-btn {
   background: transparent;
   border: none;
+  height: 50px;
+  width: 50px;
   padding: 0;
+}
+
+.mobile-nav-btn:hover {
+  cursor: pointer;
 }
 
 
@@ -74,6 +140,7 @@ span {
   font-size: 15vw;
   font-weight: 500;
   line-height: 1.1;
+  margin-bottom: $mg-500;
   text-transform: uppercase;
 
 
@@ -131,14 +198,20 @@ span {
   }
 }
 
+.intro-title {
+  margin-bottom: $mg-200;
+}
+
 
 .intro-subtitle {
   font-style: italic;
+  margin-bottom: $mg-200;
 }
 
 .intro-text {
   font-size: 14px;
   opacity: 75%;
+  margin-bottom: $mg-200;
 }
 
 /***
@@ -220,26 +293,68 @@ span {
   object-fit: cover;
 }
 
-.grid-item1 {
 
+/***
+  Contact
+***/
+.contact {
+  margin-bottom: $mg-400;
 }
 
-.grid-item2 {
-
+.contact__heading {
+  font-size: $fs-200;
+  margin-bottom: $mg-100;
 }
 
-.grid-item3 {
-
+.contact__text {
+  font-size: $fs-100;
 }
 
-.grid-item4 {
-
+/***
+  FORM
+***/
+.form {
+  padding-bottom: 60px;
 }
 
-.grid-item5 {
-  
+.form__label {
+  font-size: 12px;
 }
 
-.grid-item6 {
-
+.form__input {
+  border: none;
+  border-bottom: 0.5px solid rgba(255,255,255,0.1);
+  background: transparent;
+  width: 30%;
 }
+
+.form__input::placeholder {
+  font-size: 6px;
+}
+
+/***
+  Button
+***/
+.btn-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.btn {
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255);
+  color: $white;
+  font-size: 8px;
+  height: 26.86px;
+  width: 93.1px;
+}
+
+.btn--link {
+  text-align: center;
+  display: inline-block;
+  line-height: 26.86px;
+  text-decoration: none;
+}
+

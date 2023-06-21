@@ -180,6 +180,10 @@
     opacity: 0;
   }
 }
+:root {
+  font-size: 100%;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -217,13 +221,70 @@ span {
   font-size: 0.75rem;
 }
 
+.header {
+  margin-bottom: 120px;
+}
+
+.main {
+  margin-bottom: 120px;
+}
+
 /***
   TABLE OF CONTENTS
+  1. Mobile Navigation
+  1. Icons
   1. NAVIGATION
   2. HEADER
   3. SKILLS
   4. PROJECTS
+  5. Contact
+  6. FORM
 ***/
+/***
+  Mobile Navigation
+***/
+.mobile-nav-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 20px 0;
+  position: fixed;
+  text-align: center;
+  width: 125px;
+  z-index: 3;
+}
+
+.mobile-nav__item {
+  list-style: none;
+}
+
+.mobile-nav__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.mobile-nav__link {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/***
+  icons
+***/
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons__icon {
+  margin-bottom: 10px;
+}
+
 /***
   Navigation
 ***/
@@ -231,13 +292,20 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 30px;
   padding-top: 20px;
 }
 
 .mobile-nav-btn {
   background: transparent;
   border: none;
+  height: 50px;
+  width: 50px;
   padding: 0;
+}
+
+.mobile-nav-btn:hover {
+  cursor: pointer;
 }
 
 /***
@@ -247,6 +315,7 @@ span {
   font-size: 15vw;
   font-weight: 500;
   line-height: 1.1;
+  margin-bottom: 60px;
   text-transform: uppercase;
 }
 @media (min-width: 992px) {
@@ -307,13 +376,19 @@ span {
   }
 }
 
+.intro-title {
+  margin-bottom: 10px;
+}
+
 .intro-subtitle {
   font-style: italic;
+  margin-bottom: 10px;
 }
 
 .intro-text {
   font-size: 14px;
   opacity: 75%;
+  margin-bottom: 10px;
 }
 
 /***
@@ -395,6 +470,70 @@ span {
   width: 100%;
   height: auto;
   object-fit: cover;
+}
+
+/***
+  Contact
+***/
+.contact {
+  margin-bottom: 30px;
+}
+
+.contact__heading {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.contact__text {
+  font-size: 12px;
+}
+
+/***
+  FORM
+***/
+.form {
+  padding-bottom: 60px;
+}
+
+.form__label {
+  font-size: 12px;
+}
+
+.form__input {
+  border: none;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
+  background: transparent;
+  width: 30%;
+}
+
+.form__input::placeholder {
+  font-size: 6px;
+}
+
+/***
+  Button
+***/
+.btn-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.btn {
+  background-color: transparent;
+  border: 1px solid rgb(255, 255, 255);
+  color: #ffffff;
+  font-size: 8px;
+  height: 26.86px;
+  width: 93.1px;
+}
+
+.btn--link {
+  text-align: center;
+  display: inline-block;
+  line-height: 26.86px;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=main.css.map */
