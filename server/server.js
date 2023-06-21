@@ -12,11 +12,11 @@ const express = require("express");
 // liveReloadServer.watch(path.join(__dirname, "public"));
 
 // Ping browser on Express boot, once browser has reconnected and handshaken
-liveReloadServer.server.once("connection", () => {
-  setTimeout(() => {
-    liveReloadServer.refresh("/");
-  }, 100);
-});
+// liveReloadServer.server.once("connection", () => {
+//   setTimeout(() => {
+//     liveReloadServer.refresh("/");
+//   }, 100);
+// });
 
 const app = express();
 
