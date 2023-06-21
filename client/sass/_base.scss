@@ -297,6 +297,10 @@ span {
 /***
   Contact
 ***/
+#contact-section {
+  
+}
+
 .contact {
   margin-bottom: $mg-400;
 }
@@ -326,6 +330,22 @@ span {
   border-bottom: 0.5px solid rgba(255,255,255,0.1);
   background: transparent;
   width: 30%;
+}
+
+.form__input--name {
+
+}
+
+.form__input--company {
+  width: 33%;
+}
+
+.form__input--project-idea {
+ width: 50%;
+}
+
+.form__input--email {
+  width: 58%;
 }
 
 .form__input::placeholder {

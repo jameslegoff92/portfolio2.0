@@ -506,6 +506,18 @@ span {
   width: 30%;
 }
 
+.form__input--company {
+  width: 33%;
+}
+
+.form__input--project-idea {
+  width: 50%;
+}
+
+.form__input--email {
+  width: 58%;
+}
+
 .form__input::placeholder {
   font-size: 6px;
 }
