@@ -16,8 +16,23 @@ const devopsCloudArray = [
     'bash', 'docker', 'jenkins', 'nexus', 'linux', 'aws', 'digital ocean', 'heroku'
 ];
 
+const frontendCloudOptions = { 
+    radius: 125,
+    containerClass: 'skills__frontend',
+};
+
+const backendCloudOptions = { 
+    radius: 125,
+    containerClass: 'skills__backend',
+}
+
+const devopsCloudOptions = {  
+    radius: 125,
+    containerClass: 'skills__devops',
+}
+
 export const tagClouds = () => { 
-    TagCloud(frontendCloud, frontendCloudArray);
-    TagCloud(backendCloud, backendCloudArray);
-    TagCloud(devopsCloud, devopsCloudArray);
+    TagCloud(frontendCloud, frontendCloudArray, frontendCloudOptions);
+    TagCloud(backendCloud, backendCloudArray, backendCloudOptions);
+    TagCloud(devopsCloud, devopsCloudArray, devopsCloudOptions);
 } 
