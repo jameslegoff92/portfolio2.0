@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body class="body-js" >
+<body class="body-js">
   <!-- Loading Animation -->
   <!-- <div class="loading-animation">
     <div id="load">
@@ -21,6 +21,8 @@
       <div>L</div>
     </div>
   </div> -->
+
+
 
   <!-- Mobile Navigation -->
   <nav class="mobile-nav-container-js">
@@ -42,22 +44,22 @@
       </li>
     </ul>
 
-    <div class="icons" >
+    <div class="icons">
       <a class="icons__icon" href="">
         <img src="assets/shared/twitter-logo-negative.svg" alt="">
-      </a> 
+      </a>
 
       <a class="icons__icon" href="">
         <img src="assets/shared/google-logo-negative.svg" alt="">
-      </a> 
+      </a>
 
       <a class="icons__icon" href="">
         <img src="assets/shared/github-logo-negative.svg" alt="">
-      </a> 
+      </a>
 
       <a class="icons__icon" href="">
         <img src="assets/shared/medium-logo-negative.svg" alt="">
-      </a> 
+      </a>
     </div>
   </nav>
 
@@ -151,15 +153,33 @@
 
     <main class="main">
       <div id="skills-section" class="skills">
-        <section class="frontend-cloud">
-          <h2 class="skills__heading skills__heading--1"> frontend </h2>
-        </section>
-        <section class="backend-cloud">
-          <h2 class="skills__heading skills__heading--2"> backend </h2>
-        </section>
-        <section class="devops-cloud">
-          <h2 class="skills__heading skills__heading--3"> devops </h2>
-        </section>
+        <div class="acc-toggle" data-collapse="">
+          <div class="acc-block">
+            <div class="acc-title skills__heading skills__heading--1">Frontend </div>
+          </div>
+        </div>
+        <ul>
+          <section class="frontend-cloud">
+          </section>
+        </ul>
+        <div class="acc-toggle" data-collapse="">
+          <div class="acc-block">
+            <div class="acc-title skills__heading skills__heading--2"> Backend </div>
+          </div>
+        </div>
+        <ul>
+          <section class="backend-cloud">
+          </section>
+        </ul>
+        <div class="acc-toggle" data-collapse="">
+          <div class="acc-block">
+            <div class="acc-title skills__heading skills__heading--3"> Devops </div>
+          </div>
+        </div>
+        <ul>
+          <section class="devops-cloud">
+          </section>
+        </ul>
       </div>
 
       <div id="projects" class="grid">
@@ -212,7 +232,7 @@
           I'd like to discuss project <input class="form__input form__input--project-idea" type="text"
             placeholder="Describe your project idea (optional)">
         </label> <br>
-        
+
         <div>
           <label class="form__label" for=""> You can reach me at </label>
           <input class="form__input form__input--email" type="text" placeholder="Provide email here">
