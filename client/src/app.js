@@ -4,6 +4,7 @@ import { setProjectsLayout } from "./js/masonry.js";
 import { setMobileNavControl } from "./js/mobileNavigation.js";
 import gsap from "gsap";
 
+
 setMobileNavControl();
 removeLoadingAnimation();
 tagClouds();
@@ -37,7 +38,7 @@ parent.forEach((element) => {
 		},
 		"open"
 	);
-	tl.staggerFrom(
+	tl.from(
 		collapseElementChildren,
 		1,
 		{
