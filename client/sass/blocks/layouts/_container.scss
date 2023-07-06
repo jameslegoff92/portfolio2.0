@@ -1,0 +1,18 @@
+.container {
+  margin: 0 auto;
+  width: 87.2%;
+  max-width: 1000px;
+}
+
+.container--sm {
+  width: 70%;
+  max-width: 215px;
+}
+
+.container--md {
+  width: calc(216 / 327) *100%;
+}
+
+.container--lg {
+  width: 90%;
+}

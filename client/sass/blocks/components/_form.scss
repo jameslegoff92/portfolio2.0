@@ -1,0 +1,60 @@
+@use "../../variables" as *;
+
+
+/***
+  Contact
+***/
+#contact-section {
+  max-width: 567px;
+}
+
+.contact {
+  margin-bottom: $mg-400;
+}
+
+.contact__heading {
+  font-size: $fs-400;
+  margin-bottom: $mg-100;
+}
+
+.contact__text {
+  font-size: $fs-200;
+}
+
+
+/***
+  FORM
+***/
+.form {
+  padding-bottom: 60px;
+}
+
+.form__wrapper {
+}
+
+.form__container {
+  margin-bottom: $mg-400;
+}
+
+.form__text {
+  display: inline-block;
+  margin-bottom: $mg-200;
+}
+
+.form__label {
+  font-size: 12px;
+}
+
+.form__input {
+  border: none;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
+  background: transparent;
+  color: $white;
+  outline: transparent;
+  padding: 5px 5px 5px 2px;
+  width: 100%;
+}
+
+.form__input:focus {
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+}

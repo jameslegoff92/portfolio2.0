@@ -1,0 +1,22 @@
+.portfolio-title {
+  font-size: 15vw;
+  font-weight: 500;
+  line-height: 1.1;
+  margin-bottom: 92px; //The reason its 92px and not a multiple of 8 is to make up for the -4px margin bottom.
+}
+
+.portfolio-title div {
+  margin-bottom: -4px;
+}
+
+.section-3 {
+  text-align: right;
+}
+
+.section-5 {
+  margin-left: 6vw;
+}
+
+.char {
+  margin-right: -3.8vw;
+}

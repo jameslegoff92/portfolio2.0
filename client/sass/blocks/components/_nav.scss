@@ -1,0 +1,31 @@
+@use '../../variables' as *;
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: $m-5;
+}
+
+.nav {
+  display: none;
+
+  @media screen and (min-width: $md-screen) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+  }
+}
+
+.nav__item {
+  list-style: none;
+  padding: 2px;
+}
+
+.nav__link {
+  color: white;
+  font-size: $fs-300;
+  padding: 2px;
+  text-decoration: none;
+}

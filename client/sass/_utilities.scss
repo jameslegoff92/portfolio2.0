@@ -1,0 +1,52 @@
+@use 'variables' as *;
+
+.u-text-center {
+  text-align: center;
+}
+
+.u-text-left {
+  text-align: left;
+}
+
+.u-text-right {
+  text-align: right;
+}
+
+.u-text-justify {
+  text-align: justify;
+}
+
+.mb-0 {
+  margin-bottom: $m-0;
+}
+.mb-1 {
+  margin-bottom: $m-1;
+}
+.mb-2 {
+  margin-bottom: $m-2;
+}
+.mb-3 {
+  margin-bottom: $m-3;
+}
+.mb-4 {
+  margin-bottom: $m-4;
+}
+.mb-5 {
+  margin-bottom: $m-5;
+}
+.mb-6 {
+  margin-bottom: $m-6;
+}
+.mb-7 {
+  margin-bottom: $m-7;
+}
+.mb-8 {
+  margin-bottom: $m-8;
+}
+.mb-9 {
+  margin-bottom: $m-9;
+}
+
+.op-75 {
+  opacity: 75%;
+}

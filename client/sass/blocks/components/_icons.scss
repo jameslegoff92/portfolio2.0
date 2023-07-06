@@ -1,0 +1,15 @@
+@use '../../variables' as *;
+
+/***
+  icons
+***/
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons__icon {
+  margin-bottom: $mg-200;
+}

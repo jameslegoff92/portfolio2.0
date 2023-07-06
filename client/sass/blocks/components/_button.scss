@@ -1,0 +1,27 @@
+@use '../../variables' as *;
+
+/***
+  Button
+***/
+.btn-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.btn {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255);
+  color: $white;
+  font-size: 8px;
+  height: 26.86px;
+  width: 93.1px;
+}
+
+.btn--link {
+  text-align: center;
+  display: inline-block;
+  line-height: 26.86px;
+  text-decoration: none;
+}
