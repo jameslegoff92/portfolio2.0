@@ -644,10 +644,36 @@ ul {
 }
 
 .nav__link {
+  border-bottom: 1px solid transparent;
   color: white;
   font-size: 16px;
   padding: 2px;
   text-decoration: none;
+  transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+}
+
+.nav__link:hover {
+  cursor: pointer;
+}
+
+.nav__link-1:hover {
+  border-bottom-color: #ffffff;
+  color: #DDA091;
+}
+
+.nav__link-2:hover {
+  border-bottom-color: #ffffff;
+  color: #E5E37E;
+}
+
+.nav__link-3:hover {
+  border-bottom-color: #ffffff;
+  color: #EA4F20;
+}
+
+.nav__link-4:hover {
+  border-bottom-color: #ffffff;
+  color: #DDA091;
 }
 
 .portfolio-title {
@@ -655,6 +681,16 @@ ul {
   font-weight: 500;
   line-height: 1.1;
   margin-bottom: 92px;
+}
+@media screen and (max-width: 320px) {
+  .portfolio-title {
+    font-size: 49px;
+  }
+}
+@media screen and (min-width: 1146px) {
+  .portfolio-title {
+    font-size: 173px;
+  }
 }
 
 .portfolio-title div {
@@ -668,9 +704,29 @@ ul {
 .section-5 {
   margin-left: 6vw;
 }
+@media screen and (max-width: 320px) {
+  .section-5 {
+    margin-left: 1.2rem;
+  }
+}
+@media screen and (min-width: 1146px) {
+  .section-5 {
+    margin-left: 4.3012rem;
+  }
+}
 
 .char {
   margin-right: -3.8vw;
+}
+@media screen and (max-width: 320px) {
+  .char {
+    margin-right: -0.76rem;
+  }
+}
+@media screen and (min-width: 1146px) {
+  .char {
+    margin-right: -2.65rem;
+  }
 }
 
 .color-light {

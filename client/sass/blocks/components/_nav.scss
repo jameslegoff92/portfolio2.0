@@ -1,4 +1,4 @@
-@use '../../variables' as *;
+@use "../../variables" as *;
 
 .nav-container {
   display: flex;
@@ -24,8 +24,31 @@
 }
 
 .nav__link {
+  border-bottom: 1px solid transparent;
   color: white;
   font-size: $fs-300;
   padding: 2px;
   text-decoration: none;
+  transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+}
+
+.nav__link:hover {
+  cursor: pointer;
+}
+
+.nav__link-1:hover {
+  border-bottom-color: $white;
+  color: $salmon;
+}
+.nav__link-2:hover {
+  border-bottom-color: $white;
+  color: $yellow;
+}
+.nav__link-3:hover {
+  border-bottom-color: $white;
+  color: $orange;
+}
+.nav__link-4:hover {
+  border-bottom-color: $white;
+  color: $salmon;
 }
