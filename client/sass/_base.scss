@@ -38,51 +38,19 @@ body {
   margin-bottom: $mg-700;
 }
 
-/***
-  Skills
-***/
-.skills {
-  margin-bottom: $mg-700;
-  text-align: center;
-  text-transform: uppercase;
-
-  @media (min-width: $lg-screen) {
-    display: flex;
-    justify-content: center;
-  }
+a {
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.skills .skills__heading {
-  font-size: 2rem;
-  text-transform: uppercase;
+a:visited {
+  color: $white;
 }
 
-.skills__heading--1::first-letter {
-  color: $salmon;
+a:active {
+  color: $white;
 }
 
-.skills__heading--2::first-letter {
-  color: $yellow;
-}
-
-.skills__heading--3::first-letter {
-  color: $orange;
-}
-
-.skills__frontend {
-  color: $salmon;
-  margin: 0 auto;
-  width: 90%;
-}
-
-.skills__backend {
-  color: $yellow;
-  margin: 0 auto;
-  width: 90%;
-}
-
-.skills__devops {
-  color: $orange;
-  margin: 0 auto;
-  width: 90%;
+#projects > span {
+  margin-right: -5px;
 }

@@ -5,6 +5,7 @@
   Contact
 ***/
 #contact-section {
+  margin: 0 auto;
   max-width: 567px;
 }
 
@@ -57,4 +58,8 @@
 
 .form__input:focus {
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+}
+
+.form__input:focus::placeholder {
+  color: transparent;
 }

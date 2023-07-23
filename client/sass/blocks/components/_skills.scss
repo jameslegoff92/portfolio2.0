@@ -1,0 +1,61 @@
+@use '../../variables' as *;
+
+.skills {
+  margin-bottom: $mg-700;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $lg-screen) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.skill {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem 2rem 1rem;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+[data-collapsible] {
+  cursor: pointer;
+}
+
+.skill__heading {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.skill__heading--1::first-letter {
+  color: $salmon;
+}
+
+.skill__heading--2::first-letter {
+  color: $yellow;
+}
+
+.skill__heading--3::first-letter {
+  color: $orange;
+}
+
+.skill__frontend {
+  color: $salmon;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.skill__backend {
+  color: $yellow;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.skill__devops {
+  color: $orange;
+  margin: 0 auto;
+  width: 100%;
+}

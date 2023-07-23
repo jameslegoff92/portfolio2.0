@@ -18,17 +18,17 @@ const devopsCloudArray = [
 
 const frontendCloudOptions = { 
     radius: 125,
-    containerClass: 'skills__frontend',
+    containerClass: 'skill__frontend',
 };
 
 const backendCloudOptions = { 
     radius: 125,
-    containerClass: 'skills__backend',
+    containerClass: 'skill__backend',
 }
 
 const devopsCloudOptions = {  
     radius: 125,
-    containerClass: 'skills__devops',
+    containerClass: 'skill__devops',
 }
 
 export const tagClouds = () => { 

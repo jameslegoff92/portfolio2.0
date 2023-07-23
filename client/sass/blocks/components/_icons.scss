@@ -10,6 +10,13 @@
   justify-content: center;
 }
 
+.icons--row {
+  margin: 0 auto 24px;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 130px;
+}
+
 .icons__icon {
   margin-bottom: $mg-200;
 }
