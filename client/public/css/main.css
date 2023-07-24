@@ -422,13 +422,26 @@ a:active {
 }
 
 .btn {
+  background-image: none;
   background-color: transparent;
   border: 1px solid rgb(255, 255, 255);
   color: #ffffff;
   font-size: 12px;
   height: 48px;
+  position: relative;
   line-height: 16px;
   width: 151px;
+  transition: font-size 0.5s ease-in-out, border 0.5s ease-in-out, height 0.5s ease-in-out, width 0.5s ease-in-out, color 0.5s ease-in-out, background-color 0.5s ease-in-out, line-height 0.5s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  color: #000000;
+  font-size: 16px;
+  height: 58px;
+  line-height: 58px;
+  width: 161px;
 }
 
 .btn--link {
