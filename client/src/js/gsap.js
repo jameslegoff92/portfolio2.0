@@ -37,3 +37,16 @@ export const skillsAccordionControl = () => {
     });
   });
 };
+
+export const mainHeadingAnimation = () => {
+  let tl = gsap.timeline({ delay: 6.5});
+
+  tl.from(".section-1 > span", { opacity: 0, duration: 0.5, stagger: 0.1 });
+  tl.from(".section-2 > span", { opacity: 0, duration: 0.5, stagger: 0.1 });
+  tl.from(".section-3 > span", { opacity: 0, duration: 0.5, stagger: 0.1 });
+  tl.from(".section-4 > span", { opacity: 0, duration: 0.5, stagger: 0.1 });
+  tl.from(".section-5 > span", { opacity: 0, duration: 0.5, stagger: 0.1 });
+  tl.from (".nav-container", { opacity: 0, duration: 0.5 });
+  tl.from(".intro-gsap", { opacity: 0, duration: 1});
+
+};
