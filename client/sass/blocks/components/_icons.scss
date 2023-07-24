@@ -1,4 +1,4 @@
-@use '../../variables' as *;
+@use "../../variables" as *;
 
 /***
   icons
@@ -11,12 +11,50 @@
 }
 
 .icons--row {
-  margin: 0 auto 24px;
+  margin: 0 auto 48px;
   flex-direction: row;
   justify-content: space-between;
-  width: 130px;
+  width: 200px;
+}
+
+.icons__wrapper {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.icons__wrapper--mobile {
+  margin-bottom: $m-3;
+}
+
+.icons__link {
+
 }
 
 .icons__icon {
-  margin-bottom: $mg-200;
+  fill: $white;
+  height: 100%;
+  width: 100%;
+  transition: 0.5s ease-in-out;
+}
+
+.icons__icon-1 {
+ 
+}
+
+.icons__icon-1:hover {
+  height: 125%;
+  width: 125%;
+  fill: $yellow;
+}
+
+.icons__icon-2:hover {
+  height: 125%;
+  width: 125%;
+  fill: $orange;
+}
+
+.icons__icon-3:hover {
+  height: 125%;
+  width: 125%;
+  fill: $salmon;
 }

@@ -1,6 +1,10 @@
 .loading-animation {
+	background-color: black;
   height: 100vh;
   width: 100vw;
+	position: absolute;
+	overflow-y: hidden;
+	z-index: 4;
 }
 
 #load {
@@ -24,6 +28,7 @@
   height:36px;
   opacity:0;
   font-family:Helvetica, Arial, sans-serif;
+	font-size: 24px;
   animation:move 2s linear infinite;
   -o-animation:move 2s linear infinite;
   -moz-animation:move 2s linear infinite;
@@ -32,7 +37,6 @@
   -o-transform:rotate(180deg);
   -moz-transform:rotate(180deg);
   -webkit-transform:rotate(180deg);
-  color:#35C4F0;
 }
 
 #load div:nth-child(2) {
