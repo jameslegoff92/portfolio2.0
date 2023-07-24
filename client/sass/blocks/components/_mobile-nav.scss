@@ -33,6 +33,31 @@
   color: white;
   text-decoration: none;
   text-transform: uppercase;
+  border-bottom: 1px solid transparent;
+  font-size: $fs-300;
+  padding: 2px;
+  transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+}
+
+.mobile-nav__link:hover {
+  cursor: pointer;
+}
+
+.mobile-nav__link-1:hover {
+  border-bottom-color: $white;
+  color: $salmon;
+}
+.mobile-nav__link-2:hover {
+  border-bottom-color: $white;
+  color: $yellow;
+}
+.mobile-nav__link-3:hover {
+  border-bottom-color: $white;
+  color: $orange;
+}
+.mobile-nav__link-4:hover {
+  border-bottom-color: $white;
+  color: $salmon;
 }
 
 .mobile-nav-btn {
