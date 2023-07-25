@@ -415,6 +415,19 @@ a:active {
   opacity: 75%;
 }
 
+.overlay {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 0px;
+  opacity: 0;
+  width: 100%;
+}
+
 /***
   Button
 ***/
@@ -436,6 +449,34 @@ a:active {
   line-height: 16px;
   width: 151px;
   transition: font-size 0.5s ease-in-out, border 0.5s ease-in-out, height 0.5s ease-in-out, width 0.5s ease-in-out, color 0.5s ease-in-out, background-color 0.5s ease-in-out, line-height 0.5s ease-in-out;
+}
+
+.btn-sm {
+  background-image: none;
+  background-color: transparent;
+  border: 1px solid rgb(255, 255, 255);
+  color: #ffffff;
+  font-size: 8px;
+  height: 24px;
+  position: relative;
+  line-height: 8px;
+  width: 60px;
+  opacity: 0;
+  transition: background-color 0.5s ease-in-out, border 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.btn-sm--link {
+  text-align: center;
+  display: inline-block;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.btn-sm:hover {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -821,6 +862,10 @@ a:active {
   width: 100%;
 }
 
+.skill__icon {
+  transform: rotate(-90deg);
+}
+
 .color-light {
   color: #ffffff;
 }
@@ -910,6 +955,7 @@ a:active {
 }
 
 .grid-item {
+  position: relative;
   margin-bottom: 10px;
   width: 134.5px;
 }

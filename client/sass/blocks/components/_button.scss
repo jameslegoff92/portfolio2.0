@@ -1,4 +1,4 @@
-@use '../../variables' as *;
+@use "../../variables" as *;
 
 /***
   Button
@@ -20,7 +20,36 @@
   position: relative;
   line-height: 16px;
   width: 151px;
-  transition: font-size 0.5s ease-in-out, border 0.5s ease-in-out, height 0.5s ease-in-out, width 0.5s ease-in-out, color 0.5s ease-in-out, background-color 0.5s ease-in-out, line-height 0.5s ease-in-out;
+  transition: font-size 0.5s ease-in-out, border 0.5s ease-in-out, height 0.5s ease-in-out, width 0.5s ease-in-out,
+    color 0.5s ease-in-out, background-color 0.5s ease-in-out, line-height 0.5s ease-in-out;
+}
+
+.btn-sm {
+  background-image: none;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255);
+  color: $white;
+  font-size: 8px;
+  height: 24px;
+  position: relative;
+  line-height: 8px;
+  width: 60px;
+  opacity: 0;
+  transition: background-color 0.5s ease-in-out, border 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.btn-sm--link {
+  text-align: center;
+  display: inline-block;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.btn-sm:hover {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
 }
 
 .btn:hover {
