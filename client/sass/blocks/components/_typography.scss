@@ -25,6 +25,16 @@
   line-height: calc(($fs-2 + 4px) / $fs-2);
 }
 
+.text--link {
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s ease-in-out;
+}
+
+.text--link:hover {
+  border-bottom: 1px solid $white;
+  cursor: pointer;
+}
+
 .text--bold {
   font-weight: 700;
 }
