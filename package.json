@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Portfolio ",
   "main": "server/server.js",
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "start": "nodemon --watch ./client --watch ./server server.js -e js,ejs,scss,css,html",
     "sass": "sass --watch ./client/sass:./client/dist/css --style=compressed",
