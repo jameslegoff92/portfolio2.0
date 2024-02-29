@@ -4,7 +4,7 @@
   "description": "Portfolio ",
   "main": "server/server.js",
   "scripts": {
-    "start": "nodemon --watch ./client/public --watch ./server server.js -e js,ejs,scss,css,html",
+    "start": "nodemon --watch ./client --watch ./server server.js -e js,ejs,scss,css,html",
     "sass": "sass --watch ./client/sass:./client/dist/css --style=compressed",
     "build": "webpack --mode production"
   },
@@ -19,14 +19,10 @@
     "imagesloaded": "^5.0.0",
     "jquery": "^3.7.0",
     "masonry-layout": "^4.2.2",
-    "nodemailer": "^6.9.4",
     "nodemon": "^2.0.22"
   },
   "devDependencies": {
     "connect-livereload": "^0.6.1",
-    "ejs-loader": "^0.5.0",
-    "file-loader": "^6.2.0",
-    "image-webpack-loader": "^8.1.0",
     "livereload": "^0.9.3",
     "sass": "^1.63.4",
     "TagCloud": "^2.3.2",
