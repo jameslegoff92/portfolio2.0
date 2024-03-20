@@ -13,8 +13,8 @@
 .btn {
   background-image: none;
   background-color: transparent;
-  border: 1px solid rgba(255, 255, 255);
-  color: $white;
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
   font-size: 12px;
   height: 48px;
   position: relative;
@@ -27,8 +27,8 @@
 .btn-sm {
   background-image: none;
   background-color: transparent;
-  border: 1px solid rgba(255, 255, 255);
-  color: $white;
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
   font-size: 8px;
   height: 24px;
   position: relative;
@@ -46,16 +46,16 @@
 }
 
 .btn-sm:hover {
-  background-color: white;
-  border: 1px solid black;
-  color: black;
+  background-color: var(--text-color);
+  border: 1px solid var(--background-color);
+  color: var(--background-color);
   cursor: pointer;
 }
 
 .btn:hover {
-  background-color: $white;
-  border: 1px solid $black;
-  color: $black;
+  background-color: var(--text-color);
+  border: 1px solid var(--background-color);
+  color: var(--background-color);
   font-size: 16px;
   height: 58px;
   line-height: 58px;

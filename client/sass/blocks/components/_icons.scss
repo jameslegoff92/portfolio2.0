@@ -31,15 +31,13 @@
 }
 
 .icons__icon {
-  fill: $white;
+  fill: var(--background-color);
   height: 100%;
   width: 100%;
   transition: 0.5s ease-in-out;
 }
 
-.icons__icon-1 {
- 
-}
+
 
 .icons__icon-1:hover {
   height: 125%;

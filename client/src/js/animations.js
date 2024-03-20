@@ -7,7 +7,6 @@ export const removeLoadingAnimation = () => {
   
   setTimeout(() => {
     loadingAnimation.style.display = 'none';
-    body.style.background = 'black';
     body.style.overflowY = 'scroll';
     container.style.display = 'block';
   }, 6000)

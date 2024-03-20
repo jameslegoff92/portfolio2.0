@@ -8,9 +8,9 @@
   <link rel="stylesheet" href="css/main.css" />
 </head>
 
-<body id="body" class="body-js">
+<body id="body" class="body-js light-theme">
   <!-- Loading Animation -->
-  <div class="loading-animation">
+  <!-- <div class="loading-animation">
     <div id="load">
       <div>G</div>
       <div class="color-mustard">N</div>
@@ -20,12 +20,15 @@
       <div>O</div>
       <div class="color-orange">L</div>
     </div>
-  </div>
+  </div> -->
 
   <!-- Mobile Navigation -->
   <nav class="mobile-nav-container-js">
     <button id="" class="mobile-nav-btn close-nav-js">
-      <img src="/assets/shared/close.png" alt="mobile close button" />
+      <svg  width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="mobile-nav-btn__icon" d="M13.7071 1.70711C14.0976 1.31658 14.0976 0.683417 13.7071 0.292893C13.3166 -0.0976311 12.6834 -0.0976311 12.2929 0.292893L7 5.58579L1.70711 0.292893C1.31658 -0.0976311 0.683417 -0.0976311 0.292893 0.292893C-0.0976311 0.683417 -0.0976311 1.31658 0.292893 1.70711L5.58579 7L0.292893 12.2929C-0.0976311 12.6834 -0.0976311 13.3166 0.292893 13.7071C0.683417 14.0976 1.31658 14.0976 1.70711 13.7071L7 8.41421L12.2929 13.7071C12.6834 14.0976 13.3166 14.0976 13.7071 13.7071C14.0976 13.3166 14.0976 12.6834 13.7071 12.2929L8.41421 7L13.7071 1.70711Z" fill="#2D3648"/>
+        </svg>        
+      <!-- <img src="/assets/shared/close.png" alt="mobile close button" /> -->
     </button>
     <ul class="mobile-nav">
       <li class="mobile-nav__item">
@@ -40,12 +43,13 @@
       <li class="mobile-nav__item">
         <a class="mobile-nav__link mobile-nav__link-4" href="#contact-section">Contact</a>
       </li>
+
     </ul>
 
     <div class="icons">
       <div class="icons__wrapper icons__wrapper--mobile">
         <a class="icons__link" href="https://twitter.com/jameslegoff" target="_blank">
-          <svg class="icons__icon icons__icon-1" width="21" height="21" viewBox="0 0 21 21"
+          <svg class="icons__icon" width="21" height="21" viewBox="0 0 21 21"
             xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_131_105)">
               <path
@@ -155,11 +159,8 @@
             <a class="nav__link nav__link-4" href="#contact-section">Contact</a>
           </li>
         </ul>
-
-        <a class=nav__link href="#contact-section"> 
-           <img class="internationalization" src="/assets/shared/local_cafe.svg" alt="">
-        </a>
-
+        <input type="checkbox" class="theme-toggle" id="switch" />
+        <label for="switch">Toggle</label>
         <!-- <span class="internationalization">EN</span> -->
       </nav>
 
@@ -211,6 +212,8 @@
         </div>
       </div>
 
+
+
       <div class="container container--sm intro-gsap">
         <p id="about" class="text text--bold mb-2">Prologue,</p>
 
@@ -234,7 +237,7 @@
         <p class="text op-75 mb-2">
           Collaboration is the cornerstone of any worthwhile endeavour. I truly enjoy learning from others and working
           with people who are passionate about what they do. Steve jobs said <em> "Greats things in business are never
-          done by one person, they're done by a team of people". </em>
+            done by one person, they're done by a team of people". </em>
           Through collaboration, I believe that we can leverage diverse perspectives and expertise to push the
           boundaries of creativity and innovation.
         </p>
@@ -548,7 +551,7 @@
     </div>
 
     <div class="u-text-center">
-      <a href="#body" style="color:white;" class="text text--link"> Return to top </a>
+      <a href="#body" style="color:var(--text-color);" class="text text--link"> Return to top </a>
     </div>
   </div>
 </body>

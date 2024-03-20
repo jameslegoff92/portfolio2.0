@@ -1,7 +1,7 @@
 @use '../../variables' as *;
 
 .mobile-nav-container-js {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: var(--text-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,7 +30,7 @@
 }
 
 .mobile-nav__link {
-  color: white;
+  color: var(--background-color);
   text-decoration: none;
   text-transform: uppercase;
   border-bottom: 1px solid transparent;
@@ -44,19 +44,19 @@
 }
 
 .mobile-nav__link-1:hover {
-  border-bottom-color: $white;
+  border-bottom-color: var(--text-color);
   color: $salmon;
 }
 .mobile-nav__link-2:hover {
-  border-bottom-color: $white;
+  border-bottom-color: var(--text-color);
   color: $yellow;
 }
 .mobile-nav__link-3:hover {
-  border-bottom-color: $white;
+  border-bottom-color: var(--text-color);
   color: $orange;
 }
 .mobile-nav__link-4:hover {
-  border-bottom-color: $white;
+  border-bottom-color: var(--text-color);
   color: $salmon;
 }
 
@@ -69,6 +69,10 @@
   @media screen and (min-width: $md-screen) {
     display: none;
   }
+}
+
+.mobile-nav-btn__icon {
+  fill: var(--background-color);
 }
 
 .mobile-nav-btn img {

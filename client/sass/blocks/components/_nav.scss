@@ -25,7 +25,7 @@
 
 .nav__link {
   border-bottom: 1px solid transparent;
-  color: white;
+  color: var(--text-color);
   font-size: $fs-300;
   padding: 2px;
   text-decoration: none;
@@ -37,18 +37,18 @@
 }
 
 .nav__link-1:hover {
-  border-bottom-color: $white;
+  border-bottom-color: var(--text-color);
   color: $salmon;
 }
 .nav__link-2:hover {
-  border-bottom-color: $white;
+  border-bottom-color: var(--text-color);
   color: $yellow;
 }
 .nav__link-3:hover {
-  border-bottom-color: $white;
+  border-bottom-color: var(--text-color);
   color: $orange;
 }
 .nav__link-4:hover {
-  border-bottom-color: $white;
+  border-bottom-color: var(--text-color);
   color: $salmon;
 }
