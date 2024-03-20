@@ -4,25 +4,25 @@ const path = require("path");
 
 //Third-party modules
 const express = require("express");
-const livereload = require("livereload");
-const connectLivereload = require("connect-livereload");
+// const livereload = require("livereload");
+// const connectLivereload = require("connect-livereload");
 const bodyParser = require("body-parser");
 
 //Open livereload high port and start to watch public directory for changes
-const liveReloadServer = livereload.createServer();
-liveReloadServer.watch(path.join(__dirname, "public"));
+// const liveReloadServer = livereload.createServer();
+// liveReloadServer.watch(path.join(__dirname, "public"));
 
 // Ping browser on Express boot, once browser has reconnected and handshaken
-liveReloadServer.server.once("connection", () => {
-  setTimeout(() => {
-    liveReloadServer.refresh("/");
-  }, 100);
-});
+// liveReloadServer.server.once("connection", () => {
+//   setTimeout(() => {
+//     liveReloadServer.refresh("/");
+//   }, 100);
+// });
 
 const app = express();
 
 //Monkey patch every served HTML so they know of changes
-app.use(connectLivereload());
+// app.use(connectLivereload());
 
 const port = process.env.PORT || 3000;
 const staticFolderPath = path.join(__dirname, "../client/dist");

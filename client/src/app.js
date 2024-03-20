@@ -5,8 +5,8 @@ import { setMobileNavControl } from "./js/mobileNavigation.js";
 import { skillsAccordionControl, mainHeadingAnimation, gridOverlayAnimation } from "./js/gsap.js";
 
 setMobileNavControl();
-// removeLoadingAnimation();
-// mainHeadingAnimation();
+removeLoadingAnimation();
+mainHeadingAnimation();
 tagClouds();
 skillsAccordionControl();
 setProjectsLayout();
