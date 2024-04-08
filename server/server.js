@@ -46,14 +46,14 @@ app.use(async (req, res, next) => {
 });
 
 // Routes
-const projectsRouter = require('./routes/project');
+const projectRouter = require('./routes/project');
 
 
 app.get("/", async (req, res) => {
   res.render("pages/homepage");
 });
 
-app.use(projectsRouter);
+app.use(projectRouter);
 
 app.use((req, res, next) => {
   res.status(404).send("Sorry can't find that!");

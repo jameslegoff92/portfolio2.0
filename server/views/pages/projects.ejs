@@ -6,13 +6,17 @@
   <%- include('../partials/navigation.ejs') %>
 
   <div class="grid">
-    <img src="" alt="">
-    <h1> 
-      Project
-    </h1>
-    <p>
-      slkfjsdlkfjl lsfjsdlfj sdfljsdlfj
-    </p>
+    <% projects.forEach((element, index) => { %>
+      <div classname="grid-item grid-item-<%= index +1 %>" >
+        <img src="<%= element.img  %>  " alt="">
+        <h1> 
+          <%= element.name %>
+        </h1>
+        <p>
+          <%= element.description %>
+        </p>
+      </div>
+    <% }) %>
   </div>
 </div>
 

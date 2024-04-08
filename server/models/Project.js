@@ -1,6 +1,13 @@
 const { getDb } = require("../db");
 
-class Projects {
+class Project {
+  constructor({ name, description, img, tags }) {
+    this.name = name;
+    this.description = description;
+    this.img = img;
+    this.tags = tags;
+  }  
+
   static async getAll() {
     try {
       const db = getDb();
@@ -13,4 +20,4 @@ class Projects {
   }
 }
 
-module.exports = Projects;
+module.exports = Project;
