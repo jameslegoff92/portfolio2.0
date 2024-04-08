@@ -8,7 +8,8 @@
   },
   "scripts": {
     "start": "nodemon --watch ./client --watch ./server server.js -e js,ejs,scss,css,html",
-    "sass": "sass --watch ./client/sass:./client/dist/css --style=compressed"
+    "sass": "sass --watch ./client/sass:./client/dist/css --style=compressed",
+    "webpack": "npx webpack --watch"
   },
   "author": "James Louis Le-Goff <jameslegoff92@gmail.com>",
   "license": "ISC",
@@ -21,6 +22,7 @@
     "imagesloaded": "^5.0.0",
     "jquery": "^3.7.0",
     "masonry-layout": "^4.2.2",
+    "mongodb": "^6.5.0",
     "nodemon": "^2.0.22"
   },
   "devDependencies": {

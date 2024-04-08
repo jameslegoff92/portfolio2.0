@@ -71,9 +71,7 @@ export const mainHeadingAnimation = () => {
 export const gridOverlayAnimation = () => {
   let gridItems = document.querySelectorAll(".grid-item");
   gridItems.forEach((item) => {
-    console.log(item);
     let overlay = item.children[0];
-    console.log(overlay);
     let smallBtn1 = overlay.children[0];
     let smallBtn2 = overlay.children[1];
 

@@ -1,6 +1,9 @@
 const openNav = document.querySelector(".open-nav-js");
+console.log(openNav);
 const closeNav = document.querySelector(".close-nav-js");
+console.log(closeNav);
 const mobileNavContainer = document.querySelector(".mobile-nav-container-js");
+console.log(mobileNavContainer);
 const body = document.querySelector(".body-js");
 
 export const setMobileNavControl = () => {
