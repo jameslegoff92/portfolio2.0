@@ -2,7 +2,7 @@
 // Core node modules
 const path = require("path");
 require("dotenv").config();
-const { connectToDatabase, getDb } = require('./db');
+const { connectToDatabase } = require('./db');
 
 //Third-party modules
 const express = require("express");
@@ -43,20 +43,17 @@ app.set("views", viewsFolderPath);
 app.use(async (req, res, next) => {
   await connectToDatabase(); 
   next();
-}); 
+});
+
+// Routes
+const projectsRouter = require('./routes/project');
 
 
 app.get("/", async (req, res) => {
-  const db = getDb();
-  const collection = db.collection("projects");
-
-  const documents = await collection.find({}).toArray(); 
   res.render("pages/homepage");
 });
 
-app.get("/projects", (req, res) => {
-  res.render("pages/projects");
-});
+app.use(projectsRouter);
 
 app.use((req, res, next) => {
   res.status(404).send("Sorry can't find that!");
