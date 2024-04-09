@@ -47,6 +47,9 @@ app.use(async (req, res, next) => {
 
 // Routes
 const projectRouter = require('./routes/project');
+const aboutRouter = require('./routes/about');
+const blogRouter = require('./routes/blog');
+const contactRouter = require('./routes/contact');
 
 
 app.get("/", async (req, res) => {
@@ -54,6 +57,9 @@ app.get("/", async (req, res) => {
 });
 
 app.use(projectRouter);
+app.use(aboutRouter);
+app.use(blogRouter);
+app.use(contactRouter);
 
 app.use((req, res, next) => {
   res.status(404).send("Sorry can't find that!");

@@ -1,9 +1,9 @@
 const express = require('express');
-const projectsController = require('../controllers/project');
+const projectController = require('../controllers/project');
 
 const router = express.Router();
 
 // GET /projects
-router.get('/projects', projectsController.getAllProjects);
+router.get('/projects', projectController.getAllProjects);
 
 module.exports = router;
