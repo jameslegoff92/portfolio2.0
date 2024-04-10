@@ -1,7 +1,4 @@
-import { tagClouds } from "./js/GoogleTag.js"; 
-import { setProjectsLayout } from "./js/masonry.js";
 import { setMobileNavControl } from "./js/mobileNavigation.js";
-import { skillsAccordionControl, gridOverlayAnimation } from "./js/gsap.js";
 
 document.addEventListener("DOMContentLoaded", () => {   
   const toggle = document.querySelector(".theme-toggle");
@@ -18,9 +15,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  tagClouds();
-  skillsAccordionControl();
-  setProjectsLayout();
-  gridOverlayAnimation();
   setMobileNavControl();
 });

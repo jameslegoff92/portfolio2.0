@@ -53,7 +53,7 @@ const contactRouter = require('./routes/contact');
 
 
 app.get("/", async (req, res) => {
-  res.render("pages/homepage");
+  res.render("pages/homepage", {script: 'sketch.js'});
 });
 
 app.use(projectRouter);
