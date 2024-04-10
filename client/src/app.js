@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   toggle.addEventListener("change", function () {
     // If the toggle is on, add the dark class to the body
     const body = document.body;
-    console.log("toggled");
+
     if (body.classList.contains("dark-theme")) {
       body.classList.replace("dark-theme", "light-theme");
     } else {

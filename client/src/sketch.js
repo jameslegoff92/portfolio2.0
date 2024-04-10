@@ -1,27 +1,11 @@
-// import { removeLoadingAnimation } from "./js/animations.js";
-// import { mainHeadingAnimation } from "./js/gsap.js";
+import { removeLoadingAnimation } from "./js/animations.js";
+import { mainHeadingAnimation } from "./js/gsap.js";
 
-// // removeLoadingAnimation();
-// // mainHeadingAnimation(); 
-console.log("hi");
+removeLoadingAnimation();
+mainHeadingAnimation(); 
 
-// const s = p => {
-//   let x = 100;
-//   let y = 100;
 
-//   p.setup = function() {
-//     p.createCanvas(700, 410);
-//   };
 
-//   p.draw = function() {
-//     p.background(0);
-//     p.fill(255);
-//     p.rect(x, y, 50, 50);
-//   };
-// };
-
-// new p5(s); 
-// Define a new p5 instance
 const mySketch = (p) => {
   // Setup function
   p.setup = () => {
