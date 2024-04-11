@@ -11,13 +11,17 @@ html {
 
 .dark-theme {
   --text-color: #ffffff;
+  --mobile-color: #000000;
   --background-color: #000000;
+  --mobile-background-color: rgb(251, 243, 213);
 
 }
 
 .light-theme {
   --text-color: #000000;
+  --mobile-color: #ffffff;
   --background-color: rgb(251, 243, 213);
+  --mobile-background-color: #000000;
 }
 
 *,
@@ -60,7 +64,7 @@ a {
 }
 
 a:visited {
-  color: var(--text-color);
+  // color: var(--text-color);
 }
 
 span {

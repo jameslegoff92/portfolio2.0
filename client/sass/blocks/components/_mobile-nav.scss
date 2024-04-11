@@ -1,23 +1,31 @@
 @use '../../variables' as *;
 
-.mobile-nav-container-js {
-  background-color: white;
+
+.mobile-nav-container {
+  background-color: var(--mobile-background-color);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   justify-content: space-between;
   padding: 40px 0;
-  position: fixed;
-  text-align: center;
+  position: absolute;
+  text-align: left;
   width: 100vw;
   z-index: 3;
   top: 0;
   left: -10000px;
   overflow: hidden;
-  min-height: 100vh;
+  height: 100vh;
 
   @media screen and (min-width: 768px) {
     display: none;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: $mg-300;
   }
 }
 
@@ -26,15 +34,15 @@
 }
 
 .mobile-nav__item:not(:last-child) {
-  margin-bottom: $mg-400;
+  margin-bottom: $mg-300;
 }
 
 .mobile-nav__link {
-  color: var(--background-color);
+  color: var(--mobile-color);
   text-decoration: none;
-  text-transform: uppercase;
   border-bottom: 1px solid transparent;
-  font-size: $fs-300;
+  font-size: $fs-600;
+  font-weight: 500;
   padding: 2px;
   transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 }
@@ -72,7 +80,7 @@
 }
 
 .mobile-nav-btn__icon {
-  fill: var(--text-color);
+  fill: white;
 }
 
 .mobile-nav-btn img {
