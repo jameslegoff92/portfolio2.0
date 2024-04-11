@@ -1,5 +1,5 @@
 import { setMobileNavControl } from "./js/mobileNavigation.js";
-import { rotatingCube } from "./js/p5.js";
+import { createSketch } from "./js/p5.js";
 
 document.addEventListener("DOMContentLoaded", () => {   
   const toggle = document.querySelector(".theme-toggle");
@@ -17,5 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   setMobileNavControl();
-  new p5(rotatingCube);
+  new p5(createSketch("logo-canvas"));
+  new p5(createSketch("logo-canvas-mobile"));
 });
