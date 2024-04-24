@@ -1,0 +1,25 @@
+@use '../../variables' as *;
+
+.contact-layout {
+  display: flex;
+  gap: $m-4;
+
+  @media screen and (min-width: $md-screen){
+    height: 100vh;
+    
+  }
+
+  &__item1 {
+    width: 50%;
+  }
+
+  &__item2 {
+    display: none;
+
+    @media screen and (min-width: $sm-screen){
+      display: block;
+      width: 50%;
+    }
+  }
+}
+

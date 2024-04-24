@@ -1,35 +1,67 @@
+@use '../../variables' as *;
+
 /***
   PROJECTS
 ***/
-.grid-wrapper {
-  margin: 50px auto;
-  background: #fff;
-  max-width: 800px;
-  box-shadow: 0px 25px 30px -20px rgba(0, 0, 0, 0.2);
-}
-
-.grid {
-  margin: 0 auto;
+.projects-grid {
   display: grid;
-  width: 279px;
+  row-gap: $m-7;
+  margin: 0 auto;
+  max-width: 1000px;
 
-  @media screen and (min-width: 608px) {
-    width: 423.5px;
+  @media screen and (min-width: $lg-screen) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: $m-8;
+    row-gap: $m-9;
+  }
+  &__wrapper {
+    padding: 0 $m-2;
+
+    @media screen and (min-width: $lg-screen) {
+      padding: 0;
+    }
   }
 
-  @media screen and (min-width: 752.5px) {
-    width: 568px;
+
+  &__item1 {
+    order: 3;
+    @media screen and (min-width: $lg-screen) {
+      grid-column: 1 / 3;
+      margin-left: $m-8;
+    }
+  }
+
+  &__item2 {
+    @media screen and (min-width: $lg-screen) {
+      margin-top: $m-9;
+    }
+  }
+
+  &__item4 {
+    order: 4;
+    @media screen and (min-width: $lg-screen) {
+    }
+  }
+
+  &__item5 {
+    order: 5;
+    @media screen and (min-width: $lg-screen) {
+      margin-top: $m-9;
+    }
+  }
+
+  &__item6 {
+    order: 6;
+    @media screen and (min-width: $lg-screen) {
+      grid-column: 1 / 3;
+      margin-right: $m-9;
+    }
   }
 }
 
-.grid-item {
-  position: relative;
-  margin-bottom: 10px;
-  width: 134.5px;
+.projects-grid img {
+  margin-bottom: $m-1;
 }
 
-.grid-item img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
+
+

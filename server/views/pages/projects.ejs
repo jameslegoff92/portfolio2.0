@@ -1,29 +1,42 @@
 <%- include('../partials/head') %>
 
-<%- include('../partials/mobileNavigation.ejs') %>
-<body id="body" class="body-js light-theme">
+  <%- include('../partials/mobileNavigation.ejs') %>
 
-<div class="container">
-  <%- include('../partials/navigation.ejs') %>
+    <body id="body" class="body-js light-theme">
 
-  <h1> 
-    I bring your boldest ideas to life
-  </h1>
+      <div class="container">
+        <%- include('../partials/navigation.ejs') %>
 
-  <div class="grid">
-    <% projects.forEach((element, index) => { %>
-      <div classname="grid-item grid-item-<%= index +1 %>" >
-        <img src="<%= element.img  %>  " alt="">
-        <h1> 
-          <%= element.name %>
-        </h1>
-        <p>
-          <%= element.description %>
-        </p>
+          <h1 class="h1 h1--responsive mb-7">
+            I bring your boldest ideas to life
+          </h1>
       </div>
-    <% }) %>
-  </div>
-</div>
 
-</body>
-<%- include('../partials/end') %>
+      <div class="projects-grid">
+        <% projects.forEach((element, index)=> { %>
+          <div class="projects-grid__item projects-grid__item<%= index +1 %>">
+            <a class="projects-grid__link" href="<%= element.url %>">
+              <img src="<%= element.img  %>  " alt="">
+            </a>
+            <div class="projects-grid__wrapper">
+              <h2 class="h2 u-text-700">
+                <%= element.name %>
+              </h2>
+              <p class="text">
+                <%= element.description %>
+              </p>
+              <div>
+                <% element.tags.forEach((tag)=> { %>
+                  <span class="label op-75" >
+                    <%= tag %> |
+                  </span>
+                  <% }) %>
+              </div>
+            </div>
+          </div>
+        <% }) %>
+      </div>
+      
+
+    </body>
+    <%- include('../partials/end') %>

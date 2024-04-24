@@ -40,10 +40,10 @@ app.set("view engine", "ejs");
 app.set("views", viewsFolderPath);
 
 // Middleware to connect to the database
-app.use(async (req, res, next) => {
-  await connectToDatabase(); 
-  next();
-});
+// app.use(async (req, res, next) => {
+//   await connectToDatabase(); 
+//   next();
+// });
 
 // Routes
 const projectRouter = require('./routes/project');

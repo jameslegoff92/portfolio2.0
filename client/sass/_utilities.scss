@@ -1,5 +1,6 @@
 @use 'variables' as *;
 
+//Text Align
 .u-text-center {     
   text-align: center;
 }
@@ -16,6 +17,8 @@
   text-align: justify;
 }
 
+
+//Margin Bottom
 .mb-0 {
   margin-bottom: $m-0;
 }
@@ -62,4 +65,47 @@
   height: 0px;
   opacity: 0;
   width: 100%;
+}
+
+
+//Font Weight
+.u-text-100 {
+  font-weight: 100;
+}
+.u-text-200 {
+  font-weight: 200;
+}
+.u-text-300 {
+  font-weight: 300;
+}
+.u-text-400 {
+  font-weight: 400;
+}
+.u-text-500 {
+  font-weight: 500;
+}
+.u-text-600 {
+  font-weight: 600;
+}
+.u-text-700 {
+  font-weight: 700;
+}
+.u-text-800 {
+  font-weight: 800;
+}
+.u-text-900 {
+  font-weight: 900;
+}
+
+//Background Images
+.bg-image {
+  position: absolute;
+  z-index: -1;
+  margin-top: -2.5rem;
+  height: 400px;
+  width: 100vw;
+  background: url('../assets/shared/beige&blackbackground.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }

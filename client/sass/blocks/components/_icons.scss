@@ -8,13 +8,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 10px;
 }
 
 .icons--row {
-  margin: 0 auto 48px;
   flex-direction: row;
-  justify-content: space-between;
-  width: 200px;
+}
+
+.icons--left {
+  justify-content: start;
 }
 
 .icons__wrapper {
