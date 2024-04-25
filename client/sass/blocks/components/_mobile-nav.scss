@@ -80,7 +80,7 @@
 }
 
 .mobile-nav-btn__icon {
-  fill: white;
+  fill: var(--mobile-color);
 }
 
 .mobile-nav-btn img {
@@ -89,4 +89,27 @@
 
 .mobile-nav-btn:hover {
   cursor: pointer;
+}
+
+.mobile-nav-footer {
+  
+
+  &__heading {
+    color: var(--mobile-color);
+  }
+
+  &__link {
+    color: var(--mobile-color);
+  }
+
+  &__icon {
+    height: 40px;
+    width: 40px;
+    fill: var(--mobile-color);
+  }
+
+  &__cr {
+    margin-top: $m-6;
+    color: var(--mobile-color);
+  }
 }
