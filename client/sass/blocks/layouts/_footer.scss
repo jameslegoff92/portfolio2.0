@@ -1,0 +1,16 @@
+@use '../../variables' as *;
+
+.footer {
+  padding: $m-5 0 $m-3 0; 
+
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: $m-2 ;
+
+  & li {
+    width: 50%;
+  }
+}

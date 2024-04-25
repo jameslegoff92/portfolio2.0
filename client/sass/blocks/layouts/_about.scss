@@ -1,7 +1,12 @@
 @use '../../variables' as *;
 
 .about-h1 {
+  top: 35px;
   position: relative;
+
+  @media screen and (min-width: $lg-screen) {
+    top: 150px;
+  }
 }
 
 .about-img {
@@ -12,7 +17,7 @@
 }
 
 .about-text {
-  max-width: 700px;
+  max-width: 800px;
   
 }
 
@@ -89,13 +94,9 @@
   }
 }
 
-.logos:hover .logos-slide {
-  animation-play-state: paused;
-}
-
 .logos-slide {
   display: inline-block;
-  animation: 10s slide infinite linear;
+  animation: 20s slide infinite alternate;
 }
 
 .logos-slide img {
