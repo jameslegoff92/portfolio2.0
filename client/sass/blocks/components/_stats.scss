@@ -1,0 +1,26 @@
+@use '../../variables' as *;
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 20%;
+  row-gap: 32px;
+
+
+
+  @media screen and (min-width: 506px) {
+    justify-content: space-between;
+    gap:0;
+    
+  }
+
+  &__stat {
+    letter-spacing: -1px;
+    font-size: clamp($fs-2, 2vw, 25px);
+  }
+}
+
+.stats__data {
+  font-size: clamp($fs-2, 9vw, 125px);
+}

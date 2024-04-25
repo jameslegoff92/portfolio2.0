@@ -1,65 +1,51 @@
 @use '../../variables' as *;
 
 .skills {
-  margin-bottom: $mg-700;
-  text-align: center;
-  text-transform: uppercase;
+  background: var(--mobile-background-color);
+  color: var(--mobile-color);
+  padding-top: clamp($m-4, 6vw, $m-9);
+  padding-bottom: $m-5;
+  padding-left: $m-2;
 
-  @media (min-width: $lg-screen) {
-    display: flex;
-    justify-content: center;
+  &__heading {
+    font-family: $font-family;
+    font-size: $fs-3;
+    font-style: normal;
+    line-height: 2.75rem;
+    letter-spacing: -0.5px;
+    margin-bottom: clamp($m-4, 6vw, $m-9);
   }
-}
 
-.skill {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 2rem 1rem 2rem 1rem;
-  align-items: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  cursor: pointer;
-}
+  &__wrapper {
+    margin-bottom: clamp($m-4, 5vw, $m-9);
 
-[data-collapsible] {
-  cursor: pointer;
-}
+    @media screen and (min-width: $md-screen) {
+      display: flex;
+      gap: 15%;
+    }
+  }
 
-.skill__heading {
-  font-size: 2rem;
-  text-transform: uppercase;
-}
+  &__wrapper ul {
 
-.skill__heading--1::first-letter {
-  color: $salmon;
-}
+  }
 
-.skill__heading--2::first-letter {
-  color: $yellow;
-}
+  &__title {
+    margin-bottom: clamp($m-2, 2vw, $m-4);
 
-.skill__heading--3::first-letter {
-  color: $orange;
-}
+    @media screen and (min-width: $md-screen) {
+      width: 30%;
 
-.skill__frontend {
-  color: $salmon;
-  margin: 0 auto;
-  width: 100%;
-}
+    }
+  }
 
-.skill__backend {
-  color: $yellow;
-  margin: 0 auto;
-  width: 100%;
-}
+  &__item {
+    margin-bottom: $m-0;
+    opacity: 0.7;
 
-.skill__devops {
-  color: $orange;
-  margin: 0 auto;
-  width: 100%;
-}
+    @media screen and (min-width: $md-screen) {
+      margin-top: clamp($m-1, 1vw, $m-3);
+    }
 
-.skill__icon {
-  transform: rotate(-90deg);
+
+  }
 }

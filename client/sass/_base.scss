@@ -38,8 +38,14 @@ body {
   min-width: 20rem;
   // overflow-y: hidden;
   // overflow-x: hidden;
-  padding: 2.5rem 0;
+  padding: 2.5rem 0 0;
 }
+
+ul {
+  list-style: none;
+}
+
+
 
 img {
   max-width: 100%;

@@ -1,0 +1,109 @@
+@use '../../variables' as *;
+
+.about-h1 {
+  position: relative;
+}
+
+.about-img {
+  margin-top: -60px;
+  margin-left: auto;
+  margin-right: 20px;
+  width: 60%;
+}
+
+.about-text {
+  max-width: 700px;
+  
+}
+
+.why {
+
+  &__heading {
+    margin-bottom: clamp($m-7, 3vw, $m-9);
+  }
+
+  &__content {
+    margin-bottom: $m-9;
+  }
+
+  &__subscript {
+    font-weight: 700;
+    margin-bottom: clamp($m-1, 2vw, $m-3);
+    
+  }
+
+  &__title {
+    line-height: 1.1;
+    width: 70%;
+    max-width: 600px;
+    margin-bottom: $m-3;
+  }
+
+  &__text {
+    max-width: 800px;
+  }
+}
+
+
+
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background: transparent;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 250px;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  @media screen and (min-width: $md-screen) {
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  }
+}
+
+.logos:after {
+  right: 0;
+
+  @media screen and (min-width: $md-screen) {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  }
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 10s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 250px;
+   margin: 0 40px;
+
+  @media screen and (min-width: $md-screen) {
+    height: 400px;
+    
+  }
+}

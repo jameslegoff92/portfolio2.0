@@ -1,24 +1,5 @@
 @use "../../variables" as *;
 
-.color-light {
-  color: var(--text-color);
-}
-
-.color-dark {
-  color: var(--background-color);
-}
-
-.color-salmon {
-  color: $salmon;
-}
-
-.color-mustard {
-  color: $yellow;
-}
-
-.color-orange {
-  color: $orange;
-}
 
 .text {
   color: var(--text-color);
@@ -30,7 +11,7 @@
 .text--responsive {
   font-size: clamp($fs-2, 3vw, 25px);
   max-width: 300px;
-
+  
   @media screen and (min-width: $md-screen) {
     max-width: 600px;
     
@@ -89,6 +70,10 @@
   letter-spacing: -0.5px;
 }
 
+.h2--responsive {
+  font-size: clamp($fs-3, 4vw, 50px);
+}
+
 .h3 {
   color: var(--text-color);
   font-family: $font-family;
@@ -98,4 +83,28 @@
   line-height: 2.75rem;
 }
 
+.h3--responsive {
+  font-size: clamp($fs-2, 3vw, 40px);
 
+}
+
+
+.color-light {
+  color: var(--text-color);
+}
+
+.color-dark {
+  color: var(--background-color);
+}
+
+.color-salmon {
+  color: $salmon;
+}
+
+.color-mustard {
+  color: $yellow;
+}
+
+.color-orange {
+  color: $orange;
+}
