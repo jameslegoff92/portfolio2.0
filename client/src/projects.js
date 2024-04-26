@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
         end: "center 50%", // When the bottom of ".box-3" hits the 25% viewport height
         scrub: true, // Smooth scrubbing, tying the animation progress to the scroll position
         // Optional: markers to see the start and end points during development
-        markers: true,
+        
       },
     }
   );
@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
         end: "center 50%", // When the bottom of ".box-3" hits the 25% viewport height
         scrub: true, // Smooth scrubbing, tying the animation progress to the scroll position
         // Optional: markers to see the start and end points during development
-        markers: true,
+        
       },
     }
   );
@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", () => {
         end: "center 50%", // When the bottom of ".box-3" hits the 25% viewport height
         scrub: true, // Smooth scrubbing, tying the animation progress to the scroll position
         // Optional: markers to see the start and end points during development
-        markers: true,
+        
       },
     }
   );
@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
         end: "center 50%", // When the bottom of ".box-3" hits the 25% viewport height
         scrub: true, // Smooth scrubbing, tying the animation progress to the scroll position
         // Optional: markers to see the start and end points during development
-        markers: true,
+        
       },
     }
   );
@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", () => {
         end: "center 50%", // When the bottom of ".box-3" hits the 25% viewport height
         scrub: true, // Smooth scrubbing, tying the animation progress to the scroll position
         // Optional: markers to see the start and end points during development
-        markers: true,
+        
       },
     }
   );
@@ -199,7 +199,7 @@ document.addEventListener("DOMContentLoaded", () => {
         end: "center 50%", // When the bottom of ".box-3" hits the 25% viewport height
         scrub: true, // Smooth scrubbing, tying the animation progress to the scroll position
         // Optional: markers to see the start and end points during development
-        markers: true,
+        
       },
     }
   );
@@ -223,7 +223,7 @@ document.addEventListener("DOMContentLoaded", () => {
         end: "center 50%", // When the bottom of ".box-3" hits the 25% viewport height
         scrub: true, // Smooth scrubbing, tying the animation progress to the scroll position
         // Optional: markers to see the start and end points during development
-        markers: true,
+        
       },
     }
   );
@@ -247,7 +247,7 @@ document.addEventListener("DOMContentLoaded", () => {
         end: "center 50%", // When the bottom of ".box-3" hits the 25% viewport height
         scrub: true, // Smooth scrubbing, tying the animation progress to the scroll position
         // Optional: markers to see the start and end points during development
-        markers: true,
+        
       },
     }
   );
@@ -276,7 +276,7 @@ tl6.fromTo(
       end: "center 50%", // When the bottom of ".box-3" hits the 25% viewport height
       scrub: true, // Smooth scrubbing, tying the animation progress to the scroll position
       // Optional: markers to see the start and end points during development
-      markers: true,
+      
     },
   }
 );
@@ -300,7 +300,7 @@ tl6.fromTo(
       end: "center 50%", // When the bottom of ".box-3" hits the 25% viewport height
       scrub: true, // Smooth scrubbing, tying the animation progress to the scroll position
       // Optional: markers to see the start and end points during development
-      markers: true,
+      
     },
   }
 );
@@ -324,7 +324,7 @@ tl6.fromTo(
       end: "center 50%", // When the bottom of ".box-3" hits the 25% viewport height
       scrub: true, // Smooth scrubbing, tying the animation progress to the scroll position
       // Optional: markers to see the start and end points during development
-      markers: true,
+      
     },
   }
 );
@@ -349,7 +349,7 @@ tl6.fromTo(
       end: "center 50%", // When the bottom of ".box-3" hits the 25% viewport height
       scrub: true, // Smooth scrubbing, tying the animation progress to the scroll position
       // Optional: markers to see the start and end points during development
-      markers: true,
+      
     },
   }
 );
@@ -377,7 +377,7 @@ tl7.fromTo(
       end: "center 50%", // When the bottom of ".box-3" hits the 25% viewport height
       scrub: true, // Smooth scrubbing, tying the animation progress to the scroll position
       // Optional: markers to see the start and end points during development
-      markers: true,
+      
     },
   }
 );
@@ -401,7 +401,7 @@ tl7.fromTo(
       end: "center 50%", // When the bottom of ".box-3" hits the 25% viewport height
       scrub: true, // Smooth scrubbing, tying the animation progress to the scroll position
       // Optional: markers to see the start and end points during development
-      markers: true,
+      
     },
   }
 );
@@ -425,7 +425,7 @@ tl7.fromTo(
       end: "center 50%", // When the bottom of ".box-3" hits the 25% viewport height
       scrub: true, // Smooth scrubbing, tying the animation progress to the scroll position
       // Optional: markers to see the start and end points during development
-      markers: true,
+      
     },
   }
 );
@@ -450,7 +450,7 @@ tl7.fromTo(
       end: "center 50%", // When the bottom of ".box-3" hits the 25% viewport height
       scrub: true, // Smooth scrubbing, tying the animation progress to the scroll position
       // Optional: markers to see the start and end points during development
-      markers: true,
+      
     },
   }
 );
