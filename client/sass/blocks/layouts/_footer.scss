@@ -1,7 +1,7 @@
 @use '../../variables' as *;
 
 .footer {
-  padding: $m-5 0 $m-3 0; 
+  padding: $m-7 0 $m-7 0; 
 
   &__container {
     @media screen and (min-width: $md-screen) {
@@ -9,6 +9,11 @@
       justify-content: space-between;
     }
   }
+}
+
+.footer-container {
+  background: var(--mobile-background-color);
+  color: var(--text-color);
 }
 
 .footer-nav {
@@ -34,5 +39,13 @@
     }
   
   }
+}
+
+.footer__text {
+  color: var(--mobile-color);
+}
+
+.footer__icon {
+  fill: var(--mobile-color);
 }
 

@@ -8,6 +8,7 @@
   row-gap: $m-7;
   margin: 0 auto;
   max-width: 1000px;
+  padding-bottom: $m-7;
 
   @media screen and (min-width: $lg-screen) {
     grid-template-columns: 1fr 1fr;
