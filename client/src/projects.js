@@ -4,51 +4,51 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 document.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(ScrollTrigger);
   let tl1 = gsap.timeline({ delay: 1 });
-  let tl2 = gsap.timeline({ delay: 3.5 });
-  let tl3 = gsap.timeline({ delay: 5.5 });
+  let tl2 = gsap.timeline({ delay: 3.25 });
+  let tl3 = gsap.timeline({ delay: 5 });
   let tl4 = gsap.timeline();
   let tl5 = gsap.timeline();
   let tl6 = gsap.timeline();
   let tl7 = gsap.timeline();
 
-  tl1.fromTo("#logo-canvas", { x: -100, opacity: 0, duration: 0.3 }, { ease: "power2.out", x: 0, opacity: 1 });
-  tl1.fromTo("#toggle-input", { x: 100, opacity: 0, duration: 0.3 }, { ease: "power2.out", x: 0, opacity: 1 });
-  tl1.fromTo("#open-mobile-nav", { x: 100, opacity: 0, duration: 0.3 }, { ease: "power2.out", x: 0, opacity: 1 });
+  tl1.fromTo("#logo-canvas", { x: -100, visibility: "hidden",  }, { duration: 0.5, ease: "power2.out", x: 0, autoAlpha: 1});
+  tl1.fromTo("#toggle-input", { x: 100, visibility: "hidden",  }, { duration: 0.5, ease: "power2.out", x: 0, autoAlpha: 1 });
+  tl1.fromTo("#open-mobile-nav", { x: 100, visibility: "hidden",  }, { duration: 0.5, ease: "power2.out", x: 0, autoAlpha: 1 });
   tl1.fromTo(
     ".nav__item",
-    { x: 100, opacity: 0, duration: 0.3 },
-    { ease: "power2.out", x: 0, opacity: 1, stagger: 0.1 }
+    { x: 100, visibility: "hidden",  },
+    { duration: 0.5, ease: "power2.out", x: 0, autoAlpha: 1, stagger: 0.17 }, "-=0.5"
   );
-  tl1.fromTo("#main-heading", { x: -100, opacity: 0, duration: 0.3 }, { ease: "power2.out", x: 0, opacity: 1 });
-  tl2.fromTo(".projects-grid__link2", { x: -100, opacity: 0, duration: 0.3 }, { ease: "power2.out", x: 0, opacity: 1 });
+  tl1.fromTo("#main-heading", { x: -100, visibility: "hidden" }, { duration: 0.5, ease: "power2.out", x: 0, autoAlpha: 1 });
+  tl2.fromTo(".projects-grid__link2", { x: -100, visibility: "hidden", duration: 0.3 }, { ease: "power2.out", x: 0, autoAlpha: 1 });
   tl2.fromTo(
     ".projects-grid__heading2",
-    { x: -100, opacity: 0, duration: 0.3 },
-    { ease: "power2.out", x: 0, opacity: 1 }
+    { x: -100, visibility: "hidden", duration: 0.3 },
+    { ease: "power2.out", x: 0, autoAlpha: 1 }
   );
-  tl2.fromTo(".projects-grid__text2", { x: -100, opacity: 0, duration: 0.3 }, { ease: "power2.out", x: 0, opacity: 1 });
+  tl2.fromTo(".projects-grid__text2", { x: -100, visibility: "hidden", duration: 0.3 }, { ease: "power2.out", x: 0, autoAlpha: 1 });
   tl2.fromTo(
     ".projects-grid__tag2",
-    { x: -100, opacity: 0, duration: 0.3 },
-    { ease: "power2.out", x: 0, opacity: 1, stagger: 0.1 }
+    { x: -100, visibility: "hidden", duration: 0.3 },
+    { ease: "power2.out", x: 0, autoAlpha: 1, stagger: 0.1 }
   );
 
   tl3.fromTo(
     ".projects-grid__link3",
-    { x: 100, opacity: 0, duration: 0.3 },
-    { ease: "power2.out", x: 0, opacity: 1 },
+    { x: 100, visibility: "hidden", duration: 0.3 },
+    { ease: "power2.out", x: 0, autoAlpha: 1 },
     "after-main-heading"
   );
   tl3.fromTo(
     ".projects-grid__heading3",
-    { x: 100, opacity: 0, duration: 0.3 },
-    { ease: "power2.out", x: 0, opacity: 1 }
+    { x: 100, visibility: "hidden", duration: 0.3 },
+    { ease: "power2.out", x: 0, autoAlpha: 1 }
   );
-  tl3.fromTo(".projects-grid__text3", { x: 100, opacity: 0, duration: 0.3 }, { ease: "power2.out", x: 0, opacity: 1 });
+  tl3.fromTo(".projects-grid__text3", { x: 100, visibility: "hidden", duration: 0.3 }, { ease: "power2.out", x: 0, autoAlpha: 1 });
   tl3.fromTo(
     ".projects-grid__tag3",
-    { x: 100, opacity: 0, duration: 0.3 },
-    { ease: "power2.out", x: 0, opacity: 1, stagger: 0.1 }
+    { x: 100, visibility: "hidden", duration: 0.3 },
+    { ease: "power2.out", x: 0, autoAlpha: 1, stagger: 0.1 }
   );
 
   tl4.fromTo(
@@ -56,12 +56,12 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       // Starting properties
       scale: 2,
-      opacity: 0,
+      visibility: "hidden",
       x: -600,
     },
     {
       // Ending properties
-      opacity: 1,
+      autoAlpha: 1,
       x: 0,
       scale: 1,
 
@@ -80,13 +80,13 @@ document.addEventListener("DOMContentLoaded", () => {
     ".projects-grid__heading1",
     {
       // Starting properties
-      opacity: 0,
+      visibility: "hidden",
       scale: 2,
       x: -600,
     },
     {
       // Ending properties
-      opacity: 1,
+      autoAlpha: 1,
       x: 0,
       scale: 1,
       // ScrollTrigger configuration
@@ -105,12 +105,12 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       // Starting properties
       scale: 2,
-      opacity: 0,
+      visibility: "hidden",
       x: -600,
     },
     {
       // Ending properties
-      opacity: 1,
+      autoAlpha: 1,
       x: 0,
       scale: 1,
       // ScrollTrigger configuration
@@ -129,12 +129,12 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       // Starting properties
       scale: 2,
-      opacity: 0,
+      visibility: "hidden",
       x: -600,
     },
     {
       // Ending properties
-      opacity: 1,
+      autoAlpha: 1,
       x: 0,
       scale: 1,
       // ScrollTrigger configuration
@@ -159,12 +159,12 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       // Starting properties
       scale: 2,
-      opacity: 0,
+      visibility: "hidden",
       x: -600,
     },
     {
       // Ending properties
-      opacity: 1,
+      autoAlpha: 1,
       x: 0,
       scale: 1,
 
@@ -183,13 +183,13 @@ document.addEventListener("DOMContentLoaded", () => {
     ".projects-grid__heading4",
     {
       // Starting properties
-      opacity: 0,
+      visibility: "hidden",
       scale: 2,
       x: -600,
     },
     {
       // Ending properties
-      opacity: 1,
+      autoAlpha: 1,
       x: 0,
       scale: 1,
       // ScrollTrigger configuration
@@ -208,12 +208,12 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       // Starting properties
       scale: 2,
-      opacity: 0,
+      visibility: "hidden",
       x: -600,
     },
     {
       // Ending properties
-      opacity: 1,
+      autoAlpha: 1,
       x: 0,
       scale: 1,
       // ScrollTrigger configuration
@@ -232,12 +232,12 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       // Starting properties
       scale: 2,
-      opacity: 0,
+      visibility: "hidden",
       x: -600,
     },
     {
       // Ending properties
-      opacity: 1,
+      autoAlpha: 1,
       x: 0,
       scale: 1,
       // ScrollTrigger configuration
@@ -260,12 +260,12 @@ tl6.fromTo(
   {
     // Starting properties
     scale: 2,
-    opacity: 0,
+    visibility: "hidden",
     x: -600,
   },
   {
     // Ending properties
-    opacity: 1,
+    autoAlpha: 1,
     x: 0,
     scale: 1,
 
@@ -284,13 +284,13 @@ tl6.fromTo(
   ".projects-grid__heading5",
   {
     // Starting properties
-    opacity: 0,
+    visibility: "hidden",
     scale: 2,
     x: -600,
   },
   {
     // Ending properties
-    opacity: 1,
+    autoAlpha: 1,
     x: 0,
     scale: 1,
     // ScrollTrigger configuration
@@ -309,12 +309,12 @@ tl6.fromTo(
   {
     // Starting properties
     scale: 2,
-    opacity: 0,
+    visibility: "hidden",
     x: -600,
   },
   {
     // Ending properties
-    opacity: 1,
+    autoAlpha: 1,
     x: 0,
     scale: 1,
     // ScrollTrigger configuration
@@ -334,12 +334,12 @@ tl6.fromTo(
   {
     // Starting properties
     scale: 2,
-    opacity: 0,
+    visibility: "hidden",
     x: -600,
   },
   {
     // Ending properties
-    opacity: 1,
+    autoAlpha: 1,
     x: 0,
     scale: 1,
     // ScrollTrigger configuration
@@ -361,12 +361,12 @@ tl7.fromTo(
   {
     // Starting properties
     scale: 2,
-    opacity: 0,
+    visibility: "hidden",
     x: -600,
   },
   {
     // Ending properties
-    opacity: 1,
+    autoAlpha: 1,
     x: 0,
     scale: 1,
 
@@ -385,13 +385,13 @@ tl7.fromTo(
   ".projects-grid__heading6",
   {
     // Starting properties
-    opacity: 0,
+    visibility: "hidden",
     scale: 2,
     x: -600,
   },
   {
     // Ending properties
-    opacity: 1,
+    autoAlpha: 1,
     x: 0,
     scale: 1,
     // ScrollTrigger configuration
@@ -410,12 +410,12 @@ tl7.fromTo(
   {
     // Starting properties
     scale: 2,
-    opacity: 0,
+    visibility: "hidden",
     x: -600,
   },
   {
     // Ending properties
-    opacity: 1,
+    autoAlpha: 1,
     x: 0,
     scale: 1,
     // ScrollTrigger configuration
@@ -435,12 +435,12 @@ tl7.fromTo(
   {
     // Starting properties
     scale: 2,
-    opacity: 0,
+    visibility: "hidden",
     x: -600,
   },
   {
     // Ending properties
-    opacity: 1,
+    autoAlpha: 1,
     x: 0,
     scale: 1,
     // ScrollTrigger configuration

@@ -35,6 +35,7 @@
 }
 
 .char {
+  visibility: hidden;
   margin-right: -3.8vw;
 
   @media screen and (max-width: 320px) {

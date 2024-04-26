@@ -4,7 +4,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 :root {
   font-size: 100%;
 }
@@ -131,4 +130,9 @@ input:checked + label:after {
 
 label:active:after {
 	width: 40px;
+}
+
+#logo-canvas {
+  height: 70px;
+  width: 70px;
 }
