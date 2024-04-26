@@ -1,0 +1,46 @@
+{
+  "header":{
+      "projects": "Projets",
+      "about": "À propos",
+      "blog": "Blog",
+      "Contact": "Contact"
+  },
+  "aboutPage": {
+      "mainTitle": "À propos de moi",
+      "stats": {
+          "statsExperience": "4 ans d'expérience en développement",
+          "statsCertificate": "6 certificats obtenus",
+          "statsProject": "3 projet réalisés"
+      },
+      "introSection": {
+          "aboutIntro": "Développeur et designer basé à Montréal, Canada. Je me spécialise dans le développement et la conception front-end. Du concept à la réalisation, je garde toujours à l'esprit la façon dont les utilisateurs interagiront avec les produits que je crée.",
+          "aboutBackground": "En tant que diplômé en affaires, j'apporte une perspective précieuse au domaine du design et du développement. Mon expérience en affaires me permet de comprendre les besoins des clients, d'aligner les choix de conception avec leurs objectifs et de communiquer efficacement les résultats des projets dans un langage qui résonne avec les parties prenantes."
+      },
+      "meSection": {
+          "subtitle": "Pourquoi moi",
+          "motivationTitle": "Grand esprit de motivation",
+          "motivationBody": "Mon dynamisme indéfectible garantit que je reste constamment concentré sur l'atteinte des objectifs et la livraison des résultats. J'excelle à faire avancer les projets, à surmonter les défis et à maintenir un niveau élevé de performance même sous pression.",
+          "motivationBody1": "Je m'engage à améliorer continuellement mes compétences et à rester à jour avec les avancements du domaine, ce qui signifie que je peux rapidement m'adapter aux nouvelles technologies et méthodologies qui bénéficient à l'équipe et à l'entreprise dans son ensemble.",
+          "analyticalTitle": "Excellentes compétences analytiques et de résolution de problèmes",
+          "analyticalBody": "Ma capacité à décortiquer et à comprendre des systèmes et des processus complexes garantit que les problèmes sont non seulement résolus rapidement, mais ils sont également analysés en profondeur afin d'éviter les incidents futurs.",
+          "analyticalBody1": "Ma capacité à résoudre les problèmes garantit que je peux intervenir rapidement et de manière décisive, réduisant ainsi les perturbations tout en maintenant l'efficacité opérationnelle.",
+          "teamTitle": "Grand esprit d'équipe avec d'excellentes compétences interpersonnelles",
+          "teamBody": "Grâce à mes compétences interpersonnelles, je suis capable de communiquer de manière efficace et de coordonner les efforts, assurant ainsi que les objectifs de l'équipe sont réalisés de manière efficace et avec enthousiasme.",
+          "teamBody1": "En réduisant les écarts entre les départements et en favorisant une communication transparente,  j'aide à créer une organisation plus intégrée et agile. Cette interconnexion est cruciale pour aborder des projets complexes qui nécessitent une approche cohérente, conduisant finalement à des résultats plus réussis et une culture d'entreprise plus résiliente."
+      },
+
+      "capabilitiesSection": {
+          "subtitle": "Compétences techniques",
+          "inProgress": "En cours"
+      }
+  },
+  "projectPage": {
+      "mainTitle": "Je donne vie à vos idées les plus audacieuses."
+  },
+
+  "contactPage": {
+      "mainTitle": "Lançons une conversation !",
+      "body": "J'aimerais en apprendre davantage sur vous et sur ce que nous pouvons réaliser ensemble.",
+      "becomeClient": "Devenir un client"
+  } 
+}

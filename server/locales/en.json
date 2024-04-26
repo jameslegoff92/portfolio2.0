@@ -1,0 +1,44 @@
+{
+    "header":{
+        "projects": "Projects",
+        "about": "About",
+        "blog": "Blog",
+        "Contact": "Contact"
+    },
+    "aboutPage": {
+        "aboutTitle": "A little about me",
+        "stats": {
+            "statsExperience": "4 years of experience in developement",
+            "statsCertificate": "6 certificates earned",
+            "statsProject": "3 projects completed"
+        },
+        "introSection": {
+            "aboutIntro": "Developer and designer based in Montreal, Canada. I specialize in frontend development and design. From concept to creation, I'm always thinking about how users will interact with the products I create.",
+            "aboutBackground": "As a formally educated business graduate, I bring an important business perspective to the world of design and development. My business background allows me to understand the clients' needs, align design choices with their goals, and effectively communicate project outcomes in a language that resonates with stakeholders"
+        },
+        "meSection": {
+            "subtitle": "Why Me",
+            "motivationTitle": "Highly Motivated Individual",
+            "motivationBody": "My unwavering drive ensures that I am consistently focused on achieving goals and delivering results. I excel at pushing projects forward, overcoming challenges, and maintaining a high level of performance under pressure.",
+            "motivationBody1": "I am committed to continually improving my skills and staying abreast of industry advancements, which means I can quickly adapt to new technologies and methodologies that benefit the team and the company at large.",
+            "analyticalTitle": "Excellent analytical and troubleshooting skills",
+            "analyticalBody": "My ability to dissect and understand intricate systems and processes ensures that issues are not only swiftly resolved but also thoroughly analyzed to prevent future occurrences.",
+            "analyticalBody1": "My troubleshooting proficiency ensures that I can address issues swiftly and decisively, minimizing disruptions and maintaining operational efficiency.",
+            "teamTitle": "Team Player With Great Interpersonal Skills",
+            "teamBody": "My strong interpersonal skills enable me to effectively communicate and synchronize efforts, ensuring that team goals are met efficiently and enthusiastically.",
+            "teamBody1": "By bridging gaps between different departments and facilitating a seamless flow of information, I help create a more integrated and agile organization. This interconnectedness is crucial for tackling complex projects that require a cohesive approach, ultimately leading to more successful outcomes and a more resilient company culture."
+        },
+        "capabilitiesSection": {
+            "subtitle": "Capabilities",
+            "inProgress": "In Progress"
+        }
+    },
+    "projectPage": {
+        "mainTitle": "I bring your boldest ideas to life"
+    },
+    "contactPage": {
+        "mainTitle": "Let's Talk!",
+        "body": "I'd love to learn more about you and what we can design and build together.",
+        "becomeClient": "Become a Client"
+    }
+}
