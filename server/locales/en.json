@@ -6,11 +6,13 @@
         "Contact": "Contact"
     },
     "aboutPage": {
-        "aboutTitle": "A little about me",
+        "mainTitle": "A little about me",
         "stats": {
-            "statsExperience": "4 years of experience in developement",
-            "statsCertificate": "6 certificates earned",
-            "statsProject": "3 projects completed"
+            "statsExperience": "3 Years of Experience",
+            "statsCertificate": "6 Certificates Earned",
+            "statsProject": "3 Projects Completed",
+            "statsLocation": "Montreal",
+            "statsLocal": "City"
         },
         "introSection": {
             "aboutIntro": "Developer and designer based in Montreal, Canada. I specialize in frontend development and design. From concept to creation, I'm always thinking about how users will interact with the products I create.",

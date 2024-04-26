@@ -8,9 +8,11 @@
   "aboutPage": {
       "mainTitle": "À propos de moi",
       "stats": {
-          "statsExperience": "4 ans d'expérience en développement",
-          "statsCertificate": "6 certificats obtenus",
-          "statsProject": "3 projet réalisés"
+          "statsExperience": "3 Ans D'expérience en Développement",
+          "statsCertificate": "6 Certificats Obtenus",
+          "statsProject": "3 Projet Réalisés",
+          "statsLocation": "Montréal",
+          "statsLocal": "Ville"
       },
       "introSection": {
           "aboutIntro": "Développeur et designer basé à Montréal, Canada. Je me spécialise dans le développement et la conception front-end. Du concept à la réalisation, je garde toujours à l'esprit la façon dont les utilisateurs interagiront avec les produits que je crée.",
