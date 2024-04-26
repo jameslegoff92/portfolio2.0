@@ -1,5 +1,4 @@
 import gsap from "gsap";
-
 document.addEventListener("DOMContentLoaded", () => {
   let tl1 = gsap.timeline({ delay: 1 });
 
