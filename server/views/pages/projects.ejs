@@ -8,7 +8,7 @@
         <%- include('../partials/navigation.ejs') %>
 
           <h1 id="main-heading" class="h1 h1--responsive mb-7">
-            I bring your boldest ideas to life
+            <%= t("projectPage.mainTitle") %>
           </h1>
       </div>
 
@@ -42,7 +42,7 @@
           <div class="footer__container">
             <div class="mb-0">
               <h1 class="footer__text h1 h1--responsive mb">
-                Let's Talk
+                <%= t("contactPage.mainTitle") %>
               </h1>
               <div class="mb-5">
                 <a class="footer__text text text--link" href="mailto:jameslegoff92@gmail.com"> jameslegoff92@gmail.com
@@ -52,16 +52,16 @@
 
             <ul class="footer-nav mb-6">
               <li>
-                <a class="footer__text text text--link" href="/projects"> Projects </a>
+                <a class="footer__text text text--link" href="/projects"> <%= t("header.projects") %> </a>
               </li>
               <li>
-                <a class="footer__text text text--link" href="/about"> About </a>
+                <a class="footer__text text text--link" href="/about"> <%= t("header.about") %> </a>
               </li>
-              <li>
+              <!-- <li>
                 <a class="footer__text text text--link" href="/blog"> Blog </a>
-              </li>
+              </li> -->
               <li>
-                <a class="footer__text text text--link" href="/contact"> Contact </a>
+                <a class="footer__text text text--link" href="/contact"> <%= t("header.Contact") %> </a>
               </li>
             </ul>
           </div>

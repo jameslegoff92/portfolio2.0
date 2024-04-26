@@ -9,6 +9,9 @@ const express = require("express");
 // const livereload = require("livereload");
 // const connectLivereload = require("connect-livereload");
 const bodyParser = require("body-parser");
+const i18next = require('i18next');
+const Backend = require('i18next-fs-backend');
+const middleware = require('i18next-http-middleware');
 
 //Open livereload high port and start to watch public directory for changes
 // const liveReloadServer = livereload.createServer();
@@ -23,7 +26,21 @@ const bodyParser = require("body-parser");
 
 const app = express();
 
+i18next
+  .use(Backend) // to load translation files
+  .use(middleware.LanguageDetector) // to detect user language
+  .init({
+    fallbackLng: 'fr',
+    backend: {
+      loadPath: __dirname + '/locales/{{lng}}.json',
+    },
+    detection: {
+        order: ['querystring', 'cookie'], // methods of language detection
+        caches: ['cookie'] // where to cache the user's language
+    }
+  });
 
+app.use(middleware.handle(i18next));
 
 
 //Monkey patch every served HTML so they know of changes
@@ -53,7 +70,7 @@ const contactRouter = require('./routes/contact');
 
 
 app.get("/", async (req, res) => {
-  res.render("pages/homepage", {script: 'homepage.bundle.js'});
+  res.render("pages/homepage", {script: 'homepage.bundle.js', t: req.t});
 });
 
 app.use(projectRouter);

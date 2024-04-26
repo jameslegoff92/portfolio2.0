@@ -7,7 +7,7 @@
       <div class="container">
         <%- include('../partials/navigation.ejs') %>
           <h1 class="about-h1 h1 h1--responsive mb-2">
-            A little about me
+            <%= t('aboutPage.mainTitle') %>
           </h1>
           <div class="about-img mb-5">
             <img src="assets/shared/focused-vintage-tall.JPG" alt="">
@@ -20,7 +20,7 @@
               3
             </span>
             <p class="stats__stat label text--light">
-              Years of Experience
+              <%= t("aboutPage.stats.statsExperience") %>
             </p>
           </div>
 
@@ -29,7 +29,7 @@
               6
             </span>
             <p class="stats__stat label text--light">
-              Certificates Earned
+              <%= t("aboutPage.stats.statsCertificate") %>
             </p>
           </div>
 
@@ -38,17 +38,17 @@
               4
             </span>
             <p class="stats__stat label text--light">
-              Projects Completed
+              <%= t("aboutPage.stats.statsProject") %>
             </p>
           </div>
         </div>
 
         <div class="stats__location mb-7">
           <span class="stats__data text--bold">
-            Montreal
+            <%= t("aboutPage.stats.statsLocation") %>
           </span>
           <p class="stats__stat label text--light  ">
-            Location
+            <%= t("aboutPage.stats.statsLocal") %>
           </p>
         </div>
       </div>
@@ -75,14 +75,10 @@
       <div class="container">
         <div class="about-text text text--responsive mb-9">
           <p>
-            Developer and designer based in Montreal, Canada. I specialize in frontend development and design.
-            From concept to creation, I'm always thinking about how users will interact with the products I create.
+            <%= t("aboutPage.introSection.aboutIntro") %>
             <br><br>
 
-            As a formally educated business graduate, I bring an important business perspective to the world of design
-            and development. My business background allows me to understand the clients' needs, align design choices
-            with
-            their goals, and effectively communicate project outcomes in a language that resonates with stakeholders
+            <%= t("aboutPage.introSection.aboutBackground") %>
           </p>
         </div>
 
@@ -90,7 +86,7 @@
         <!-- Why Me Section -->
         <div class="why">
           <h2 class="h2 h2--responsive why__heading ">
-            Why Me
+            <%= t("aboutPage.meSection.subtitle") %>
           </h2>
 
           <div>
@@ -99,18 +95,12 @@
                 01
               </span>
               <h3 class="why__title h2 h2--responsive">
-                Highly Motivated Individual
+                <%= t("aboutPage.meSection.motivationTitle") %>
               </h3>
               <p class="why__text text--responsive">
-                My unwavering drive ensures that I am consistently focused on achieving goals and delivering results.
-                I
-                excel at pushing projects forward, overcoming challenges, and maintaining a high level of performance
-                under pressure.
+                <%= t("aboutPage.meSection.motivationBody") %>
                 <br><br>
-                I am committed to continually improving my skills and staying abreast of industry advancements, which
-                means I can quickly adapt to new technologies and methodologies that benefit the team and the company
-                at
-                large.
+                <%= t("aboutPage.meSection.motivationBody1") %>
               </p>
             </div>
 
@@ -119,15 +109,12 @@
                 02
               </span>
               <h3 class="why__title h2 h2--responsive">
-                Excellent analytical and troubleshooting skills
+                <%= t("aboutPage.meSection.analyticalTitle") %>
               </h3>
               <p class="why__text text--responsive">
-                My ability to dissect and understand intricate systems and processes ensures that issues are not only
-                swiftly resolved but also thoroughly analyzed to prevent future occurrences.
+                <%= t("aboutPage.meSection.analyticalBody") %>
                 <br><br>
-                I am committed to continually improving my skills and staying abreast of industry advancements, which
-                means I can quickly adapt to new technologies and methodologies that benefit the team and the company
-                at large.
+                <%= t("aboutPage.meSection.analyticalBody1") %>
               </p>
             </div>
 
@@ -136,16 +123,12 @@
                 03
               </span>
               <h3 class="why__title h2 h2--responsive">
-                Team Player With Great Interpersonal Skills
+                <%= t("aboutPage.meSection.teamTitle") %>
               </h3>
               <p class="why__text text--responsive">
-                My strong interpersonal skills enable me to effectively communicate and synchronize efforts, ensuring
-                that team goals are met efficiently and enthusiastically.
+                <%= t("aboutPage.meSection.teamBody") %>
                 <br><br>
-                By bridging gaps between different departments and facilitating a seamless flow of information, I help
-                create a more integrated and agile organization. This interconnectedness is crucial for tackling
-                complex projects that require a cohesive approach, ultimately leading to more successful outcomes and
-                a more resilient company culture.
+                <%= t("aboutPage.meSection.teamBody1") %>
               </p>
             </div>
           </div>
@@ -156,7 +139,7 @@
       <div class="skills">
         <div class="container">
           <h2 class="skills__heading h2--responsive">
-            Capabilities
+            <%= t("aboutPage.capabilitiesSection.subtitle") %>
           </h2>
 
           <div class="skills__wrapper">
@@ -208,7 +191,7 @@
           </div>
 
           <div class="skills__wrapper">
-            <h3 class="skills__title h3--responsive"> In Progress </h3>
+            <h3 class="skills__title h3--responsive"> <%= t("aboutPage.capabilitiesSection.inProgress") %> </h3>
             <ul>
               <li class="skills__item text--responsive"> Testing (Jest, Cypress, Selenium) </li>
               <li class="skills__item text--responsive"> Three.JS </li>
@@ -225,6 +208,7 @@
       </div>
 
 
+<<<<<<< HEAD
       <div class="container footer">
         <div class="footer__container">
           <div class="mb-0">
@@ -234,6 +218,33 @@
             <div class="mb-5">
               <a class="text text--link" href="mailto:jameslegoff92@gmail.com"> jameslegoff92@gmail.com </a>
             </div>
+=======
+        <div class="container footer">
+          <div class="footer__container">
+            <div class="mb-0">
+              <h1 class="h1 h1--responsive mb">
+                <%= t("contactPage.mainTitle") %>
+              </h1>
+              <div class="mb-5" >
+                <a  class="text text--link" href="mailto:jameslegoff92@gmail.com"> jameslegoff92@gmail.com </a>
+              </div>
+            </div>
+          
+            <ul class="footer-nav mb-6">
+              <li>
+                <a class="text text--link" href="/projects"> <%= t("header.projects") %> </a>
+              </li>
+              <li>
+                <a class="text text--link" href="/about"> <%= t("header.about") %> </a>
+              </li>
+              <!-- <li>
+                <a class="text text--link" href="/blog"> Blog </a>
+              </li> -->
+              <li>
+                <a class="text text--link" href="/contact"> <%= t("header.Contact") %> </a>
+              </li>
+            </ul>
+>>>>>>> develop
           </div>
 
           <ul class="footer-nav mb-6">

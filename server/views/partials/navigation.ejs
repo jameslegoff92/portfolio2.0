@@ -9,19 +9,25 @@
     <label id="toggle-input" for="switch"> Toggle </label>
     <ul class="nav">
       <li class="nav__item">
-        <a class="nav__link nav__link-3" href="/projects"> Projects </a>
+        <a class="nav__link nav__link-3" href="/projects"> <%= t('header.projects') %> </a>
       </li>
       <li class="nav__item">
-        <a class="nav__link nav__link-1" href="/about"> About </a>
+        <a class="nav__link nav__link-1" href="/about"> <%= t('header.about') %> </a>
       </li>
       <!-- <li class="nav__item">
         <a class="nav__link nav__link-2" href="/blog"> Blog </a>
       </li> -->
       <li class="nav__item">
-        <a class="nav__link nav__link-4" href="/contact"> Contact </a>
+        <a class="nav__link nav__link-4" href="/contact"> <%= t('header.Contact') %> </a>
       </li>
     </ul>
     
+    <div class="nav__item">
+      <li>
+        <a class="nav__link" href="?lng=en">EN</a> |
+        <a class="nav__link" href="?lng=fr">FR</a>
+      </li>
+    </div>
     <button id="" class="mobile-nav-btn open-nav-js">
       <img id="open-mobile-nav" src="/assets/shared/mobile-menu-button.svg" alt="mobile menu" />
     </button>
