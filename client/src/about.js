@@ -2,7 +2,7 @@ import gsap from "gsap";
 document.addEventListener("DOMContentLoaded", () => {
   let tl1 = gsap.timeline({ delay: 1 });
 
-
+  tl1.from("body", { autoAlpha: 0,});
   tl1.fromTo("#logo-canvas", { x: -100, visibility: "hidden",  }, { duration: 0.5, ease: "power2.out", x: 0, autoAlpha: 1});
   tl1.fromTo("#toggle-input", { x: 100, visibility: "hidden",  }, { duration: 0.5, ease: "power2.out", x: 0, autoAlpha: 1 });
   tl1.fromTo("#open-mobile-nav", { x: 100, visibility: "hidden",  }, { duration: 0.5, ease: "power2.out", x: 0, autoAlpha: 1 }, "-=0.5");
