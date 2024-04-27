@@ -8,9 +8,9 @@
   "aboutPage": {
       "mainTitle": "À propos de moi",
       "stats": {
-          "statsExperience": "3 Ans D'expérience en Développement",
-          "statsCertificate": "6 Certificats Obtenus",
-          "statsProject": "4 Projet Réalisés",
+          "statsExperience": "Ans D'expérience",
+          "statsCertificate": "Certificats Obtenus",
+          "statsProject": "Projet Réalisés",
           "statsLocation": "Montréal",
           "statsLocal": "Endroit"
       },

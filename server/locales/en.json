@@ -8,9 +8,9 @@
     "aboutPage": {
         "mainTitle": "A little about me",
         "stats": {
-            "statsExperience": "3 Years of Experience",
-            "statsCertificate": "6 Certificates Earned",
-            "statsProject": "3 Projects Completed",
+            "statsExperience": "Years of Experience",
+            "statsCertificate": "Certificates Earned",
+            "statsProject": "Projects Completed",
             "statsLocation": "Montreal",
             "statsLocal": "City"
         },

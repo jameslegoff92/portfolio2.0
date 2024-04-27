@@ -96,16 +96,3 @@
 .u-text-900 {
   font-weight: 900;
 }
-
-//Background Images
-.bg-image {
-  position: absolute;
-  z-index: -1;
-  margin-top: -2.5rem;
-  height: 300px;
-  width: 100vw;
-  background: url('../assets/shared/blackwhitegradient.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
