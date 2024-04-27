@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
   );
   tl1.fromTo(
     ".main-img",
-    { scale: 4, x: 100, visibility: "hidden" },
-    { ease: "power2.out", x: 0, autoAlpha: 1, scale: 1 }
+    { visibility: "hidden" },
+    { ease: "power2.out", autoAlpha: 1, }, "-=2"
   );
 });
