@@ -2,6 +2,7 @@
 
 html {
   scroll-behavior: smooth;
+  visibility: visible;
 }
 
 :root {
@@ -13,7 +14,6 @@ html {
   --mobile-color: #000000;
   --background-color: #000000;
   --mobile-background-color: rgb(251, 243, 213);
-
 }
 
 .light-theme {
@@ -30,7 +30,9 @@ html {
   margin: 0;
   padding: 0;
 }
+
 body {
+  visibility: hidden;
   background: var(--background-color);
   color: var(--text-color);
   font-family: $font-family;
