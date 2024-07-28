@@ -60,7 +60,7 @@ app.set("views", viewsFolderPath);
 app.use(async (req, res, next) => {
   await connectToDatabase(); 
   next();
-});
+});  
 
 // Routes
 const projectRouter = require('./routes/project');
