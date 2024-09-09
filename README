@@ -1,17 +1,10 @@
-# Personal Portfolio
-
-This repository contains the source code for my personal portfolio website. The portfolio showcases my projects, skills, and experience as a developer, while this README will guide you on how to set it up locally and explore the technology behind it.
-
 ## Table of Contents
 - [Overview](#overview)
 - [Tech Stack](#tech-stack)
-- [Setup Instructions](#setup-instructions)
 - [Features](#features)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Overview
-This project is my personal portfolio website where I showcase my personal code projects. The portfolio is built with modern web technologies, aiming to create a clean, responsive, and interactive experience for visitors.
+This project is my personal portfolio website where I showcase my code projects, open-source contributions and blog posts.
 
 ## Tech Stack
 - **Frontend**: HTML, CSS, JavaScript
