@@ -7,9 +7,9 @@
 This project is my personal portfolio website where I showcase my code projects, open-source contributions and blog posts.
 
 ## Tech Stack
-- **Frontend**: HTML, CSS, JavaScript
-- **Backend**: Node.js, API integration
-- **Databese**: MongoDB, Mongoose
+- **Frontend**: HTML, CSS, SASS, JavaScript
+- **Backend**: Node.js, Express.JS, EJS API 
+- **Databese**: MongoDB
 - **Deployment**: Heroku
 - **CI/CD**: Github Actions
 - **Tools**: GSAP, Webpack
@@ -20,4 +20,3 @@ This project is my personal portfolio website where I showcase my code projects,
 - **Project Showcase**: Detailed project sections with descriptions and live demos.
 - **Internationalization (i18n)**: Multi-language support for English and French.
 - **Theme Switcher**: Light and dark mode theme switcher.
-- **Contact Form**: Integrated form allowing visitors to reach out easily.
