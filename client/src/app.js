@@ -1,24 +1,16 @@
 import { setMobileNavControl } from "./js/mobileNavigation.js";
 import { createSketch } from "./js/p5.js";
+import { loadThemeFromLocalStorage } from "./theme-control.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   let toggle = document.querySelector(".theme-toggle");
-  var theme = localStorage.getItem("theme");
-  var body = document.querySelector("body");
-
 
   // Listen for a change on the toggle
   toggle.addEventListener("change", function () {
-    let toggleBoolean = toggle.checked;
-    localStorage.setItem("theme", toggleBoolean);
-    // If the toggle is on, add the dark class to the body
-    theme = localStorage.getItem("theme");
-
-    if (theme === "false") {
-      body.classList.replace("dark-theme", "light-theme");
-    } else  {
-      body.classList.replace("light-theme", "dark-theme");
-    }
+    //The toggle starts off as false, so if it's checked, set the theme to dark
+    let isOn = toggle.checked;
+    localStorage.setItem("theme", isOn);
+    loadThemeFromLocalStorage();
   });
 
   new p5(createSketch("logo-canvas"));
