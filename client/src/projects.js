@@ -150,10 +150,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   );
 
-
-
-
-
 // T15
   tl5.fromTo(
     ".projects-grid__img4",
