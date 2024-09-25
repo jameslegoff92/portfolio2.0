@@ -6,23 +6,23 @@ const { connectToDatabase } = require('./db');
 
 //Third-party modules
 const express = require("express");
-// const livereload = require("livereload");
-// const connectLivereload = require("connect-livereload");
+const livereload = require("livereload");
+const connectLivereload = require("connect-livereload");
 const bodyParser = require("body-parser");
 const i18next = require('i18next');
 const Backend = require('i18next-fs-backend');
 const middleware = require('i18next-http-middleware');
 
 //Open livereload high port and start to watch public directory for changes
-// const liveReloadServer = livereload.createServer();
-// liveReloadServer.watch(path.join(__dirname, "public"));
+const liveReloadServer = livereload.createServer();
+liveReloadServer.watch(path.join(__dirname, "public"));
 
 // Ping browser on Express boot, once browser has reconnected and handshaken
-// liveReloadServer.server.once("connection", () => {
-//   setTimeout(() => {
-//     liveReloadServer.refresh("/");
-//   }, 100);
-// });
+liveReloadServer.server.once("connection", () => {
+  setTimeout(() => {
+    liveReloadServer.refresh("/");
+  }, 100);
+});
 
 const app = express();
 
@@ -44,15 +44,17 @@ app.use(middleware.handle(i18next));
 
 
 //Monkey patch every served HTML so they know of changes
-// app.use(connectLivereload());
+app.use(connectLivereload());
 
 const port = process.env.PORT || 3000;
 const staticFolderPath = path.join(__dirname, "../client/dist");
 const viewsFolderPath = path.join(__dirname, "/views");
+const sanityDirPath = path.join(__dirname, "/studio/dist");
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(express.static(staticFolderPath));
+app.use('/studio', express.static(sanityDirPath));
 app.set("view engine", "ejs");
 app.set("views", viewsFolderPath);
 

@@ -1,13 +1,15 @@
 <%- include('../partials/head') %>
 
-<%- include('../partials/mobileNavigation.ejs') %>
 <body id="body" class="body-js light-theme">
-<div class="container">
-  <%- include('../partials/navigation.ejs') %>
+  <%- include('../partials/mobileNavigation.ejs') %>
 
-  <h1 class="h1 h1--responsive"> 
-    Blog
-  </h1>
+      <div class="container">
+        <%- include('../partials/navigation.ejs') %>
 
-</div>
-<%- include('../partials/end') %>
+          <h1 id="main-heading" class="h1 h1--responsive">
+            Blog
+          </h1>
+      </div>
+      <%- include('../partials/scripts') %>
+        <script src="<%= script %>"></script>
+        <%- include('../partials/end') %>
