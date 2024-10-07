@@ -15,7 +15,7 @@ This project is my personal portfolio website where I showcase my code projects,
 - **Databese**: MongoDB
 - **Deployment**: Heroku
 - **CI/CD**: Github Actions
-- **Tools**: GSAP, Webpack, Babel, Jest
+- **Tools**: GSAP, Webpack, Babel, Jest, Cypress
 - **Architecture**: MVC
 
 ## Features
