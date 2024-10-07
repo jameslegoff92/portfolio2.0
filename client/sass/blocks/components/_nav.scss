@@ -2,7 +2,7 @@
 
 .nav-container {
   display: flex;
-  gap: $m-3;
+  gap: 40px;
   align-items: center;
 }
 
@@ -19,7 +19,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 250px;
+    width: 300px;
   }
 }
 
@@ -31,8 +31,8 @@
 .nav__link {
   position: relative;
   color: rgba(0, 0, 0, 1);
-  font-size: $fs-300;
-  padding: 2px;
+  font-size: 1.125rem;
+  padding: 0.125rem;
   text-decoration: none;
   transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out; /* Add opacity transition */
 }
