@@ -4,11 +4,10 @@
   display: flex;
   gap: $m-3;
   align-items: center;
-
 }
 
 .nav-container--secondary {
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: $m-5;
 }
@@ -31,42 +30,61 @@
 
 .nav__link {
   position: relative;
-  color: var(--text-color);
+  color: rgba(0, 0, 0, 1);
   font-size: $fs-300;
   padding: 2px;
   text-decoration: none;
-  // transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out; /* Add opacity transition */
 }
 
-.nav__link::after {
+.nav__link:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.nav__link-1::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: -4px;
   width: 0;
   height: 2px;
-  background-color: black;
-  transition: width 0.5s ease; /* Adjust duration as needed */
+  background-color: $yellow;
+  transition: width 0.2s ease; /* Adjust duration as needed */
 }
 
-.nav__link:hover::after {
+.nav__link-1:hover::after {
   width: 100%;
   cursor: pointer;
 }
 
-.nav__link-1:hover {
-  border-bottom-color: var(--text-color);
-  color: $salmon;
+.nav__link-3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: $salmon;
+  transition: width 0.2s ease; /* Adjust duration as needed */
 }
-.nav__link-2:hover {
-  border-bottom-color: var(--text-color);
-  color: $yellow;
+
+.nav__link-3:hover::after {
+  width: 100%;
+  cursor: pointer;
 }
-.nav__link-3:hover {
-  border-bottom-color: var(--text-color);
-  color: $orange;
+
+.nav__link-4::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: $orange;
+  transition: width 0.2s ease; /* Adjust duration as needed */
 }
-.nav__link-4:hover {
-  border-bottom-color: var(--text-color);
-  color: $salmon;
+
+.nav__link-4:hover::after {
+  width: 100%;
+  cursor: pointer;
 }
