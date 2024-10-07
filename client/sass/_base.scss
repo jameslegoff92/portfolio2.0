@@ -32,7 +32,7 @@ html {
 
 body {
   //Visibility is blocked out during development so that we can see the navigation bar.
-  visibility: hidden;
+  // visibility: hidden;
   background: var(--background-color);
   color: var(--text-color);
   font-family: $font-family;
