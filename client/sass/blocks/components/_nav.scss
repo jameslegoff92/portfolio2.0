@@ -2,13 +2,12 @@
 
 .nav-container {
   display: flex;
-  gap: $m-3;
+  gap: 40px;
   align-items: center;
-
 }
 
 .nav-container--secondary {
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: $m-5;
 }
@@ -20,7 +19,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 250px;
+    width: 300px;
   }
 }
 
@@ -30,31 +29,62 @@
 }
 
 .nav__link {
-  border-bottom: 3px solid transparent;
-  color: var(--text-color);
-  font-size: $fs-300;
-  padding: 2px;
+  position: relative;
+  color: rgba(0, 0, 0, 1);
+  font-size: 1.125rem;
+  padding: 0.125rem;
   text-decoration: none;
-  transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out; /* Add opacity transition */
 }
 
 .nav__link:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.nav__link-1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: $yellow;
+  transition: width 0.2s ease; /* Adjust duration as needed */
+}
+
+.nav__link-1:hover::after {
+  width: 100%;
   cursor: pointer;
 }
 
-.nav__link-1:hover {
-  border-bottom-color: var(--text-color);
-  color: $salmon;
+.nav__link-3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: $salmon;
+  transition: width 0.2s ease; /* Adjust duration as needed */
 }
-.nav__link-2:hover {
-  border-bottom-color: var(--text-color);
-  color: $yellow;
+
+.nav__link-3:hover::after {
+  width: 100%;
+  cursor: pointer;
 }
-.nav__link-3:hover {
-  border-bottom-color: var(--text-color);
-  color: $orange;
+
+.nav__link-4::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: $orange;
+  transition: width 0.2s ease; /* Adjust duration as needed */
 }
-.nav__link-4:hover {
-  border-bottom-color: var(--text-color);
-  color: $salmon;
+
+.nav__link-4:hover::after {
+  width: 100%;
+  cursor: pointer;
 }
