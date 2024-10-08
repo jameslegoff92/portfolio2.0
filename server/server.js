@@ -60,7 +60,12 @@ if (process.env.NODE_ENV == "development") {
 }
 
 const port = process.env.PORT || 3000;
-const staticFolderPath = path.join(__dirname, "../client/dist");
+
+if (process.env.NODE_ENV == "development") {
+  var staticFolderPath = path.join(__dirname, "../client/src");
+} else {
+  var staticFolderPath = path.join(__dirname, "../client/dist");
+}
 const viewsFolderPath = path.join(__dirname, "/views");
 
 app.use(bodyParser.urlencoded({ extended: false }));
