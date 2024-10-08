@@ -30,7 +30,7 @@
 
 .nav__link {
   position: relative;
-  color: rgba(0, 0, 0, 1);
+  color: rgba(var(--text-color), 1);
   font-size: 1.125rem;
   padding: 0.125rem;
   text-decoration: none;
@@ -38,7 +38,7 @@
 }
 
 .nav__link:hover {
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(var(--text-color), 0.6);
 }
 
 .nav__link-1::after {

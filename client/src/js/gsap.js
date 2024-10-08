@@ -17,18 +17,9 @@ export function animationBounce(item) {
 
   element.addEventListener("mouseenter", () => {
     gsap.to(element, {
-      scale: 1.2,              // Scale up to 1.2x
-      duration: 0.5,           // Slightly longer duration for bounce effect
+      scale: 1.5,              // Scale up to 1.2x
+      duration: 1,           // Slightly longer duration for bounce effect
       ease: "bounce.out"       // Add bounce effect on scaling up
-    });
-    
-    // Add a shake effect
-    gsap.to(element, {
-      x: -5,                   // Move slightly left
-      repeat: 5,               // Repeat the shake a few times
-      yoyo: true,              // Return to original position on each repeat
-      duration: 0.1,
-      ease: "power1.inOut"
     });
   });
 
