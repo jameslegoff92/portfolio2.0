@@ -7,7 +7,8 @@
     "node": "20.x"
   },
   "scripts": {
-    "start": "nodemon --watch ./client --watch ./server server.js -e js,ejs,scss,css,html",
+    "start:dev": "cross-env NODE_ENV=development nodemon --watch ./client --watch ./server server.js -e js,ejs,scss,css,html",
+    "start:prod": "cross-env NODE_ENV=production nodemon --watch ./client --watch ./server server.js -e js,ejs,scss,css,html",
     "sass": "sass --watch ./client/sass:./client/dist/css --style=compressed",
     "webpack": "npx webpack --watch",
     "test:frontend": "jest --config jest.frontend.config.js",
@@ -37,6 +38,7 @@
     "babel-jest": "^29.7.0",
     "babel-loader": "^9.2.1",
     "connect-livereload": "^0.6.1",
+    "cross-env": "^7.0.3",
     "jest": "^29.7.0",
     "livereload": "^0.9.3",
     "sass": "^1.63.4",
