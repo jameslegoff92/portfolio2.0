@@ -1,28 +1,40 @@
 //This is a starter template for most nodejs servers for development
 // Core node modules
 const path = require("path");
-require("dotenv").config();
-const { connectToDatabase } = require('./db');
+const dotenv = require("dotenv");
+const envFile = `.env.${process.env.NODE_ENV || "development"}`;
+dotenv.config({ path: envFile });
+
+// Log the file that is being used
+console.log(`Using ${envFile} for environment variables`);
+
+//Connects to the NoSQL Database
+const { connectToDatabase } = require("./db");
 
 //Third-party modules
 const express = require("express");
-const livereload = require("livereload");
-const connectLivereload = require("connect-livereload");
+
+if (process.env.NODE_ENV == "development") {
+  var livereload = require("livereload");
+  var connectLivereload = require("connect-livereload");
+}
 const bodyParser = require("body-parser");
-const i18next = require('i18next');
-const Backend = require('i18next-fs-backend');
-const middleware = require('i18next-http-middleware');
+const i18next = require("i18next");     
+const Backend = require("i18next-fs-backend");
+const middleware = require("i18next-http-middleware");
 
-//Open livereload high port and start to watch public directory for changes
-const liveReloadServer = livereload.createServer();
-liveReloadServer.watch(path.join(__dirname, "public"));
+if (process.env.NODE_ENV == "development") {
+  //Open livereload high port and start to watch public directory for changes
+  const liveReloadServer = livereload.createServer();
+  liveReloadServer.watch(path.join(__dirname, "public"));
 
-// Ping browser on Express boot, once browser has reconnected and handshaken
-liveReloadServer.server.once("connection", () => {
-  setTimeout(() => {
-    liveReloadServer.refresh("/");
-  }, 100);
-});
+  // Ping browser on Express boot, once browser has reconnected and handshaken
+  liveReloadServer.server.once("connection", () => {
+    setTimeout(() => {
+      liveReloadServer.refresh("/");
+    }, 100);
+  });
+}
 
 const app = express();
 
@@ -30,20 +42,22 @@ i18next
   .use(Backend) // to load translation files
   .use(middleware.LanguageDetector) // to detect user language
   .init({
-    fallbackLng: 'fr',
+    fallbackLng: "fr",
     backend: {
-      loadPath: __dirname + '/locales/{{lng}}.json',
+      loadPath: __dirname + "/locales/{{lng}}.json",
     },
     detection: {
-        order: ['querystring', 'cookie'], // methods of language detection
-        caches: ['cookie'] // where to cache the user's language
-    }
+      order: ["querystring", "cookie"], // methods of language detection
+      caches: ["cookie"], // where to cache the user's language
+    },
   });
 
 app.use(middleware.handle(i18next));
 
 //Monkey patch every served HTML so they know of changes
-app.use(connectLivereload());
+if (process.env.NODE_ENV == "development") {
+  app.use(connectLivereload());
+}
 
 const port = process.env.PORT || 3000;
 const staticFolderPath = path.join(__dirname, "../client/dist");
@@ -57,19 +71,18 @@ app.set("views", viewsFolderPath);
 
 // Middleware to connect to the database
 app.use(async (req, res, next) => {
-  await connectToDatabase(); 
+  await connectToDatabase();
   next();
-});  
+});
 
 // Routes
-const projectRouter = require('./routes/project');
-const aboutRouter = require('./routes/about');
-const blogRouter = require('./routes/blog');
-const contactRouter = require('./routes/contact');
-
+const projectRouter = require("./routes/project");
+const aboutRouter = require("./routes/about");
+const blogRouter = require("./routes/blog");
+const contactRouter = require("./routes/contact");
 
 app.get("/", async (req, res) => {
-  res.render("pages/homepage", {script: 'homepage.bundle.js', t: req.t});
+  res.render("pages/homepage", { script: "homepage.bundle.js", t: req.t });
 });
 
 app.use(projectRouter);
