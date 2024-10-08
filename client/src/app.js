@@ -1,6 +1,7 @@
 import { setMobileNavControl } from "./js/mobileNavigation.js";
 import { createSketch } from "./js/p5.js";
 import { loadThemeFromLocalStorage } from "./theme-control.js";
+import { animationBounce } from "./js/gsap.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   let toggle = document.querySelector(".theme-toggle");
@@ -16,4 +17,5 @@ document.addEventListener("DOMContentLoaded", () => {
   new p5(createSketch("logo-canvas"));
   new p5(createSketch("logo-canvas-mobile"));
   setMobileNavControl();
+  animationBounce("#toggle-input"); 
 });

@@ -9,14 +9,14 @@ html {
 }
 
 .dark-theme {
-  --text-color: #ffffff;
+  --text-color: (255, 255, 255);
   --mobile-color: #000000;
   --background-color: #000000;
   --mobile-background-color: rgb(251, 243, 213);
 }
 
 .light-theme {
-  --text-color: #000000;
+  --text-color: (0, 0, 0);
   --mobile-color: #ffffff;
   --background-color: rgb(251, 243, 213);
   --mobile-background-color: #000000;
@@ -779,7 +779,7 @@ label:active:after {
 
 .nav__link {
   position: relative;
-  color: rgb(0, 0, 0);
+  color: rgba(var(--text-color), 1);
   font-size: 1.125rem;
   padding: 0.125rem;
   text-decoration: none;
@@ -787,7 +787,7 @@ label:active:after {
 }
 
 .nav__link:hover {
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(var(--text-color), 0.6);
 }
 
 .nav__link-1::after {

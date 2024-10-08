@@ -17,4 +17,4 @@ export const toggleMobileNavigation = () => {
   $('.hamburger').on('click', function() {
 		$(this).toggleClass('open');
 	});
-}
+} 
