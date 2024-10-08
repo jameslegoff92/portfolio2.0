@@ -11,5 +11,5 @@ export function applyTheme(theme) {
 
 export function loadThemeFromLocalStorage() {
   const theme = localStorage.getItem("theme");
-  applyTheme(theme);
+  applyTheme(theme); 
 }
