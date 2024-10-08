@@ -2,7 +2,7 @@
 
 
 .text {
-  color: var(--text-color);
+  color: rgba(var(--text-color), 1);
   font-family: $font-family;
   font-size: $fs-2;
   line-height: calc(($fs-2 + 4px) / $fs-2);
@@ -24,7 +24,7 @@
 }
 
 .text--link:hover {
-  border-bottom: 1px solid var(--text-color);
+  border-bottom: 1px solid rgba(var(--text-color), 1);
   cursor: pointer;
 }
 
@@ -48,7 +48,7 @@
 
 
 .h1 {
-  color: var(--text-color);
+  color: rgba(var(--text-color), 1);
   font-family: $font-family;
   font-size: $fs-4;
   font-style: normal;
@@ -62,7 +62,7 @@
 }
 
 .h2 {
-  color: var(--text-color);
+  color: rgba(var(--text-color), 1);
   font-family: $font-family;
   font-size: $fs-3;
   font-style: normal;
@@ -75,7 +75,7 @@
 }
 
 .h3 {
-  color: var(--text-color);
+  color: rgba(var(--text-color), 1);
   font-family: $font-family;
   font-size: $fs-2;
   font-style: normal;
@@ -90,7 +90,7 @@
 
 
 .color-light {
-  color: var(--text-color);
+  color: rgba(var(--text-color), 1);
 }
 
 .color-dark {

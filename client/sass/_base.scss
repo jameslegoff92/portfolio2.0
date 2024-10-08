@@ -9,14 +9,14 @@ html {
 }
 
 .dark-theme {
-  --text-color: #ffffff;
+  --text-color: 255, 255, 255;
   --mobile-color: #000000;
   --background-color: #000000;
   --mobile-background-color: rgb(251, 243, 213);
 }
 
 .light-theme {
-  --text-color: #000000;
+  --text-color: 0, 0, 0;
   --mobile-color: #ffffff;
   --background-color: rgb(251, 243, 213);
   --mobile-background-color: #000000;
@@ -32,9 +32,9 @@ html {
 
 body {
   //Visibility is blocked out during development so that we can see the navigation bar.
-  // visibility: hidden;
+  visibility: hidden;
   background: var(--background-color);
-  color: var(--text-color);
+  color: rgba(var(--text-color), 1);
   font-family: $font-family;
   min-width: 365px;
   // overflow-y: hidden;
@@ -75,7 +75,7 @@ a {
 }
 
 a:visited {
-  // color: var(--text-color);
+  // color: rgba(var(--text-color), 1);
 }
 
 span {
@@ -83,7 +83,7 @@ span {
 }
 
 a:active {
-  color: var(--text-color);
+  color: rgba(var(--text-color), 1);
 }
 
 #projects > span {
@@ -103,7 +103,7 @@ label {
 	text-indent: -9999px;
 	width: 40px;
 	height: 20px;
-	background: var(--text-color);
+	background: rgba(var(--text-color), 1);
 	display: block;
 	border-radius: 100px;
 	position: relative;
@@ -122,7 +122,7 @@ label:after {
 }
 
 input:checked + label {
-	background: var(--text-color);
+	background: rgba(var(--text-color), 1);
 }
 
 input:checked + label:after {
