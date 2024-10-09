@@ -10,6 +10,15 @@ console.log(`Using ${envFile} for environment variables`);
 
 //Connects to the NoSQL Database
 const { connectToDatabase } = require("./db");
+const dotenv = require("dotenv");
+const envFile = `.env.${process.env.NODE_ENV || "development"}`;
+dotenv.config({ path: envFile });
+
+// Log the file that is being used
+console.log(`Using ${envFile} for environment variables`);
+
+//Connects to the NoSQL Database
+const { connectToDatabase } = require("./db");
 
 //Third-party modules
 const express = require("express");
@@ -60,6 +69,7 @@ if (process.env.NODE_ENV == "development") {
 }
 
 const port = process.env.PORT || 3000;
+
 const staticFolderPath = path.join(__dirname, "../client/dist");
 const viewsFolderPath = path.join(__dirname, "/views");
 

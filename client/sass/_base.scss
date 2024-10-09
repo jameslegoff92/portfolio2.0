@@ -10,12 +10,14 @@ html {
 
 .dark-theme {
   --text-color: 255, 255, 255;
+  --text-color: 255, 255, 255;
   --mobile-color: #000000;
   --background-color: #000000;
   --mobile-background-color: rgb(251, 243, 213);
 }
 
 .light-theme {
+  --text-color: 0, 0, 0;
   --text-color: 0, 0, 0;
   --mobile-color: #ffffff;
   --background-color: rgb(251, 243, 213);
