@@ -1,5 +1,12 @@
 @use 'variables' as *;
 
+//Hidden
+.u-hidden {
+  display: none;
+  transform: translateY(100px);
+}
+
+
 //Text Align
 .u-text-center {     
   text-align: center;
