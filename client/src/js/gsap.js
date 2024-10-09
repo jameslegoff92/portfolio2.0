@@ -12,8 +12,12 @@ export const mainHeadingAnimation = () => {
   tl.from(".nav-container--secondary", { opacity: 0, duration: 1 });
 };
 
-export function animationBounce(item) {
+export function animationScale(item = null) {
   const element = document.querySelector(item);  
+
+  if (!element) {
+    return console.warn(`No element found with the selector: ${item}`);
+  }
 
   element.addEventListener("mouseenter", () => {
     gsap.to(element, {
