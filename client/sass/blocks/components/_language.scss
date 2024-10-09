@@ -24,13 +24,13 @@
 }
 
 .lang-modal {
-  background-color: var(--mobile-color);
+  background-color: var(--language-color);
   border-radius: 4px;
   box-shadow: 0 0 10px rgba(var(--text-color), 0.2);
+  border: 1px solid #ffffff;
 
   position: relative; 
   height: 95%;
-  border: 1px solid rgba(var(--text-color), 0.6);
   width: 100%;
 
   &__icon {

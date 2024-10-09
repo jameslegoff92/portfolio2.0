@@ -2,7 +2,6 @@ import { setMobileNavControl } from "./js/mobileNavigation.js";
 import { createSketch } from "./js/p5.js";
 import { loadThemeFromLocalStorage } from "./theme-control.js";
 import { animationScale } from "./js/gsap.js";
-import gsap from "gsap";
 
 document.addEventListener("DOMContentLoaded", () => {
   let toggle = document.querySelector(".theme-toggle");
@@ -18,18 +17,22 @@ document.addEventListener("DOMContentLoaded", () => {
   new p5(createSketch("logo-canvas"));
   new p5(createSketch("logo-canvas-mobile"));
   setMobileNavControl();
-  animationScale("#toggle-input"); 
+  animationScale("#toggle-input");
 
+  //Refactor the code below
   let lang = document.querySelector(".lang");
   let langWrapper = document.querySelector(".lang-wrapper");
   let chevronIcon = document.querySelector(".lang-container__icon");
+  let currentLang = document.querySelector("#current-lang");
+  let altLang = document.querySelector("#alt-lang");
+  let langIcon = document.querySelector(".lang-modal__icon");
 
   lang.addEventListener("mouseenter", (e) => {
     langWrapper.classList.remove("u-hidden");
     langWrapper.classList.remove("animate-out");
     langWrapper.classList.add("animate-in");
     chevronIcon.classList.remove("return-counter");
-    chevronIcon.classList.add("rotate-counter");  
+    chevronIcon.classList.add("rotate-counter");
   });
 
   lang.addEventListener("mouseleave", (e) => {
@@ -39,4 +42,26 @@ document.addEventListener("DOMContentLoaded", () => {
     chevronIcon.classList.remove("rotate-counter");
     chevronIcon.classList.add("return-counter");
   });
+
+  const urlParams = window.location.search;
+  localStorage.setItem("lang", urlParams);
+  var langSetting = localStorage.getItem("lang");
+
+  if (langSetting === null || langSetting === undefined) {
+
+  } else if (langSetting === "?lng=fr") {
+    currentLang.textContent = "Français";
+    currentLang.href = "?lng=fr";
+    altLang.innerHTML = '<img class="lang-modal__icon" src="/assets/canada-icon.png" alt="flag of Canda"> Anglais';
+    altLang.href = "?lng=en";
+    console.log("lang icon: ", langIcon);
+    langIcon.src = "/assets/canada-icon.png";
+
+  } else if (langSetting === "?lng=en") {
+    currentLang.textContent = "English";
+    currentLang.href = "?lng=en";
+    altLang.innerHTML = '<img class="lang-modal__icon" src="/assets/france-icon.png" alt="flag of Canda"> French';
+    altLang.href = "?lng=fr";
+    langIcon.src = "/assets/france-icon.png";
+  }
 });
