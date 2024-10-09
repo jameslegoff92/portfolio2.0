@@ -6,4 +6,7 @@ module.exports = {
     '^.+\\.jsx?$': 'babel-jest', // Use babel-jest to transpile frontend tests
   },
   moduleFileExtensions: ['js', 'jsx', 'json'],
+  // collectCoverage: true,
+  // You can also specify specific files or folders
+  // collectCoverageFrom: ["client/**/*.{js,jsx,ts,tsx}"],
 }
