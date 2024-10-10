@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
   lang.addEventListener("mouseleave", (e) => {
     langWrapper.classList.add("u-hidden");
     langWrapper.classList.remove("animate-in");
-    langWrapper.classList.add("animate-out");
+    langWrapper.classList.add("animate-out"); 
     chevronIcon.classList.remove("rotate-counter");
     chevronIcon.classList.add("return-counter");
   });
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
   var langSetting = localStorage.getItem("lang");
 
   if (langSetting === null || langSetting === undefined) {
-
+ 
   } else if (langSetting === "?lng=fr") {
     currentLang.textContent = "Français";
     currentLang.href = "?lng=fr";
