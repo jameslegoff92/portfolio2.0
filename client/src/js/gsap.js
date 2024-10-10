@@ -22,7 +22,7 @@ export function animationScale(item = null) {
   element.addEventListener("mouseenter", () => {
     gsap.to(element, {
       scale: 1.5,              // Scale up to 1.2x
-      duration: 1,           // Slightly longer duration for bounce effect
+      duration: 0.5,           // Slightly longer duration for bounce effect
       ease: "bounce.out"       // Add bounce effect on scaling up
     });
   });
