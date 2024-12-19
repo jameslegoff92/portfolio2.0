@@ -71,10 +71,13 @@ app.set("view engine", "ejs");
 app.set("views", viewsFolderPath);
 
 // Middleware to connect to the database
-app.use(async (req, res, next) => {
+async function startServer() {
   await connectToDatabase();
-  next();
-});
+  
+  app.listen(port, () => {
+    console.log(`Example app listening on port ${port}`);
+  });
+}
 
 // Routes
 const projectRouter = require("./routes/project");
@@ -95,6 +98,4 @@ app.use((req, res, next) => {
   res.status(404).send("Sorry can't find that!");
 });
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
-});
+startServer().catch(err => console.error("Failed to start the server", err));

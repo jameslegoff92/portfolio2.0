@@ -12,8 +12,8 @@
     "start:prod": "cross-env NODE_ENV=production nodemon --watch ./client --watch ./server server.js -e js,ejs,scss,css,html",
     "sass": "sass --watch ./client/sass:./client/dist/css --style=compressed",
     "webpack": "npx webpack --watch",
-    "test:frontend": "jest --config jest.frontend.config.js",
-    "test:backend": "jest --config jest.backend.config.js",
+    "test:frontend": "jest --config jest.frontend.config.js --coverage",
+    "test:backend": "jest --config jest.backend.config.js --coverage",
     "test:all": "npm run test:frontend && npm run test:backend"
   },
   "author": "James Louis Le-Goff <jameslegoff92@gmail.com>",
