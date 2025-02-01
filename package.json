@@ -11,7 +11,7 @@
     "start:prod": "cross-env NODE_ENV=production nodemon --watch ./client --watch ./server server.js -e js,ejs,scss,css,html",
     "sass:dev": "sass --watch ./client/sass:./client/src/css",
     "sass:prod": "sass --watch ./client/sass:./client/dist/css --style=compressed",
-    "webpack": "npx webpack --watch",
+    "webpack": "npx webpack --no-cache --watch",
     "test:frontend": "jest --config jest.frontend.config.js --coverage",
     "test:backend": "jest --config jest.backend.config.js --coverage",
     "test:all": "npm run test:frontend && npm run test:backend"

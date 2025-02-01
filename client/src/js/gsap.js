@@ -1,4 +1,4 @@
-import gsap from "gsap";
+import { gsap } from "gsap"; 
 
 //Controls the animation for the heading and navigation fading into the UI.
 export const mainHeadingAnimation = () => {
