@@ -13,9 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("theme", isOn);
     loadThemeFromLocalStorage();
   });
-
-  new p5(createSketch("logo-canvas"));
-  new p5(createSketch("logo-canvas-mobile"));
+  
   setMobileNavControl();
   animationScale("#toggle-input");
 
@@ -48,19 +46,19 @@ document.addEventListener("DOMContentLoaded", () => {
   var langSetting = localStorage.getItem("lang");
 
   if (langSetting === null || langSetting === undefined) {
-
   } else if (langSetting === "?lng=fr") {
     currentLang.textContent = "Français";
     currentLang.href = "?lng=fr";
-    altLang.innerHTML = '<img class="lang-modal__icon" src="/assets/canada-icon.png" alt="flag of Canda"> Anglais';
+    altLang.innerHTML =
+      '<img class="lang-modal__icon" src="/assets/canada-icon.png" alt="flag of Canda"> Anglais';
     altLang.href = "?lng=en";
     console.log("lang icon: ", langIcon);
     langIcon.src = "/assets/canada-icon.png";
-
   } else if (langSetting === "?lng=en") {
     currentLang.textContent = "English";
     currentLang.href = "?lng=en";
-    altLang.innerHTML = '<img class="lang-modal__icon" src="/assets/france-icon.png" alt="flag of Canda"> French';
+    altLang.innerHTML =
+      '<img class="lang-modal__icon" src="/assets/france-icon.png" alt="flag of Canda"> French';
     altLang.href = "?lng=fr";
     langIcon.src = "/assets/france-icon.png";
   }
