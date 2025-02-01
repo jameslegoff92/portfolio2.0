@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   setMobileNavControl();
   animationScale("#toggle-input");
 
-  //Refactor the code below
+  //Refactor the code below - All this is related to the Language Switching Component
   let lang = document.querySelector(".lang");
   let langWrapper = document.querySelector(".lang-wrapper");
   let chevronIcon = document.querySelector(".lang-container__icon");

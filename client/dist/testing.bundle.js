@@ -1,0 +1,1 @@
+(()=>{!function(e,s){sessionStorage.setItem(e,s)}("name","John");var e,s=(e="name")?sessionStorage.getItem(e)?sessionStorage.getItem(e):"Key does not exist":"Key is missing";console.log("session key: ",s)})();

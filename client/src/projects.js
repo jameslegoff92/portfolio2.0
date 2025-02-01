@@ -21,6 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
     { duration: 0.5, ease: "power2.out", x: 0, autoAlpha: 1, stagger: 0.17 }, "-=0.5"
   );
   tl1.fromTo("#main-heading", { x: -100, visibility: "hidden" }, { duration: 0.5, ease: "power2.out", x: 0, autoAlpha: 1 });
+
+  
   tl2.fromTo(".projects-grid__link2", { x: -100, visibility: "hidden", duration: 0.3 }, { ease: "power2.out", x: 0, autoAlpha: 1 });
   tl2.fromTo(
     ".projects-grid__heading2",

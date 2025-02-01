@@ -8,6 +8,7 @@ module.exports = {
     projects: './client/src/projects.js',
     contact: './client/src/contact.js',
     about: './client/src/about.js',
+    testing: './client/src/testing.js',
   },
   output: {
     path: path.resolve(__dirname, 'client/dist'),

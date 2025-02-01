@@ -94,6 +94,12 @@ app.use(aboutRouter);
 app.use(blogRouter);
 app.use(contactRouter);
 
+if (process.env.NODE_ENV == "development") {
+  app.get("/testing", (req, res) => {
+    res.render("pages/testing", { script: "testing.bundle.js", t: req.t });
+  });
+}
+
 app.use((req, res, next) => {
   res.status(404).send("Sorry can't find that!");
 });
