@@ -1,19 +1,18 @@
 <nav class="nav-container nav-container--secondary">
   <!-- Canvas logo get added inside of this div. Do not change the ID. -->
   <a id="logo-canvas" href="/">
-
   </a>
 
   <div class="nav-container">
     <input type="checkbox" class="theme-toggle" id="switch" />
-    <label id="toggle-input" for="switch"> Toggle </label>
-    <ul class="nav">
-      <li class="nav__item">
+    <label id="toggle-input" class="hidden" for="switch"> Toggle </label>
+    <ul id="mainnav" class="nav">
+      <li class="nav__item hidden">
         <a class="nav__link nav__link-3" href="/projects">
           <%= t('header.projects') %>
         </a>
       </li>
-      <li class="nav__item">
+      <li class="nav__item hidden">
         <a class="nav__link nav__link-1" href="/about">
           <%= t('header.about') %>
         </a>
@@ -21,14 +20,14 @@
       <!-- <li class="nav__item">
         <a class="nav__link nav__link-2" href="/blog"> Blog </a>
       </li> -->
-      <li class="nav__item">
+      <li class="nav__item hidden">
         <a class="nav__link nav__link-4" href="/contact">
           <%= t('header.Contact') %>
         </a>
       </li>
     </ul>
 
-    <div class="nav__item lang">
+    <div id="langid" class="nav__item lang">
       <div class="lang-container">
         <img class="lang-container__img" src="/assets/globe-icon-black.png" alt="globe icon">
         <a id="current-lang" class="nav__link lang-container__link" href="?lng=en">English</a>

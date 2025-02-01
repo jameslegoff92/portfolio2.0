@@ -9,7 +9,11 @@ export const mainHeadingAnimation = () => {
   tl.from(".section-3 > span", { autoAlpha: 0, duration: 0.7, stagger: 0.1 });
   tl.from(".section-4 > span", { autoAlpha: 0, duration: 0.7, stagger: 0.1 });
   tl.from(".section-5 > span", { autoAlpha: 0, duration: 0.7, stagger: 0.1 });
-  tl.from(".nav-container--secondary", { opacity: 0, duration: 1 });
+  tl.from("#toggle-input", { autoAlpha: 0, duration: 0.2, y: 20, ease: "power2.out" });
+  tl.from("#mainnav > li", { autoAlpha: 0, duration: 0.2, y: 20, ease: "power2.out", stagger: 0.1 }, "-=0.1");
+  tl.from("#langid", { autoAlpha: 0, duration: 0.2, y: 20, ease: "power2.out" }, "-=0.1");
+
+  // tl.from(".nav-container--secondary", { opacity: 0, duration: 1 });
 };
 
 export function animationScale(item = null) {

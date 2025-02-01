@@ -19,7 +19,6 @@ module.exports = {
     alias: {
       'jquery': 'jquery/dist/jquery.min.js',
       'imagesloaded': 'imagesloaded/imagesloaded.pkgd.min.js',
-      'p5': 'p5/lib/p5.min.js',
     }
   },
   optimization: {

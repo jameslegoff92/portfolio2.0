@@ -1,5 +1,4 @@
 import { setMobileNavControl } from "./js/mobileNavigation.js";
-import { createSketch } from "./js/p5.js";
 import { loadThemeFromLocalStorage } from "./theme-control.js";
 import { animationScale } from "./js/gsap.js";
 
@@ -13,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("theme", isOn);
     loadThemeFromLocalStorage();
   });
-  
+
   setMobileNavControl();
   animationScale("#toggle-input");
 
