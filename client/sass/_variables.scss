@@ -1,6 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
+.dark-theme {
+  --text-color: 255, 255, 255;
+  --mobile-color: #000000;
+  --background-color: #000000;
+  --mobile-background-color: white;
+  --language-color: #000000;
+}
+
+.light-theme {
+  --text-color: 0, 0, 0;
+  --mobile-color: #ffffff;
+  --background-color: white;
+  --mobile-background-color: #000000;
+  --language-color: #ffffff;
+}
 
 $font-family: 'Lato', sans-serif;
 $font-family-2: 'Playfair Display', serif;

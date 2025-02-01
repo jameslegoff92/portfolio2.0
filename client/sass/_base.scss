@@ -8,22 +8,6 @@ html {
   font-size: 100%;
 }
 
-.dark-theme {
-  --text-color: 255, 255, 255;
-  --mobile-color: #000000;
-  --background-color: #000000;
-  --mobile-background-color: rgb(251, 243, 213);
-  --language-color: #000000;
-}
-
-.light-theme {
-  --text-color: 0, 0, 0;
-  --mobile-color: #ffffff;
-  --background-color: rgb(251, 243, 213);
-  --mobile-background-color: #000000;
-  --language-color: #ffffff;
-}
-
 *,
 *::before,
 *::after {
