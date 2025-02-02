@@ -23,6 +23,11 @@
     }
   }
 
+  &__item {
+    min-width: 400px;
+    min-height: 400px;
+  }
+
 
   &__item1 {
     order: 3;
@@ -63,6 +68,3 @@
 .projects-grid img {
   margin-bottom: $m-1;
 }
-
-
-
