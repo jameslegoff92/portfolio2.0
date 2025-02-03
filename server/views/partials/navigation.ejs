@@ -5,19 +5,19 @@
 
   <div class="nav-container">
     <input type="checkbox" class="theme-toggle" id="switch" />
-    <label id="toggle-input"  for="switch"> Toggle </label>
+    <label id="toggle-input" class="hidden navid" for="switch"> Toggle </label>
     <ul id="mainnav" class="nav">
-      <li class="nav__item">
+      <li class="nav__item hidden navid">
         <a class="nav__link nav__link-1" href="/">
           <%= t('header.home') %>
         </a>
       </li>
-      <li class="nav__item">
+      <li class="nav__item hidden navid">
         <a class="nav__link nav__link-3" href="/projects">
           <%= t('header.projects') %>
         </a>
       </li>
-      <li class="nav__item">
+      <li class="nav__item hidden navid">
         <a class="nav__link nav__link-4" href="/about">
           <%= t('header.about') %>
         </a>
@@ -25,14 +25,14 @@
       <!-- <li class="nav__item">
         <a class="nav__link nav__link-2" href="/blog"> Blog </a>
       </li> -->
-      <li class="nav__item">
+      <li class="nav__item hidden navid">
         <a class="nav__link nav__link-1" href="/contact">
           <%= t('header.Contact') %>
         </a>
       </li>
     </ul>
 
-    <div id="langid" class="nav__item lang">
+    <div id="langid" class="nav__item lang hidden navid">
       <div class="lang-container">
         <img class="lang-container__img" src="/assets/globe-icon-black.png" alt="globe icon">
         <a id="current-lang" class="nav__link lang-container__link" href="?lng=en">English</a>
@@ -48,7 +48,7 @@
       </div>
     </div>
     <button id="" class="mobile-nav-btn open-nav-js">
-      <img id="open-mobile-nav" src="/assets/mobile-menu-button.svg" alt="mobile menu" />
+      <img id="open-mobile-nav" class="hidden navid" src="/assets/mobile-menu-button.svg" alt="mobile menu" />
     </button>
   </div>
 </nav>
