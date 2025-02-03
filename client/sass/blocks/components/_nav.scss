@@ -58,6 +58,7 @@
   cursor: pointer;
 }
 
+
 .nav__link-3::after {
   content: "";
   position: absolute;
@@ -70,8 +71,8 @@
 }
 
 .nav__link-3:hover::after {
+  pointer-events: none;
   width: 100%;
-  cursor: pointer;
 }
 
 .nav__link-4::after {
@@ -86,6 +87,12 @@
 }
 
 .nav__link-4:hover::after {
+  width: 100%;
+  cursor: pointer;
+}
+
+
+.nav__link-active::after {
   width: 100%;
   cursor: pointer;
 }

@@ -5,7 +5,7 @@
   
   <%- include('../partials/mobileNavigation.ejs') %>
       <div class="container">
-        <%- include('../partials/navigation.ejs') %>
+        <%- include('../partials/navigation.ejs', { url }) %>
 
           <h1 id="main-heading" class="h1 h1--responsive mb-7 hidden">
             <%= t("projectPage.mainTitle") %>

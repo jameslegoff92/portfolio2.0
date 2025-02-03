@@ -86,7 +86,9 @@ const blogRouter = require("./routes/blog");
 const contactRouter = require("./routes/contact");
 
 app.get("/", async (req, res) => {
-  res.render("pages/homepage", { script: "homepage.bundle.js", t: req.t });
+  const url = 'home';
+  console.log("url value: ", url);
+  res.render("pages/homepage", { script: "homepage.bundle.js", t: req.t, url });
 });
 
 app.use(projectRouter);
