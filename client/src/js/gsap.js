@@ -97,12 +97,10 @@ export function animationScale(item = null) {
 export const navigationAnimation = () => {
   const hasAnimated = getSessionKey("hasAnimated");
   if (hasAnimated === "true") {
-    removeClassFromElements(".navid", "hidden");
     return;
   }
 
   setSessionKey("hasAnimated", "true");
-  removeClassFromElements(".navid", "hidden");
 
   let tl = gsap.timeline();
   tl.fromTo(

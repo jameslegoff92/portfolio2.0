@@ -1,22 +1,27 @@
-function setSessionStorage(key, value) {
-  if (!key || !value) {
-    return "Key or value is missing";
+import { getSessionKey } from "./js/utils/storageAPI.js";
+import logger from "./libs/loglevel.js";
+
+document.addEventListener("DOMContentLoaded", function () {
+  logger.debug("DOM is loaded");
+  const sessionKey = getSessionKey("hasAnimated");
+  logger.debug(`Session key: ${sessionKey}`);
+
+  if (sessionKey === "true") {
+    logger.debug("sessionKey is true");
+    const targetScript = document.querySelector(
+      '#testingId'
+    );
+  
+    if (targetScript) {
+      logger.debug("Target script found. Adding css stylesheet dynamically");
+      const link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.href = "css/styles.css";
+      targetScript.parentNode.insertBefore(link, targetScript.nextSibling);
+      logger.debug("CSS stylesheet added successfully");
+      return;
+    } else {
+      logger.debug("Target script not found");
+    }
   }
-  sessionStorage.setItem(key, value);
-}
-
-function getSessionStorage(key) { 
-  if (!key) {
-    return "Key is missing";
-  }
-
-  if (!sessionStorage.getItem(key)) {
-    return "Key does not exist";
-  }
-
-  return sessionStorage.getItem(key);
-}
-
-setSessionStorage("name", "John");
-const sessionKey = getSessionStorage("name"); // "John"
-console.log("session key: ", sessionKey);
+});
