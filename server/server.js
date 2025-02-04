@@ -73,7 +73,7 @@ app.set("views", viewsFolderPath);
 // Middleware to connect to the database
 async function startServer() {
   await connectToDatabase();
-  
+   
   app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
   });

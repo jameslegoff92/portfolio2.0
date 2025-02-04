@@ -6,11 +6,11 @@
 
       <div class="container">
         <%- include('../partials/navigation.ejs', { url }) %>
-          <h1 class="about-h1 h1 h1--responsive mb-2">
+          <h1 class="about-h1 h1 h1--responsive mb-2 hidden">
             <%= t('aboutPage.mainTitle') %>
           </h1>
-          <div class="about-img mb-5">
-            <img src="assets/focused-vintage-tall.JPG" alt="">
+          <div class="about-img mb-5 hidden">
+            <img class="" src="assets/focused-vintage-tall.JPG" alt="">
           </div>
       </div>
       <div class="container">
@@ -43,7 +43,7 @@
           </div>
         </div>
 
-        <div class="stats__location mb-7">
+        <div class="stats__location hidden mb-7">
           <span class="stats__data text--bold">
             <%= t("aboutPage.stats.statsLocation") %>
           </span>
