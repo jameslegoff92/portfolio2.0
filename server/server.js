@@ -9,7 +9,7 @@ dotenv.config({ path: envFile });
 console.log(`Using ${envFile} for environment variables`);
 
 //Connects to the NoSQL Database
-const { connectToDatabase } = require("./db");
+const { connectToDatabase, resetConnectionPool } = require("./db");
 
 //Third-party modules
 const express = require("express");
@@ -87,8 +87,18 @@ const contactRouter = require("./routes/contact");
 
 app.get("/", async (req, res) => {
   const url = 'home';
-  console.log("url value: ", url);
   res.render("pages/homepage", { script: "homepage.bundle.js", t: req.t, url });
+});
+
+// Admin endpoint to reset the pool
+app.get("/admin/resetpool", async (req, res) => {
+  try {
+    await resetConnectionPool();
+    res.send("Connection pool has been reset.");
+  } catch (error) {
+    console.error("Error resetting pool:", error);
+    res.status(500).send("Failed to reset connection pool.");
+  }
 });
 
 app.use(projectRouter);

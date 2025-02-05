@@ -48,4 +48,62 @@ const getDb = () => {
   return db;
 };
 
-module.exports = { connectToDatabase, getDb };
+/**
+ * Resets the MongoDB connection pool.
+ * This function closes the existing client (and its pool) and creates a new one.
+ */
+const resetConnectionPool = async () => {
+  try {
+    if (client && client.topology && client.topology.isConnected()) {
+      await client.close();
+      console.log("Existing connection pool closed.");
+    }
+    // Create a new client instance, which creates a new pool
+    client = new MongoClient(uri, {
+      serverApi: {
+        version: ServerApiVersion.v1,
+        strict: true,
+        deprecationErrors: true,
+      },
+    });
+    await client.connect();
+    db = client.db(dbName);
+    console.log("New connection pool created.");
+    return db;
+  } catch (error) {
+    console.error("Error resetting the connection pool:", error);
+    throw error;
+  }
+};
+
+/**
+ * Gracefully close the MongoDB connection.
+ */
+const closeDbConnection = async () => {
+  if (client && client.topology && client.topology.isConnected()) {
+    try {
+      await client.close();
+      console.log("Database connection closed gracefully.");
+      // Optionally, reset the client and db variables
+      client = null;
+      db = null;
+    } catch (error) {
+      console.error("Error while closing the database connection:", error);
+    }
+  }
+};
+
+// Attach listeners for process termination signals to close the connection gracefully
+process.on("SIGINT", async () => {
+  console.log("SIGINT signal received.");
+  await closeDbConnection();
+  process.exit(0);
+});
+
+process.on("SIGTERM", async () => {
+  console.log("SIGTERM signal received.");
+  await closeDbConnection();
+  process.exit(0);
+});
+
+module.exports = { connectToDatabase, getDb, resetConnectionPool, closeDbConnection };

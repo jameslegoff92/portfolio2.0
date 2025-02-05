@@ -107,7 +107,7 @@ label:after {
 input:checked + label {
 	background: rgb(var(--text-color));
 }
-
+   
 input:checked + label:after {
 	left: calc(100% - 5px);
 	transform: translateX(-100%);
@@ -121,4 +121,3 @@ label:active:after {
   height: 70px;
   width: 70px;
 }
-

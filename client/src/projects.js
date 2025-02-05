@@ -9,8 +9,8 @@ import {
 } from "./js/gsap";
 
 document.addEventListener("DOMContentLoaded", () => {
-  let mastertimeline = gsap.timeline();
   navigationAnimation();
+  let mastertimeline = gsap.timeline();
   mastertimeline
     .add(slideUpAnimation("#main-heading"), 0)
     .add(expandImageRevealAnimation(".projects-grid__img7"), 0)

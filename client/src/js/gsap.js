@@ -2,6 +2,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { getSessionKey, setSessionKey } from "./utils/storageAPI.js";
 import { removeClassFromElements } from "./utils/dom.js";
+import logger from "../libs/loglevel.js";
 
 //Controls the animation for the heading and navigation fading into the UI.
 export const mainHeadingAnimation = () => {
@@ -95,14 +96,19 @@ export function animationScale(item = null) {
 }
 
 export const navigationAnimation = () => {
+  logger.debug("Inside navigation animation");
   const hasAnimated = getSessionKey("hasAnimated");
   if (hasAnimated === "true") {
+    logger.debug("hasAnimated is true. Exit function.");
     return;
-  }
+  } 
 
+  logger.debug("Setting session key to true");
   setSessionKey("hasAnimated", "true");
 
-  let tl = gsap.timeline();
+  logger.debug("Before navigation animation");
+  let tl = gsap.timeline({ delay: 1 });
+  tl.fromTo("body", { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.7 });
   tl.fromTo(
     "#toggle-input",
     { autoAlpha: 0, y: 20 },
@@ -126,6 +132,7 @@ export const navigationAnimation = () => {
     { duration: 0.2, ease: "power2.out", y: 0, autoAlpha: 1 },
     "-=0.1"
   );
+  logger.debug("After navigation animation");
 };
 
 export const slideUpAnimation = (element) => {

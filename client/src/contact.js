@@ -2,7 +2,7 @@ import { gsap } from "gsap";
 import { navigationAnimation } from "./js/gsap";
 
 document.addEventListener("DOMContentLoaded", () => {
-  let tl1 = gsap.timeline();
+  let tl1 = gsap.timeline({ delay: 1 });
 
   navigationAnimation();
   tl1.fromTo(
