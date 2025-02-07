@@ -107,10 +107,10 @@ export const navigationAnimation = () => {
   setSessionKey("hasAnimated", "true");
 
   logger.debug("Before navigation animation");
-  let tl = gsap.timeline({ delay: 1 });
-  tl.fromTo("body", { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.7 });
+  let tl = gsap.timeline();
+
   tl.fromTo(
-    "#toggle-input",
+    ".toggle-wrapper",
     { autoAlpha: 0, y: 20 },
     { autoAlpha: 1, duration: 0.2, y: 0, ease: "power2.out" }
   );
@@ -161,11 +161,13 @@ export const expandImageRevealAnimation = (element) => {
     return console.warn("Provide a string selector for the element to animate");
   }
 
+  logger.debug("Before expand image reveal animation");
   gsap.fromTo(
     element,
     { autoAlpha: 0, scale: 0.8 },
     { autoAlpha: 1, scale: 1, duration: 1, ease: "power2.out" }
   );
+  logger.debug("After expand image reveal animation");
 };
 
 export const expandImageRevealAnimationScroll = (element) => {
@@ -197,11 +199,13 @@ export const revealAnimation = (element) => {
     return console.warn("Provide a string selector for the element to animate");
   }
 
+  logger.debug("Before reveal animation");
   gsap.fromTo(
     element,
     { autoAlpha: 0 },
     { autoAlpha: 1, duration: 2, ease: "power2.out" }
   );
+  logger.debug("After reveal animation");
 };
 
 export const revealAnimationScroll = (element) => {

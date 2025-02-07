@@ -1,11 +1,13 @@
-<nav class="nav-container nav-container--secondary">  
+<nav class="nav-container nav-container--secondary">
   <!-- Canvas logo get added inside of this div. Do not change the ID. -->
-  <a id="logo-canvas" style="pointer-events: none;"> 
+  <a id="logo-canvas" style="pointer-events: none;">
   </a>
 
   <div class="nav-container">
-    <input type="checkbox" class="theme-toggle hidden-nav" id="switch" />
-    <label id="toggle-input" class="hidden-nav visible" for="switch"> Toggle </label>
+    <div class="toggle-wrapper hidden-nav visible "> 
+      <input type="checkbox" class="theme-toggle" id="switch" />
+      <label id="toggle-input" for="switch"> Toggle </label>
+    </div>
     <ul id="mainnav" class="nav">
       <li class="nav__item hidden-nav visible">
         <a class="nav__link nav__link-1 <%= url === 'home' ? 'nav__link-active' : '' %>" href="/">
@@ -41,7 +43,7 @@
 
       <div class="lang-wrapper u-hidden">
         <div class="lang-modal ">
-          <a id="alt-lang" class="nav__link lang-modal__text" href="?lng=fr"> 
+          <a id="alt-lang" class="nav__link lang-modal__text" href="?lng=fr">
             <img class="lang-modal__icon" src="/assets/france-icon.png" alt="flag of france"> French
           </a>
         </div>

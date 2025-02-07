@@ -52,13 +52,14 @@
   font-family: $font-family;
   font-size: $fs-4;
   font-style: normal;
-  font-weight: 700;
-  line-height: calc($fs-700 / 44px);
+  font-weight: 7500;
+  line-height: 1.1;
   max-width: 600px;
+  letter-spacing: -1.5px;
 }
 
 .h1--responsive {
-  font-size: clamp($fs-4, 5vw, 60px);
+  font-size: clamp($fs-4, 5vw, 4rem);
 }
 
 .h2 {
@@ -66,7 +67,7 @@
   font-family: $font-family;
   font-size: $fs-3;
   font-style: normal;
-  line-height: 2.75rem;
+  line-height: 1.4;
   letter-spacing: -0.5px;
 }
 

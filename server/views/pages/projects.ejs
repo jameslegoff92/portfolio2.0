@@ -25,11 +25,12 @@
               <p class="text projects-grid__text<%= index +1 %>">
                 <%= element.description %>
               </p>
-              <div>
-                <% element.tags.forEach((tag)=> { %>
-                  <span class="label op-75 projects-grid__tag<%= index +1 %>">
-                    <%= tag %> |
+              <div class="projects-grid__tags">
+                <% element.tags.forEach((tag, pos)=> { %>
+                  <span class="text op-50 projects-grid__tag  projects-grid__tag<%= index +1 %>">
+                    <%= tag %> 
                   </span>
+                  <% if ( pos < 2) { %> <span class="bullet op-50" ></span> <% } %>
                   <% }) %>
               </div>
             </div>
@@ -37,7 +38,7 @@
           <% }) %>
       </div>
 
-      <div class="footer-container">
+      <div class="footer-container hidden visible">
         <div class="container footer ">
           <div class="footer__container">
             <div class="mb-0">
@@ -83,5 +84,5 @@
       </div>
 
       <%- include('../partials/scripts') %>
-        <script src="<%= script %>"></script>
+      <script src="<%= script %>"></script>
         <%- include('../partials/end') %>
