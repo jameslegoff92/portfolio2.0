@@ -98,7 +98,7 @@ label:after {
   height: 10px;
   background: var(--background-color);
   border-radius: 90px;
-  transition: left 0.3s;
+  transition: left 0.3s, width 0.3s, height 0.3s;
 }
 
 input:checked + label {
