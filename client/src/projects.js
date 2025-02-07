@@ -28,4 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
     revealAnimationScroll(".projects-grid__wrapper5");
     expandImageRevealAnimationScroll(".projects-grid__img6");
     revealAnimationScroll(".projects-grid__wrapper6");
+
+    revealAnimation("#projects-footer");
 });
