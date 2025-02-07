@@ -12,7 +12,7 @@ This project is my personal portfolio website where I showcase my code projects,
 
 - **Frontend**: HTML, CSS, SASS, JavaScript
 - **Backend**: Node.js, Express.JS, EJS
-- **Databese**: MongoDB
+- **Database**: MongoDB
 - **Deployment**: Heroku
 - **CI/CD**: Github Actions
 - **Tools**: GSAP, Webpack, Babel, Jest, Cypress
@@ -24,4 +24,4 @@ This project is my personal portfolio website where I showcase my code projects,
 - **Project Showcase**: Detailed project sections with descriptions and live demos.
 - **Internationalization (i18n)**: Multi-language support for English and French.
 - **Theme Switcher**: Light and dark mode theme switcher.
-- **Animations**: Modern css and javascript animations.
+- **Animations**: Implemented the GSAP library to provide modern animations.

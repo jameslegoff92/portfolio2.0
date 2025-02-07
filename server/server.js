@@ -9,7 +9,7 @@ dotenv.config({ path: envFile });
 console.log(`Using ${envFile} for environment variables`);
 
 //Connects to the NoSQL Database
-const { connectToDatabase } = require("./db");
+const { connectToDatabase, resetConnectionPool } = require("./db");
 
 //Third-party modules
 const express = require("express");
@@ -73,7 +73,7 @@ app.set("views", viewsFolderPath);
 // Middleware to connect to the database
 async function startServer() {
   await connectToDatabase();
-  
+   
   app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
   });
@@ -86,13 +86,31 @@ const blogRouter = require("./routes/blog");
 const contactRouter = require("./routes/contact");
 
 app.get("/", async (req, res) => {
-  res.render("pages/homepage", { script: "homepage.bundle.js", t: req.t });
+  const url = 'home';
+  res.render("pages/homepage", { script: "homepage.bundle.js", t: req.t, url });
+});
+
+// Admin endpoint to reset the pool
+app.get("/admin/resetpool", async (req, res) => {
+  try {
+    await resetConnectionPool();
+    res.send("Connection pool has been reset.");
+  } catch (error) {
+    console.error("Error resetting pool:", error);
+    res.status(500).send("Failed to reset connection pool.");
+  }
 });
 
 app.use(projectRouter);
 app.use(aboutRouter);
 app.use(blogRouter);
 app.use(contactRouter);
+
+if (process.env.NODE_ENV == "development") {
+  app.get("/testing", (req, res) => {
+    res.render("pages/testing", { script: "testing.bundle.js", t: req.t });
+  });
+}
 
 app.use((req, res, next) => {
   res.status(404).send("Sorry can't find that!");

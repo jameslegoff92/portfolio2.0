@@ -1,5 +1,5 @@
 var theme = localStorage.getItem("theme");
-let toggle = document.querySelector(".theme-toggle");
+let toggle = document.querySelector(".theme-toggle");   
 
 if (theme === "false") {
   document.body.classList.replace("dark-theme", "light-theme");

@@ -1,34 +1,40 @@
 <nav class="nav-container nav-container--secondary">
   <!-- Canvas logo get added inside of this div. Do not change the ID. -->
-  <a id="logo-canvas" href="/">
-
+  <a id="logo-canvas" style="pointer-events: none;">
   </a>
 
   <div class="nav-container">
-    <input type="checkbox" class="theme-toggle" id="switch" />
-    <label id="toggle-input" for="switch"> Toggle </label>
-    <ul class="nav">
-      <li class="nav__item">
-        <a class="nav__link nav__link-3" href="/projects">
+    <div class="toggle-wrapper hidden-nav visible "> 
+      <input type="checkbox" class="theme-toggle" id="switch" />
+      <label id="toggle-input" for="switch"> Toggle </label>
+    </div>
+    <ul id="mainnav" class="nav">
+      <li class="nav__item hidden-nav visible">
+        <a class="nav__link nav__link-1 <%= url === 'home' ? 'nav__link-active' : '' %>" href="/">
+          <%= t('header.home') %>
+        </a>
+      </li>
+      <li class="nav__item hidden-nav visible">
+        <a class="nav__link nav__link-3 <%= url === 'projects' ? 'nav__link-active' : '' %>" href="/projects">
           <%= t('header.projects') %>
         </a>
       </li>
-      <li class="nav__item">
-        <a class="nav__link nav__link-1" href="/about">
+      <li class="nav__item hidden-nav visible">
+        <a class="nav__link nav__link-4 <%= url === 'about' ? 'nav__link-active' : '' %>" href="/about">
           <%= t('header.about') %>
         </a>
       </li>
       <!-- <li class="nav__item">
         <a class="nav__link nav__link-2" href="/blog"> Blog </a>
       </li> -->
-      <li class="nav__item">
-        <a class="nav__link nav__link-4" href="/contact">
+      <li class="nav__item hidden-nav visible">
+        <a class="nav__link nav__link-1 <%= url === 'contact' ? 'nav__link-active' : '' %>" href="/contact">
           <%= t('header.Contact') %>
         </a>
       </li>
     </ul>
 
-    <div class="nav__item lang">
+    <div id="langid" class="nav__item lang hidden-nav visible ">
       <div class="lang-container">
         <img class="lang-container__img" src="/assets/globe-icon-black.png" alt="globe icon">
         <a id="current-lang" class="nav__link lang-container__link" href="?lng=en">English</a>
@@ -37,14 +43,14 @@
 
       <div class="lang-wrapper u-hidden">
         <div class="lang-modal ">
-          <a id="alt-lang" class="nav__link lang-modal__text" href="?lng=fr"> 
+          <a id="alt-lang" class="nav__link lang-modal__text" href="?lng=fr">
             <img class="lang-modal__icon" src="/assets/france-icon.png" alt="flag of france"> French
           </a>
         </div>
       </div>
     </div>
     <button id="" class="mobile-nav-btn open-nav-js">
-      <img id="open-mobile-nav" src="/assets/mobile-menu-button.svg" alt="mobile menu" />
+      <img id="open-mobile-nav" class="hidden-nav visible" src="/assets/mobile-menu-button.svg" alt="mobile menu" />
     </button>
   </div>
 </nav>

@@ -13,7 +13,8 @@
 
 .footer-container {
   background: var(--mobile-background-color);
-  color: rgba(var(--text-color), 1);
+  color: rgb(var(--text-color));
+  //This is important for removing the flickering nav 
 }
 
 .footer-nav {

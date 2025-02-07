@@ -5,9 +5,9 @@
   
   <%- include('../partials/mobileNavigation.ejs') %>
       <div class="container">
-        <%- include('../partials/navigation.ejs') %>
+        <%- include('../partials/navigation.ejs', { url }) %>
 
-          <h1 id="main-heading" class="h1 h1--responsive mb-7">
+          <h1 id="main-heading" class="h1 h1--responsive mb-7 hidden">
             <%= t("projectPage.mainTitle") %>
           </h1>
       </div>
@@ -16,20 +16,21 @@
         <% projects.forEach((element, index)=> { %>
           <div class="projects-grid__item projects-grid__item<%= index +1 %>">
             <a class="projects-grid__link projects-grid__link<%= index +1 %>" href="<%= element.url %>">
-              <img class="projects-grid__img<%= index +1 %>" src="<%= element.img  %>  " alt="">
+              <img class="projects-grid__img<%= index +1 %> hidden" src="<%= element.img  %>  " alt="">
             </a>
-            <div class="projects-grid__wrapper">
+            <div class="projects-grid__wrapper projects-grid__wrapper<%= index +1 %> hidden">
               <h2 class="h2 u-text-700 projects-grid__heading<%= index +1 %>">
                 <%= element.name %>
               </h2>
               <p class="text projects-grid__text<%= index +1 %>">
                 <%= element.description %>
               </p>
-              <div>
-                <% element.tags.forEach((tag)=> { %>
-                  <span class="label op-75 projects-grid__tag<%= index +1 %>">
-                    <%= tag %> |
+              <div class="projects-grid__tags">
+                <% element.tags.forEach((tag, pos)=> { %>
+                  <span class="text op-50 projects-grid__tag  projects-grid__tag<%= index +1 %>">
+                    <%= tag %> 
                   </span>
+                  <% if ( pos < 2) { %> <span class="bullet op-50" ></span> <% } %>
                   <% }) %>
               </div>
             </div>
@@ -37,7 +38,7 @@
           <% }) %>
       </div>
 
-      <div class="footer-container">
+      <div id="projects-footer" class="footer-container hidden visible">
         <div class="container footer ">
           <div class="footer__container">
             <div class="mb-0">
@@ -83,5 +84,5 @@
       </div>
 
       <%- include('../partials/scripts') %>
-        <script src="<%= script %>"></script>
+      <script src="<%= script %>"></script>
         <%- include('../partials/end') %>

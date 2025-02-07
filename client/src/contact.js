@@ -1,41 +1,14 @@
-import gsap from "gsap";
+import { gsap } from "gsap";
+import { slideUpAnimation, revealAnimation, expandImageRevealAnimation, navigationAnimation } from "./js/gsap";
 
 document.addEventListener("DOMContentLoaded", () => {
-  let tl1 = gsap.timeline({ delay: 1 });
-
-  tl1.from("body", { autoAlpha: 0,});
-  tl1.fromTo("#logo-canvas", { x: -200, visibility:"hidden"}, { duration: 0.5, ease: "power2.out", x: 0, autoAlpha: 1,  });
-  tl1.fromTo("#toggle-input", { x: 100, visibility:"hidden",  }, { ease: "power2.out", x: 0, autoAlpha: 1, duration: 0.5 });
-  tl1.fromTo("#open-mobile-nav", { x: 100, visibility:"hidden"  }, { ease: "power2.out", x: 0, autoAlpha: 1, duration: 0.5 }, "-=0.5");
-  tl1.fromTo(".nav__item", { x: 100, visibility:"hidden"  }, { ease: "power2.out", x: 0, autoAlpha: 1, stagger: 0.17, duration: 0.5 });
-  tl1.fromTo(
-    "#main-heading",
-    { x: 100, visibility: "hidden",  },
-    { ease: "power2.out", x: 0, autoAlpha: 1 }
-  );
-  tl1.fromTo(
-    "#main-text",
-    { x: 100, visibility: "hidden", },
-    { ease: "power2.out", x: 0, autoAlpha: 1 }
-  );
-  tl1.fromTo(
-    "#main-content",
-    { x: 100, visibility: "hidden", },
-    { ease: "power2.out", x: 0, autoAlpha: 1 }
-  );
-  tl1.fromTo(
-    ".icons__wrapper",
-    { x: 100, visibility: "hidden",  },
-    { ease: "power2.out", x: 0, autoAlpha: 1 }
-  );
-  tl1.fromTo(
-    "#main-cr",
-    { x: 100, visibility: "hidden",  },
-    { ease: "power2.out", x: 0, autoAlpha: 1 }
-  );
-  tl1.fromTo(
-    ".main-img",
-    { visibility: "hidden" },
-    { ease: "power2.out", autoAlpha: 1, }, "-=2"
-  );
+  navigationAnimation();
+  const mastertimeline = gsap.timeline();
+  mastertimeline
+    .add(slideUpAnimation("#main-heading"), 0)
+    .add(slideUpAnimation("#main-text"), 0)
+    .add(slideUpAnimation("#main-content"), 0)
+    .add(revealAnimation(".icons__wrapper"), 0)
+    .add(revealAnimation("#main-cr"), 0)
+    .add(expandImageRevealAnimation(".main-img"), 0);
 });

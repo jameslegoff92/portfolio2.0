@@ -8,24 +8,6 @@ html {
   font-size: 100%;
 }
 
-.dark-theme {
-  --text-color: 255, 255, 255;
-  --text-color: 255, 255, 255;
-  --mobile-color: #000000;
-  --background-color: #000000;
-  --mobile-background-color: rgb(251, 243, 213);
-  --language-color: #000000;
-}
-
-.light-theme { 
-  --text-color: 0, 0, 0;
-  --text-color: 0, 0, 0;
-  --mobile-color: #ffffff;
-  --background-color: rgb(251, 243, 213);
-  --mobile-background-color: #000000;
-  --language-color: #ffffff;
-}
-
 *,
 *::before,
 *::after {
@@ -35,22 +17,17 @@ html {
 }
 
 body {
-  //Visibility is blocked out during development so that we can see the navigation bar.
-  visibility: hidden;
   background: var(--background-color);
   color: rgba(var(--text-color), 1);
   font-family: $font-family;
   min-width: 365px;
-  // overflow-y: hidden;
-  // overflow-x: hidden;
+  overflow-x: hidden;
   padding: 2.5rem 0 0;
 }
 
 ul {
   list-style: none;
 }
-
-
 
 img {
   max-width: 100%;
@@ -94,48 +71,47 @@ a:active {
   margin-right: -5px;
 }
 
-
 //Toggle Animation
-input[type=checkbox]{
-	height: 0;
-	width: 0;
-	visibility: hidden;
+input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
 }
 
 label {
-	cursor: pointer;
-	text-indent: -9999px;
-	width: 40px;
-	height: 20px;
-	background: rgba(var(--text-color), 1);
-	display: block;
-	border-radius: 100px;
-	position: relative;
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 40px;
+  height: 20px;
+  background: rgb(var(--text-color));
+  display: block;
+  border-radius: 100px;
+  position: relative;
 }
 
 label:after {
-	content: '';
-	position: absolute;
-	top: 5px;
-	left: 5px;
-	width: 10px; 
-	height: 10px;
-	background: var(--background-color);
-	border-radius: 90px;
-	transition: 0.3s;
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background: var(--background-color);
+  border-radius: 90px;
+  transition: left 0.3s, width 0.3s, height 0.3s;
 }
 
 input:checked + label {
-	background: rgba(var(--text-color), 1);
+  background: rgb(var(--text-color));
 }
 
 input:checked + label:after {
-	left: calc(100% - 5px);
-	transform: translateX(-100%);
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
 }
 
 label:active:after {
-	width: 40px;
+  width: 40px;
 }
 
 #logo-canvas {
