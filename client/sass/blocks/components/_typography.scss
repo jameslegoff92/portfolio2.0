@@ -26,7 +26,15 @@
   transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out; /* Add opacity transition */
 }
 
+.text--link-alt {
+  position: relative;
+  color: var(--mobile-background-color);
+  padding: 0.125rem;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out; /* Add opacity transition */
+}
 
+    
 
 .text--link::after {
   content: "";
@@ -37,10 +45,25 @@
   height: 2px;
   background-color: var(--language-color);
   transition: width 0.2s ease; /* Adjust duration as needed */
+}
 
+.text--link-alt::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0; 
+  height: 2px;
+  background-color: var(--mobile-background-color);
+  transition: width 0.2s ease; /* Adjust duration as needed */
 }
 
 .text--link:hover::after {
+  width: 100%;
+  cursor: pointer;
+}
+
+.text--link-alt:hover::after {
   width: 100%;
   cursor: pointer;
 }
