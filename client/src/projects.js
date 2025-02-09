@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     expandImageRevealAnimationScroll(".projects-grid__img2");
     revealAnimationScroll(".projects-grid__wrapper2");
-    expandImageRevealAnimationScroll(".projects-grid__img3");
+    expandImageRevealAnimationScroll(".projects-grid__img3");  
     revealAnimationScroll(".projects-grid__wrapper3");
     expandImageRevealAnimationScroll(".projects-grid__img1");
     revealAnimationScroll(".projects-grid__wrapper1");
