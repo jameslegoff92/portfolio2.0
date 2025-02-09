@@ -12,7 +12,7 @@
             <%= t('aboutPage.mainTitle') %>
           </h1>
           <div class="about-img mb-5 hidden">
-            <img src="assets/focused-vintage-tall.JPG" alt="">
+            <img src="assets/focused-vintage-tall.webp" alt="">
           </div>
       </div>
 
@@ -23,7 +23,7 @@
             <span class="stats__data text--bold">
               3
             </span>
-            <p class="stats__stat label text--light">
+            <p class="stats__stat text--light">
               <%= t("aboutPage.stats.statsExperience") %>
             </p>
           </div>
@@ -32,7 +32,7 @@
             <span class="stats__data text--bold">
               6
             </span>
-            <p class="stats__stat label text--light">
+            <p class="stats__stat text--light">
               <%= t("aboutPage.stats.statsCertificate") %>
             </p>
           </div>
@@ -41,7 +41,7 @@
             <span class="stats__data text--bold">
               4
             </span>
-            <p class="stats__stat label text--light">
+            <p class="stats__stat text--light">
               <%= t("aboutPage.stats.statsProject") %>
             </p>
           </div>
@@ -51,7 +51,7 @@
           <span class="stats__data text--bold">
             <%= t("aboutPage.stats.statsLocation") %>
           </span>
-          <p class="stats__stat label text--light  ">
+          <p class="stats__stat text--light  ">
             <%= t("aboutPage.stats.statsLocal") %>
           </p>
         </div>
@@ -60,20 +60,20 @@
       <!-- GALLERY OF IMAGES -->
       <div id="gallery-wrapper"  class="logos mb-7 hidden">
         <div class="logos-slide">
-          <img src="assets/design-of-everyday-things.png" />
-          <img src="assets/to-engineer.png" />
-          <img src="assets/clean-code.png" />
-          <img src="assets/laws-of-ux-cover-art.png" />
-          <img src="assets/thinking-fast.png" />
-          <img src="assets/art-of-war.png" />
-          <img src="assets/before-you-know-it.png" />
-          <img src="assets/design-of-everyday-things.png" />
-          <img src="assets/to-engineer.png" />
-          <img src="assets/clean-code.png" />
-          <img src="assets/laws-of-ux-cover-art.png" />
-          <img src="assets/thinking-fast.png" />
-          <img src="assets/art-of-war.png" />
-          <img src="assets/before-you-know-it.png" />
+          <img src="assets/design-of-everyday-things.webp" />
+          <img src="assets/to-engineer.webp" />
+          <img src="assets/clean-code.webp" />
+          <img src="assets/laws-of-ux-cover-art.webp" />
+          <img src="assets/thinking-fast.webp" />
+          <img src="assets/art-of-war.webp" />
+          <img src="assets/before-you-know-it.webp" />
+          <img src="assets/design-of-everyday-things.webp" />
+          <img src="assets/to-engineer.webp" />
+          <img src="assets/clean-code.webp" />
+          <img src="assets/laws-of-ux-cover-art.webp" />
+          <img src="assets/thinking-fast.webp" />
+          <img src="assets/art-of-war.webp" />
+          <img src="assets/before-you-know-it.webp" />
         </div>
       </div>
 
@@ -219,22 +219,27 @@
       <div id="footer-wrapper" class="container footer hidden">
         <div class="footer__container">
           <div class="mb-0">
-            <h1 class="h1 h1--responsive mb">
+            <h1 class="h1 h1--responsive mb-2">
               <%= t("contactPage.mainTitle") %>
             </h1>
             <div class="mb-5">
-              <a class="text text--link" href="mailto:jameslegoff92@gmail.com"> jameslegoff92@gmail.com </a>
+              <a class="text text--link-alt" href="mailto:jameslegoff92@gmail.com"> jameslegoff92@gmail.com </a>
             </div>
           </div>
 
           <ul class="footer-nav mb-6">
             <li>
-              <a class="text text--link" href="/projects">
+              <a class="text text--link-alt" href="/">
+                <%= t("header.home") %>
+              </a>
+            </li>
+            <li>
+              <a class="text text--link-alt" href="/projects">
                 <%= t("header.projects") %>
               </a>
             </li>
             <li>
-              <a class="text text--link" href="/about">
+              <a class="text text--link-alt" href="/about">
                 <%= t("header.about") %>
               </a>
             </li>
@@ -242,7 +247,7 @@
               <a class="text text--link" href="/blog"> Blog </a>
             </li> -->
             <li>
-              <a class="text text--link" href="/contact">
+              <a class="text text--link-alt" href="/contact">
                 <%= t("header.Contact") %>
               </a>
             </li>
