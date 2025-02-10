@@ -1,0 +1,9 @@
+.hidden-nav {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.visible {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
