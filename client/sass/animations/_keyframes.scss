@@ -53,3 +53,23 @@
 .return-counter {
   animation: returnCounter 0.5s ease forwards;
 }
+
+//Animation to Scale An Element plus add a shadow
+@keyframes scaleUp {
+  from {
+    transform: scale(1);
+
+  }
+  to {
+    transform: scale(1.02);
+  }
+}
+
+@keyframes boxShadow {
+  from {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  to {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  }
+}
