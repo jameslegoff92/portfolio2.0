@@ -8,7 +8,7 @@ import {
   revealAnimationScroll,
 } from "./js/gsap";
 
-import { customCursor } from "./utils/customCursor.js";
+import { customCursor } from "./js/utils/customCursor";
 
 document.addEventListener("DOMContentLoaded", () => {
   let mastertimeline = gsap.timeline({ delay: 5 });
@@ -31,6 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
   expandImageRevealAnimationScroll(".projects-grid__img6");
   revealAnimationScroll(".projects-grid__wrapper6");
 
-  revealAnimation("#projects-footer");
-  customCursor();
+  revealAnimation("#projects-footer");     
+  customCursor(); 
 });
