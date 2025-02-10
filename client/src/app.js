@@ -61,4 +61,27 @@ document.addEventListener("DOMContentLoaded", () => {
     altLang.href = "?lng=fr";
     langIcon.src = "/assets/france-icon.png";
   }
+
+  // Create a div element for the custom cursor
+  const cursor = document.createElement("div");
+  cursor.id = "custom-cursor";
+  document.body.appendChild(cursor);
+  const targetArea = document
+    .querySelectorAll(".projects-grid__link")
+    .forEach((link) => {
+      link.addEventListener("mouseenter", () => {
+        cursor.style.display = "block";
+      });
+      link.addEventListener("mouseleave", () => {
+        cursor.style.display = "none";
+      });
+    });
+
+  // Update cursor position on mouse move
+  document.addEventListener("mousemove", (e) => {
+    cursor.style.left = `${e.pageX}px`;
+    console.log(e.clientY); 
+    cursor.style.top = `${e.pageY}px`;
+    console.log(e.clientY);
+  });
 });

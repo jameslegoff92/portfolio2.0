@@ -118,3 +118,16 @@ label:active:after {
   height: 70px;
   width: 70px;
 }
+ 
+/* Custom cursor (initially hidden) */
+#custom-cursor {
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  background-color: red;
+  pointer-events: none; /* Prevents interfering with elements */
+  transform: translate(-50%, -50%);
+  border-radius: 4px; /* Optional */
+  display: none; /* Initially hidden */
+  z-index: 9999;
+}
