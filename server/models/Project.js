@@ -1,12 +1,13 @@
 const { getDb } = require("../db");
 
 class Project {
-  constructor({ name, description, img, tags, url }) {
+  constructor({ name, description, img, tags, url, repo }) {
     this.name = name;
     this.description = description;
     this.img = img;
     this.tags = tags;
     this.url = url;
+    this.repo = repo;
   }  
 
   static async getAll() {

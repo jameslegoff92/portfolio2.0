@@ -15,13 +15,16 @@
       <div class="projects-grid">
         <% projects.forEach((element, index)=> { %>
           <div class="projects-grid__item projects-grid__item<%= index +1 %>">
-            <a class="projects-grid__link projects-grid__link<%= index +1 %>" href="<%= element.url %>">
+            <a target="_blank" rel="noopener noreferrer" class="projects-grid__link projects-grid__link<%= index +1 %>" href="<%= element.repo %>">
               <img class="projects-grid__img projects-grid__img<%= index +1 %> hidden" src="<%= element.img  %>  " alt="">
             </a>
             <div class="projects-grid__wrapper projects-grid__wrapper<%= index +1 %> hidden">
-              <h2 class="h2 u-text-700 projects-grid__heading<%= index +1 %>">
-                <%= element.name %>
-              </h2>   
+              <div class="projects-grid__header">
+                <h2 class="h2 u-text-700 projects-grid__heading<%= index +1 %>">
+                  <%= element.name %>
+                </h2>
+                
+              </div>
               <p class="text projects-grid__text<%= index +1 %>">
                 <%= element.description %>
               </p> 
@@ -33,6 +36,7 @@
                   <% if ( pos < 2) { %> <span class="bullet op-50" ></span> <% } %>
                   <% }) %>
               </div>  
+              <a target="_blank" rel="noopener noreferrer" class="project-link" href="<%= element.url %>" > View Site </a>
             </div>
           </div>
           <% }) %>
