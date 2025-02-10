@@ -118,3 +118,25 @@ label:active:after {
   height: 70px;
   width: 70px;
 }
+ 
+/* Custom cursor (initially hidden) */
+#custom-cursor {
+  position: absolute;
+  width: 200px;
+  height: 40px;
+  background-color: var(--mobile-background-color);
+  pointer-events: none; /* Prevents interfering with elements */
+  transform: translate(-50%, -50%);
+  display: none; /* Initially hidden */
+  margin-bottom: 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 9999;
+  font-size: 20px;
+  color: var(--language-color);
+}
+
+#custom-cursor > * {
+  margin-top: 7px;
+}
