@@ -8,7 +8,7 @@ import {
   revealAnimationScroll,
 } from "./js/gsap";
 
-import { customCursor } from "./utils/customCursor.js";
+import { customCursor } from "./js/utils/customCursor.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   let mastertimeline = gsap.timeline({ delay: 5 });

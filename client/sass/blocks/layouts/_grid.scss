@@ -150,3 +150,26 @@
 .projects-grid img {
   display: block;
 }
+
+.project-link {
+  font-style: italic;
+  font-size: 16px;
+  margin-top: 4px;
+  font-weight: 500;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.project-link:visited {
+  color: var(--mobile-background-color);
+}
+
+.project-link:hover {
+  opacity: 0.5;
+}
+
+.projects-grid__header {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
