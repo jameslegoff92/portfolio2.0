@@ -4,7 +4,7 @@
 <body id="body" class="body-js light-theme">
   
   <%- include('../partials/mobileNavigation.ejs') %>
-      <div class="container">
+      <div class="container">  
         <%- include('../partials/navigation.ejs', { url }) %>
 
           <h1 id="main-heading" class="h1 h1--responsive mb-7 hidden">
@@ -16,7 +16,7 @@
         <% projects.forEach((element, index)=> { %>
           <div class="projects-grid__item projects-grid__item<%= index +1 %>">
             <a class="projects-grid__link projects-grid__link<%= index +1 %>" href="<%= element.url %>">
-              <img class="projects-grid__img<%= index +1 %> hidden" src="<%= element.img  %>  " alt="">
+              <img class="projects-grid__img projects-grid__img<%= index +1 %> hidden" src="<%= element.img  %>  " alt="">
             </a>
             <div class="projects-grid__wrapper projects-grid__wrapper<%= index +1 %> hidden">
               <h2 class="h2 u-text-700 projects-grid__heading<%= index +1 %>">
@@ -36,7 +36,7 @@
             </div>
           </div>
           <% }) %>
-      </div>
+      </div>  
 
       <div id="projects-footer" class="footer-container hidden visible">
         <div class="container footer ">

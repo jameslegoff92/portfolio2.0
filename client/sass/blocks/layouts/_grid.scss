@@ -1,4 +1,4 @@
-@use '../../variables' as *;
+@use "../../variables" as *;
 
 /***
   PROJECTS
@@ -15,6 +15,7 @@
     column-gap: $m-8;
     row-gap: $m-9;
   }
+
   &__wrapper {
     padding: 0 $m-2;
 
@@ -31,6 +32,62 @@
     min-height: 400px;
   }
 
+  &__link {
+    display: block;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+
+  &__link1:hover {
+    transform: scale(1.02);
+    -webkit-box-shadow: 23px 21px 23px -7px rgba(0, 185, 247, 0.45);
+    -moz-box-shadow: 23px 21px 23px -7px rgba(0, 185, 247, 0.45);
+    box-shadow: 23px 21px 23px -7px rgba(0, 185, 247, 0.45);
+  }
+
+  &__link2:hover {
+    transform: scale(1.02);
+    -webkit-box-shadow: 23px 21px 23px -7px rgba(65, 255, 255, 0.45);
+    -moz-box-shadow: 23px 21px 23px -7px rgba(65, 255, 255, 0.45);
+    box-shadow: 23px 21px 23px -7px rgba(65, 255, 255, 0.45);
+  }
+
+  &__link3:hover {
+    transform: scale(1.02);
+    -webkit-box-shadow: 23px 21px 23px -7px rgba(255, 163, 163, 0.48);
+    -moz-box-shadow: 23px 21px 23px -7px rgba(255, 163, 163, 0.48);
+    box-shadow: 23px 21px 23px -7px rgba(255, 163, 163, 0.48);
+  }
+
+  &__link4:hover {
+    transform: scale(1.02);
+    -webkit-box-shadow: 23px 21px 23px -7px rgba(67, 173, 82, 0.45);
+    -moz-box-shadow: 23px 21px 23px -7px rgba(67, 173, 82, 0.45);
+    box-shadow: 23px 21px 23px -7px rgba(67, 173, 82, 0.45);
+  }
+
+  &__link5:hover {
+    transform: scale(1.02);
+    -webkit-box-shadow: 23px 21px 23px -7px rgba(47, 47, 88, 0.45);
+    -moz-box-shadow: 23px 21px 23px -7px rgba(47, 47, 88, 0.45);
+    box-shadow: 23px 21px 23px -7px rgba(47, 47, 88, 0.45);
+  }
+
+  &__link6:hover {
+    transform: scale(1.02);
+    -webkit-box-shadow: 23px 21px 23px -7px rgba(238, 164, 43, 0.45);
+    -moz-box-shadow: 23px 21px 23px -7px rgba(238, 164, 43, 0.45);
+    box-shadow: 23px 21px 23px -7px rgba(238, 164, 43, 0.45);
+  }
+
+  &__link7:hover {
+    transform: scale(1.02);
+    -webkit-box-shadow: 23px 21px 23px -7px rgba(0, 135, 255, 0.39);
+    -moz-box-shadow: 23px 21px 23px -7px rgba(0, 135, 255, 0.39);
+    box-shadow: 23px 21px 23px -7px rgba(0, 135, 255, 0.39);
+  }
+
+  &__img {
+  }
 
   &__item1 {
     order: 4;
@@ -90,5 +147,5 @@
 }
 
 .projects-grid img {
-  margin-bottom: $m-1;
+  display: block;
 }
