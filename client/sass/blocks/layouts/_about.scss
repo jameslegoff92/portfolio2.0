@@ -1,30 +1,11 @@
 @use '../../variables' as *;
 
 .about-h1 {
-  top: 35px;
   position: relative;
-  z-index: 2;
-
-  @media screen and (min-width: $lg-screen) {
-    top: 150px;
-  }
-}
-
-.about-img {
-  margin-top: -60px;
-  margin-left: auto;
-  margin-right: 20px;
-  width: 60%;
-  min-height: 800px;
-}
-
-.about-img  img{
-  min-height: 800px;
 }
 
 .about-text {
   max-width: 800px;
-  
 }
 
 .why {

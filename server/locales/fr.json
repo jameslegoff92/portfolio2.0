@@ -1,49 +1,108 @@
 {
-  "header":{
-      "home": "Accueil",
-      "projects": "Projets",
-      "about": "À propos",
-      "blog": "Blog",
-      "Contact": "Contact"
+  "header": {
+    "home": "Accueil",
+    "projects": "Projets",
+    "about": "À propos",
+    "blog": "Blog",
+    "Contact": "Contact"
   },
   "aboutPage": {
-      "mainTitle": "À propos de moi",
-      "stats": {
-          "statsExperience": "Ans D'expérience",
-          "statsCertificate": "Certificats Obtenus",
-          "statsProject": "Projet Réalisés",
-          "statsLocation": "Montréal",
-          "statsLocal": "Endroit"
-      },
-      "introSection": {
-          "aboutIntro": "Développeur et designer basé à Montréal, Canada. Je me spécialise dans le développement et la conception front-end. Du concept à la réalisation, je garde toujours à l'esprit la façon dont les utilisateurs interagiront avec les produits que je crée.",
-          "aboutBackground": "En tant que diplômé en affaires, j'apporte une perspective précieuse au domaine du design et du développement. Mon expérience en affaires me permet de comprendre les besoins des clients, d'aligner les choix de conception avec leurs objectifs et de communiquer efficacement les résultats des projets dans un langage qui résonne avec les parties prenantes."
-      },
-      "meSection": {
-          "subtitle": "Pourquoi moi",
-          "motivationTitle": "Grand esprit de motivation",
-          "motivationBody": "Mon dynamisme indéfectible garantit que je reste constamment concentré sur l'atteinte des objectifs et la livraison des résultats. J'excelle à faire avancer les projets, à surmonter les défis et à maintenir un niveau élevé de performance même sous pression.",
-          "motivationBody1": "Je m'engage à améliorer continuellement mes compétences et à rester à jour avec les avancements du domaine, ce qui signifie que je peux rapidement m'adapter aux nouvelles technologies et méthodologies qui bénéficient à l'équipe et à l'entreprise dans son ensemble.",
-          "analyticalTitle": "Excellentes compétences analytiques et de résolution de problèmes",
-          "analyticalBody": "Ma capacité à décortiquer et à comprendre des systèmes et des processus complexes garantit que les problèmes sont non seulement résolus rapidement, mais ils sont également analysés en profondeur afin d'éviter les incidents futurs.",
-          "analyticalBody1": "Ma capacité à résoudre les problèmes garantit que je peux intervenir rapidement et de manière décisive, réduisant ainsi les perturbations tout en maintenant l'efficacité opérationnelle.",
-          "teamTitle": "Grand esprit d'équipe avec d'excellentes compétences interpersonnelles",
-          "teamBody": "Grâce à mes compétences interpersonnelles, je suis capable de communiquer de manière efficace et de coordonner les efforts, assurant ainsi que les objectifs de l'équipe sont réalisés de manière efficace et avec enthousiasme.",
-          "teamBody1": "En réduisant les écarts entre les départements et en favorisant une communication transparente,  j'aide à créer une organisation plus intégrée et agile. Cette interconnexion est cruciale pour aborder des projets complexes qui nécessitent une approche cohérente, conduisant finalement à des résultats plus réussis et une culture d'entreprise plus résiliente."
-      },
-
-      "capabilitiesSection": {
-          "subtitle": "Compétences techniques",
-          "inProgress": "En cours"
-      }
+    "mainTitle": "A little about me",
+    "mainText": "As a dedicated full-stack developer with a strong design sensibility, I empower brands to excel in the digital landscape.",
+    "frontend": {
+      "title": "Frontend Development",
+      "body": "At the core of our approach, we believe that performance and user experience are inextricably linked. Our expertise lies in crafting dynamic, responsive digital interfaces that not only look exceptional but also perform seamlessly across all devices and platforms. We provide comprehensive guidance and adhere to industry best practices, ensuring that every project delivers a consistent, high-quality user experience.",
+      "list": [
+        {
+          "title": "Tech Stack",
+          "body": "Figma, HTML, CSS,  Sass, TailwindCSS Javascript, Typescript, ReactJS, NextJS, Shadcn/ui, MUI, Storybook, Webpack, WordPress, Elementor, JQuery, GSAP."
+        },
+        {
+          "title": "Responsive Design",
+          "body": "Crafting flexible layouts that adapt gracefully to any screen size, ensuring optimal viewing on desktops, tablets, and mobile devices."
+        },
+        {
+          "title": "Component Architecture",
+          "body": "Developing a modular system of reusable UI elements that streamline maintenance, scalability, and collaborative development."
+        },
+        {
+          "title": "UI/UX Implementation",
+          "body": "Translating design visions into interactive, pixel-perfect interfaces that marry aesthetics with functionality."
+        },
+        {
+          "title": "Performance Optimization",
+          "body": "Employing cutting-edge techniques and best practices to guarantee fast load times and smooth, efficient user interactions."
+        },
+        {
+          "title": "Cross-Browser Compatibility",
+          "body": "Ensuring that every digital experience is consistently robust and visually coherent across all modern browsers."
+        },
+        {
+          "title": "Analytics",
+          "body": "mplementing robust analytics strategies to monitor user engagement and behavior. I integrate tools such as Google Analytics to track website performance, measure key metrics, and inform data-driven design and development decisions."
+        }
+      ]
+    },
+    "backend": {
+      "title": "Backend Development",
+      "body": "At the core of my approach is a commitment to establishing a robust backend foundation that underpins exceptional digital experiences. As a junior backend developer, I dedicate myself to mastering and applying industry best practices to develop reliable server-side systems that manage data, support user interactions, and integrate seamlessly with frontend applications. I continuously enhance my technical proficiency through hands-on projects and collaboration with experienced professionals.",
+      "list": [
+        {
+          "title": "Tech Stack",
+          "body": "NodeJS, ExpressJS, EJS, Python, Django, Java, PHP, Linux, Mongoose, MongoDB, SQL, PostgreSQL, REST APIs, and Postman."
+        },
+        {
+          "title": "API Design",
+          "body": "I focus on designing clear, well-documented APIs that serve as the critical bridge between frontend and backend systems. My growing expertise with RESTful conventions and modern frameworks ensures secure and efficient data exchanges."
+        },
+        {
+          "title": "Database Fundamentals",
+          "body": "I am committed to developing a comprehensive understanding of both relational and NoSQL databases. My work emphasizes designing effective data structures, optimizing queries, and ensuring that data is stored and retrieved with maximum efficiency."
+        },
+        {
+          "title": "Server-side Logic",
+          "body": "I write clean, maintainable code to manage business processes and data flows. By leveraging popular backend frameworks, I build scalable logic that prioritizes both performance and readability."
+        },
+        {
+          "title": "Architecture & Design Patterns",
+          "body": "I focus on structuring my applications using proven architectural patterns to enhance modularity, scalability, and maintainability. I incorporate the Model-View-Controller (MVC) pattern to separate concerns and streamline development, while applying Object-Oriented Programming (OOP) principles to create reusable, robust components."
+        },
+        {
+          "title": "Security & Best Practices",
+          "body": "I place a strong emphasis on security fundamentals such as authentication, encryption, and secure data handling. I continually refine my skills to implement measures that protect user data and comply with industry standards."
+        },
+        {
+          "title": "Performance Optimization",
+          "body": "I actively explore various techniques and tools to monitor and enhance backend performance, ensuring that applications remain responsive and efficient under varying loads."
+        }
+      ]
+    },
+    "devops": {
+      "title": "DevOps, Infrastructure & Quality Assurance",
+      "body": "My strategy integrates robust DevOps practices, seamless infrastructure management, and rigorous quality assurance to ensure that my applications are reliable, scalable, and high-performing.",
+      "list": [
+        {
+          "title": "Version Control with Git",
+          "body": "I leverage Git to manage code changes effectively, enabling smooth collaboration and continuous integration throughout the development process."
+        },
+        {
+          "title": "Continuous Integration & Deployment",
+          "body": "Utilizing GitHub Actions, I automate testing and deployment pipelines to validate code changes and deploy them seamlessly. I host my applications on platforms like Heroku to ensure scalability and consistent performance."
+        },
+        {
+          "title": "Testing Frameworks:",
+          "body": "To maintain high code quality, I implement comprehensive testing strategies. By using Jest for unit testing and Cypress for end-to-end testing, I ensure that every component of the application functions as intended and meets rigorous standards."
+        }
+      ]
+    }
   },
   "projectPage": {
-      "mainTitle": "Je donne vie à vos idées les plus audacieuses."
+    "mainTitle": "Je donne vie à vos idées les plus audacieuses."
   },
 
   "contactPage": {
-      "mainTitle": "Lançons une conversation !",
-      "body": "J'aimerais en apprendre davantage sur vous et sur ce que nous pouvons réaliser ensemble.",
-      "becomeClient": "Devenir un client"
-  } 
+    "mainTitle": "Lançons une conversation !",
+    "body": "J'aimerais en apprendre davantage sur vous et sur ce que nous pouvons réaliser ensemble.",
+    "becomeClient": "Devenir un client"
+  }
 }
