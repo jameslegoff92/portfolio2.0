@@ -8,104 +8,104 @@
         <%- include('../partials/navigation.ejs', { url }) %>
 
           <!-- HERO SECTION -->
-          <div>
-            <h1 class="about-h1 h1 h1--responsive mb-2">
+          <div class="about-header">
+            <h1 class="about-h1 h1 h1--responsive">
               <%= t('aboutPage.mainTitle') %>
             </h1>
-            <h2>
+            <p class="about-text h3 h3--responsive">
               <%= t('aboutPage.mainText') %>
+            </p>
+          </div>
+      </div>
+
+      <!-- FRONTEND DEVELOPMENT SECTION -->
+      <div class="about-section" >
+        <div class="about-section__img" >
+          <img class="about-img" src="assets/about-img-1.webp" alt="">
+        </div>
+        <div class="container"> 
+          <div class="about-section__header" >
+            <h2>
+              <%= t('aboutPage.frontend.title') %>
             </h2>
+            <p>
+              <%= t('aboutPage.frontend.body') %>
           </div>
+          <div class="about-section__body" >
+            <% var list=t('aboutPage.frontend.list', { returnObjects: true }); %>
+              <% var listArr=Array.isArray(list) ? list : Object.values(list); %>
+                <% for (var i=0; i < list.length; i++) { %>
+                  <div>
+                    <h5>
+                      <%= t('aboutPage.frontend.list.' + i + '.title' ) %>
+                    </h5>
+                    <p>
+                      <%= t('aboutPage.frontend.list.' + i + '.body' ) %>
+                    </p>
+                  </div>
+                  <% } %>
+          </div>
+        </div>
+      </div>
 
-          <!-- FRONTEND DEVELOPMENT SECTION -->
+      <!-- BACKEND DEVELOPMENT SECTION -->
+      <div>
+        <div>
+          <img src="assets/about-img-2.webp" alt="">
+        </div>
+        <div class="container">
           <div>
-            <div>
-              <div>
-                <h2>
-                  <%= t('aboutPage.frontend.title') %>
-                </h2>
-                <p>
-                  <%= t('aboutPage.frontend.body') %>
-              </div>
-              <div>
-                <% var list=t('aboutPage.frontend.list', { returnObjects: true }); %>
-                  <% var listArr=Array.isArray(list) ? list : Object.values(list); %>
-                    <% for (var i=0; i < list.length; i++) { %>
-                      <div>
-                        <h5>
-                          <%= t('aboutPage.frontend.list.' + i + '.title' ) %>
-                        </h5>
-                        <p>
-                          <%= t('aboutPage.frontend.list.' + i + '.body' ) %>
-                        </p>
-                      </div>
-                      <% } %>
-              </div>
-            </div>
-            <div>
-              <img src="assets/about-img-1.webp" alt="">
-            </div>
+            <h2>
+              <%= t('aboutPage.backend.title') %>
+            </h2>
+            <p>
+              <%= t('aboutPage.backend.body') %>
           </div>
+          <div>
+            <% var list=t('aboutPage.backend.list', { returnObjects: true }); %>
+              <% var listArr=Array.isArray(list) ? list : Object.values(list); %>
+                <% for (var i=0; i < list.length; i++) { %>
+                  <div>
+                    <h5>
+                      <%= t('aboutPage.backend.list.' + i + '.title' ) %>
+                    </h5>
+                    <p>
+                      <%= t('aboutPage.backend.list.' + i + '.body' ) %>
+                    </p>
+                  </div>
+                  <% } %>
+          </div>
+        </div>
+      </div>
 
-          <!-- BACKEND DEVELOPMENT SECTION -->
+      <!-- DEVOPS & INFRASTUCTURE -->
+      <div>
+        <div>
+          <img src="assets/about-img-3.webp" alt="">
+        </div>
+        <div class="container" >
           <div>
-            <div>
-              <div>
-                <h2>
-                  <%= t('aboutPage.backend.title') %>
-                </h2>
-                <p>
-                  <%= t('aboutPage.backend.body') %>
-              </div>
-              <div>
-                <% var list=t('aboutPage.backend.list', { returnObjects: true }); %>
-                  <% var listArr=Array.isArray(list) ? list : Object.values(list); %>
-                    <% for (var i=0; i < list.length; i++) { %>
-                      <div>
-                        <h5>
-                          <%= t('aboutPage.backend.list.' + i + '.title' ) %>
-                        </h5>
-                        <p>
-                          <%= t('aboutPage.backend.list.' + i + '.body' ) %>
-                        </p>
-                      </div>
-                      <% } %>
-              </div>
-            </div>
-            <div>
-              <img src="assets/about-img-2.webp" alt="">
-            </div>
+            <h2>
+              <%= t('aboutPage.devops.title') %>
+            </h2>
+            <p>
+              <%= t('aboutPage.devops.body') %>
           </div>
-
-          <!-- DEVOPS & INFRASTUCTURE -->
           <div>
-            <div>
-              <div>
-                <h2>
-                  <%= t('aboutPage.devops.title') %>
-                </h2>
-                <p>
-                  <%= t('aboutPage.devops.body') %>
-              </div>
-              <div>
-                <% var list=t('aboutPage.devops.list', { returnObjects: true }); %>
-                  <% var listArr=Array.isArray(list) ? list : Object.values(list); %>
-                    <% for (var i=0; i < list.length; i++) { %>
-                      <div>
-                        <h5>
-                          <%= t('aboutPage.devops.list.' + i + '.title' ) %>
-                        </h5>
-                        <p>
-                          <%= t('aboutPage.devops.list.' + i + '.body' ) %>
-                        </p>
-                      </div>
-                      <% } %>
-              </div>
-            </div>
-            <div>
-              <img src="assets/about-img-3.webp" alt="">
-            </div>
+            <% var list=t('aboutPage.devops.list', { returnObjects: true }); %>
+              <% var listArr=Array.isArray(list) ? list : Object.values(list); %>
+                <% for (var i=0; i < list.length; i++) { %>
+                  <div>
+                    <h5>
+                      <%= t('aboutPage.devops.list.' + i + '.title' ) %>
+                    </h5>
+                    <p>
+                      <%= t('aboutPage.devops.list.' + i + '.body' ) %>
+                    </p>
+                  </div>
+                  <% } %>
           </div>
+        </div>
       </div>
 
 

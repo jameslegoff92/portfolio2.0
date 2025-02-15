@@ -1,97 +1,52 @@
-@use '../../variables' as *;
+@use "../../variables" as *;
+
+.about-header {
+  padding: 1rem 0 2rem 0;
+  margin-bottom: 40px;
+}
 
 .about-h1 {
-  position: relative;
+  width: 85%;
+  max-width: 800px;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: $sm-screen) {
+    width: 70%;
+  }
 }
 
 .about-text {
-  max-width: 800px;
+  width: 80%;
+  max-width: 600px;
 }
 
-.why {
-
-  &__heading {
-    margin-bottom: clamp($m-7, 3vw, $m-9);
-  }
-
-  &__content {
-    margin-bottom: $m-9;
-  }
-
-  &__subscript {
-    font-weight: 700;
-    margin-bottom: clamp($m-1, 2vw, $m-3);
-    
-  }
-
-  &__title {
-    line-height: 1.1;
-    width: 70%;
-    max-width: 600px;
-    margin-bottom: $m-3;
-  }
-
-  &__text {
-    max-width: 800px;
-  }
+.about-img {
+  margin: 0 auto;
+  width: 100%;
 }
 
-
-
-
-@keyframes slide {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-.logos {
-  overflow: hidden;
-  padding: 60px 0;
-  background: transparent;
-  white-space: nowrap;
-  position: relative;
-}
-
-.logos:before,
-.logos:after {
-  position: absolute;
-  top: 0;
-  width: 250px;
-  height: 250px;
-  content: "";
-  z-index: 2;
-}
-
-// .logos:before {
-//   left: 0;
-//   @media screen and (min-width: $md-screen) {
-//     background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
-//   }
-// }
-
-// .logos:after {
-//   right: 0;
-
-//   @media screen and (min-width: $md-screen) {
-//     background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
-//   }
-// }
-
-.logos-slide {
-  display: inline-block;
-  animation: 20s slide infinite alternate;
-}
-
-.logos-slide img {
-  height: 250px;
-   margin: 0 40px;
-
+.about-section {
   @media screen and (min-width: $md-screen) {
-    height: 400px;
-    
+    display: flex;
+    gap: 16px;
+    margin: 0 auto;
+    width: 87.2%;
+    max-width: 1000px;
+  }
+
+  &__header {
+    @media screen and (min-width: $md-screen) {
+      width: 400px;
+    }    
+  }
+
+  &__body {
+    @media screen and (min-width: $md-screen) {
+      width: 300px;
+    }
+  }
+
+  &__img {
+    order: 2;
   }
 }

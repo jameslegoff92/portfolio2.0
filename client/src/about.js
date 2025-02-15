@@ -1,6 +1,5 @@
 import { gsap } from "gsap";
 import {
-  expandImageRevealAnimation,
   navigationAnimation,
   revealAnimation,
   slideUpAnimation,

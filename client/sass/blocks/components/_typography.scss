@@ -125,13 +125,15 @@
   font-size: $fs-2;
   font-style: normal;
   font-weight: 400;
-  line-height: 2.75rem;
+  line-height: 1.4;
 }
 
 .h3--responsive {
-  font-size: clamp($fs-2, 3vw, 40px);
+  font-size: clamp($fs-2, 2.5vw, 25px);
 
 }
+
+
 
 
 .color-light {
