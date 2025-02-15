@@ -19,31 +19,36 @@
       </div>
 
       <!-- FRONTEND DEVELOPMENT SECTION -->
-      <div class="about-section" >
-        <div class="about-section__img" >
+      <div class="about-section">
+        <div class="about-section__img">
           <img class="about-img" src="assets/about-img-1.webp" alt="">
         </div>
-        <div class="container"> 
-          <div class="about-section__header" >
-            <h2>
+        <div class="container">
+          <div class="about-section__header">
+            <h2 class="about-section__title h2-alt h2--responsive-alt">
               <%= t('aboutPage.frontend.title') %>
             </h2>
-            <p>
+            <p class="text text--responsive-alt">
               <%= t('aboutPage.frontend.body') %>
           </div>
-          <div class="about-section__body" >
+          <div class="about-section__list">
             <% var list=t('aboutPage.frontend.list', { returnObjects: true }); %>
               <% var listArr=Array.isArray(list) ? list : Object.values(list); %>
+              <div class="about-section__list-wrapper">
                 <% for (var i=0; i < list.length; i++) { %>
-                  <div>
-                    <h5>
-                      <%= t('aboutPage.frontend.list.' + i + '.title' ) %>
-                    </h5>
-                    <p>
-                      <%= t('aboutPage.frontend.list.' + i + '.body' ) %>
-                    </p>
-                  </div>
-                  <% } %>
+                    <div class="about-section__list-item" >
+                      <div class="about-section__list-header">
+                        <div class="rectangle"></div>
+                        <h5 class="about-section__list-title h4 h4--responsive">
+                          <%= t('aboutPage.frontend.list.' + i + '.title' ) %>
+                        </h5>
+                      </div>
+                      <p class="about-section__list-text text">
+                        <%= t('aboutPage.frontend.list.' + i + '.body' ) %>
+                      </p>
+                    </div>
+                    <% } %>
+                </div>
           </div>
         </div>
       </div>
@@ -83,7 +88,7 @@
         <div>
           <img src="assets/about-img-3.webp" alt="">
         </div>
-        <div class="container" >
+        <div class="container">
           <div>
             <h2>
               <%= t('aboutPage.devops.title') %>
@@ -103,7 +108,7 @@
                       <%= t('aboutPage.devops.list.' + i + '.body' ) %>
                     </p>
                   </div>
-                  <% } %>
+                <% } %>
           </div>
         </div>
       </div>

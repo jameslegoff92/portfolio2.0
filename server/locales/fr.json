@@ -11,7 +11,7 @@
     "mainText": "Blending design and technology to craft seamless digital experiences that drive results.",
     "frontend": {
       "title": "Frontend Development",
-      "body": "At the core of our approach, we believe that performance and user experience are inextricably linked. Our expertise lies in crafting dynamic, responsive digital interfaces that not only look exceptional but also perform seamlessly across all devices and platforms. We provide comprehensive guidance and adhere to industry best practices, ensuring that every project delivers a consistent, high-quality user experience.",
+      "body": "I believe performance and user experience go hand in hand. I build dynamic, responsive interfaces that look great and work seamlessly across all devices, ensuring a high-quality user experience.",
       "list": [
         {
           "title": "Tech Stack",
@@ -39,7 +39,7 @@
         },
         {
           "title": "Analytics",
-          "body": "mplementing robust analytics strategies to monitor user engagement and behavior. I integrate tools such as Google Analytics to track website performance, measure key metrics, and inform data-driven design and development decisions."
+          "body": "Implementing robust analytics strategies to monitor user engagement and behavior. I integrate tools such as Google Analytics to track website performance, measure key metrics, and inform data-driven design and development decisions."
         }
       ]
     },
