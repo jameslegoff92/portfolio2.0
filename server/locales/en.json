@@ -45,7 +45,7 @@
     },
     "backend": {
       "title": "Backend Development",
-      "body": "At the core of my approach is a commitment to establishing a robust backend foundation that underpins exceptional digital experiences. As a junior backend developer, I dedicate myself to mastering and applying industry best practices to develop reliable server-side systems that manage data, support user interactions, and integrate seamlessly with frontend applications. I continuously enhance my technical proficiency through hands-on projects and collaboration with experienced professionals.",
+      "body": "I focus on building a strong backend foundation for seamless digital experiences. I apply best practices to create reliable server-side systems that manage data, support user interactions, and integrate smoothly with the frontend.",
       "list": [
         {
           "title": "Tech Stack",
@@ -90,7 +90,7 @@
           "body": "Utilizing GitHub Actions, I automate testing and deployment pipelines to validate code changes and deploy them seamlessly. I host my applications on platforms like Heroku to ensure scalability and consistent performance."
         },
         {
-          "title": "Testing Frameworks:",
+          "title": "Testing Frameworks",
           "body": "To maintain high code quality, I implement comprehensive testing strategies. By using Jest for unit testing and Cypress for end-to-end testing, I ensure that every component of the application functions as intended and meets rigorous standards."
         }
       ]
