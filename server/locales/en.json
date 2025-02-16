@@ -1,47 +1,108 @@
 {
-    "header":{
-        "home": "Home",
-        "projects": "Projects",
-        "about": "About",
-        "blog": "Blog",
-        "Contact": "Contact"
-    },
-    "aboutPage": {
-        "mainTitle": "A little about me",
-        "stats": {
-            "statsExperience": "Years of Experience",
-            "statsCertificate": "Certificates Earned",
-            "statsProject": "Projects Completed",
-            "statsLocation": "Montreal",
-            "statsLocal": "City"
+  "header": {
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About",
+    "blog": "Blog",
+    "Contact": "Contact"
+  },
+  "aboutPage": {
+    "mainTitle": "Transforming ideas into powerful digital solutions",
+    "mainText": "Blending design and technology to craft seamless digital experiences that drive results.",
+    "frontend": {
+      "title": "Frontend Development",
+      "body": "I believe performance and user experience go hand in hand. I build dynamic, responsive interfaces that look great and work seamlessly across all devices, ensuring a high-quality user experience.",
+      "list": [
+        {
+          "title": "Tech Stack",
+          "body": "Figma, HTML, CSS,  Sass, TailwindCSS Javascript, Typescript, ReactJS, NextJS, Shadcn/ui, MUI, Storybook, Webpack, WordPress, Elementor, JQuery, GSAP, Jest, Playwright."
         },
-        "introSection": {
-            "aboutIntro": "Developer and designer based in Montreal, Canada. I specialize in frontend development and design. From concept to creation, I'm always thinking about how users will interact with the products I create.",
-            "aboutBackground": "As a formally educated business graduate, I bring an important business perspective to the world of design and development. My business background allows me to understand the clients' needs, align design choices with their goals, and effectively communicate project outcomes in a language that resonates with stakeholders"
+        {
+          "title": "Responsive Design",
+          "body": "Crafting seamless experiences across devices by implementing fluid grids, flexible layouts, and media queries. Ensuring optimal usability with mobile-first design, scalable typography, and adaptive images. Every project is built to be accessible and visually consistent on any screen size."
         },
-        "meSection": {
-            "subtitle": "Why Me",
-            "motivationTitle": "Highly Motivated Individual",
-            "motivationBody": "My unwavering drive ensures that I am consistently focused on achieving goals and delivering results. I excel at pushing projects forward, overcoming challenges, and maintaining a high level of performance under pressure.",
-            "motivationBody1": "I am committed to continually improving my skills and staying abreast of industry advancements, which means I can quickly adapt to new technologies and methodologies that benefit the team and the company at large.",
-            "analyticalTitle": "Excellent analytical and troubleshooting skills",
-            "analyticalBody": "My ability to dissect and understand intricate systems and processes ensures that issues are not only swiftly resolved but also thoroughly analyzed to prevent future occurrences.",
-            "analyticalBody1": "My troubleshooting proficiency ensures that I can address issues swiftly and decisively, minimizing disruptions and maintaining operational efficiency.",
-            "teamTitle": "Team Player With Great Interpersonal Skills",
-            "teamBody": "My strong interpersonal skills enable me to effectively communicate and synchronize efforts, ensuring that team goals are met efficiently and enthusiastically.",
-            "teamBody1": "By bridging gaps between different departments and facilitating a seamless flow of information, I help create a more integrated and agile organization. This interconnectedness is crucial for tackling complex projects that require a cohesive approach, ultimately leading to more successful outcomes and a more resilient company culture."
+        {
+          "title": "Component Architecture",
+          "body": "Building scalable and maintainable applications with reusable, modular components. Structuring UI elements for flexibility, separation of concerns, and efficient state management. Ensuring consistency, reusability, and performance by leveraging design patterns and best practices in modern frameworks."
         },
-        "capabilitiesSection": {
-            "subtitle": "Capabilities",
-            "inProgress": "In Progress"
+        {
+          "title": "UI/UX Implementation",
+          "body": "Designing intuitive interfaces that prioritize usability, accessibility, and aesthetics. Creating seamless user experiences through thoughtful layouts, clear navigation, and interactive elements. Balancing functionality and visual appeal to enhance engagement and streamline user interactions."
+        },
+        {
+          "title": "Performance Optimization",
+          "body": "Implementing lazy loading, code splitting, and caching strategies ensures fast and efficient web apps. Images are optimized with modern formats and compression, while minification, bundling, and tree shaking reduce file sizes. Profiling tools help refine performance and enhance responsiveness."
+        },
+        {
+          "title": "Cross-Browser Compatibility",
+          "body": "Ensuring a consistent experience across all major browsers by implementing standardized code, feature detection, and graceful degradation. Addressing inconsistencies with polyfills, fallbacks, and thorough testing to maintain functionality and design integrity on any platform."
+        },
+        {
+          "title": "Analytics",
+          "body": "Integrating tracking tools to gather actionable insights on user behavior and performance. Leveraging data from heatmaps, event tracking, and A/B testing to optimize user experience and conversion rates. Using analytics to drive informed design and development decisions."
         }
+      ]
     },
-    "projectPage": {
-        "mainTitle": "I bring your boldest ideas to life"
+    "backend": {
+      "title": "Backend Development",
+      "body": "Building robust and scalable server-side architectures that ensure efficiency, security, and reliability. Ensuring seamless communication between the frontend and backend for smooth user experiences.",
+      "list": [
+        {
+          "title": "Tech Stack",
+          "body": "NodeJS, Jest, ExpressJS, EJS, Python, Django, Java, PHP, Linux, Mongoose, MongoDB, SQL, PostgreSQL, REST APIs, and Postman."
+        },
+        {
+          "title": "API Design",
+          "body": "Developing scalable and maintainable APIs with clear structure, efficient endpoints, and secure authentication. Ensuring seamless data exchange with RESTful and GraphQL architectures. Prioritizing performance, versioning, and documentation for smooth integration and long-term usability."
+        },
+        {
+          "title": "Database Fundamentals",
+          "body": "Designing efficient, scalable, and normalized database structures to ensure data integrity and performance. Implementing indexing, query optimization, and relationships for fast retrieval. Managing both SQL and NoSQL databases to suit project needs, ensuring reliability and consistency."
+        },
+        {
+          "title": "Server-side Logic",
+          "body": "Developing efficient and secure server-side logic to handle data processing, authentication, and business rules. Optimizing performance with asynchronous operations, caching, and load balancing. Ensuring smooth communication between the backend, database, and client applications."
+        },
+        {
+          "title": "Architecture & Design Patterns",
+          "body": "Implementing scalable and maintainable software architectures using proven design patterns. Ensuring clean code, separation of concerns, and reusability with MVC, microservices, and component-based structures."
+        },
+        {
+          "title": "Security & Best Practices",
+          "body": "Implementing authentication, authorization, and data encryption to protect sensitive information. Mitigating vulnerabilities with secure coding practices, input validation, and API rate limiting. Ensuring compliance with security standards to safeguard applications against threats and attacks."
+        },
+        {
+          "title": "Performance Optimization",
+          "body": "Optimizing server response times with efficient database queries, caching strategies, and asynchronous processing. Implementing load balancing, rate limiting, and background tasks to enhance scalability. Ensuring smooth and fast data handling for high-performance applications."
+        }
+      ]
     },
-    "contactPage": {
-        "mainTitle": "Let's Talk!",
-        "body": "I'd love to learn more about you and what we can design and build together.",
-        "becomeClient": "Become a Client"
+    "devops": {
+      "title": "DevOps, Infrastructure & Quality Assurance",
+      "body": "Implementing robust DevOps practices and rigorous quality assurance to ensure that my applications are reliable, scalable, and high-performing.",
+      "list": [
+        {
+          "title": "Version Control with Git",
+          "body": "Managing code efficiently with Git, ensuring collaboration, traceability, and seamless rollbacks. Utilizing branching strategies, pull requests, and code reviews to maintain a clean and structured workflow. Keeping projects organized and versioned for continuous development and deployment."
+        },
+        {
+          "title": "Continuous Integration & Deployment",
+          "body": "Automating build, test, and deployment processes to ensure rapid and reliable software delivery. Implementing continuous integration to catch issues early and continuous deployment for seamless updates. Streamlining development workflows for efficiency and scalability."
+        },
+        {
+          "title": "Testing Frameworks",
+          "body": "Ensuring application reliability through unit, integration, and end-to-end testing. Automating test suites to catch bugs early and maintain stability. Implementing test-driven development (TDD) and continuous testing practices to deliver robust and high-quality software."
+        }
+      ]
     }
+  },
+  "projectPage": {
+    "mainTitle": "I bring your boldest ideas to life"
+  },
+  "contactPage": {
+    "mainTitle": "Let's Talk!",
+    "body": "I'd love to learn more about you and what we can design and build together.",
+    "becomeClient": "Become a Client"
+  },
+  "resume": "Let’s Connect – View My Resume"
 }

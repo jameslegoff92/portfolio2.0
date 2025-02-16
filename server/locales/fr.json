@@ -1,49 +1,108 @@
 {
-  "header":{
-      "home": "Accueil",
-      "projects": "Projets",
-      "about": "À propos",
-      "blog": "Blog",
-      "Contact": "Contact"
+  "header": {
+    "home": "Accueil",
+    "projects": "Projets",
+    "about": "À propos",
+    "blog": "Blog",
+    "Contact": "Contact"
   },
   "aboutPage": {
-      "mainTitle": "À propos de moi",
-      "stats": {
-          "statsExperience": "Ans D'expérience",
-          "statsCertificate": "Certificats Obtenus",
-          "statsProject": "Projet Réalisés",
-          "statsLocation": "Montréal",
-          "statsLocal": "Endroit"
-      },
-      "introSection": {
-          "aboutIntro": "Développeur et designer basé à Montréal, Canada. Je me spécialise dans le développement et la conception front-end. Du concept à la réalisation, je garde toujours à l'esprit la façon dont les utilisateurs interagiront avec les produits que je crée.",
-          "aboutBackground": "En tant que diplômé en affaires, j'apporte une perspective précieuse au domaine du design et du développement. Mon expérience en affaires me permet de comprendre les besoins des clients, d'aligner les choix de conception avec leurs objectifs et de communiquer efficacement les résultats des projets dans un langage qui résonne avec les parties prenantes."
-      },
-      "meSection": {
-          "subtitle": "Pourquoi moi",
-          "motivationTitle": "Grand esprit de motivation",
-          "motivationBody": "Mon dynamisme indéfectible garantit que je reste constamment concentré sur l'atteinte des objectifs et la livraison des résultats. J'excelle à faire avancer les projets, à surmonter les défis et à maintenir un niveau élevé de performance même sous pression.",
-          "motivationBody1": "Je m'engage à améliorer continuellement mes compétences et à rester à jour avec les avancements du domaine, ce qui signifie que je peux rapidement m'adapter aux nouvelles technologies et méthodologies qui bénéficient à l'équipe et à l'entreprise dans son ensemble.",
-          "analyticalTitle": "Excellentes compétences analytiques et de résolution de problèmes",
-          "analyticalBody": "Ma capacité à décortiquer et à comprendre des systèmes et des processus complexes garantit que les problèmes sont non seulement résolus rapidement, mais ils sont également analysés en profondeur afin d'éviter les incidents futurs.",
-          "analyticalBody1": "Ma capacité à résoudre les problèmes garantit que je peux intervenir rapidement et de manière décisive, réduisant ainsi les perturbations tout en maintenant l'efficacité opérationnelle.",
-          "teamTitle": "Grand esprit d'équipe avec d'excellentes compétences interpersonnelles",
-          "teamBody": "Grâce à mes compétences interpersonnelles, je suis capable de communiquer de manière efficace et de coordonner les efforts, assurant ainsi que les objectifs de l'équipe sont réalisés de manière efficace et avec enthousiasme.",
-          "teamBody1": "En réduisant les écarts entre les départements et en favorisant une communication transparente,  j'aide à créer une organisation plus intégrée et agile. Cette interconnexion est cruciale pour aborder des projets complexes qui nécessitent une approche cohérente, conduisant finalement à des résultats plus réussis et une culture d'entreprise plus résiliente."
-      },
-
-      "capabilitiesSection": {
-          "subtitle": "Compétences techniques",
-          "inProgress": "En cours"
-      }
+    "mainTitle": "Transformer des idées en solutions digitales",
+    "mainText": "Fusionner le design et la technologie pour créer des solutions digitales fluides qui génèrent des résultats.",
+    "frontend": {
+      "title": "Développement Frontend",
+      "body": "Performance et expérience utilisateur vont de pair. Je conçois des interfaces dynamiques et réactives, optimisées pour tous les appareils, garantissant une expérience utilisateur fluide et de haute qualité.",
+      "list": [
+        {
+          "title": "Stack Technologique",
+          "body": "Figma, HTML, CSS, Sass, TailwindCSS, JavaScript, TypeScript, ReactJS, NextJS, Shadcn/ui, MUI, Storybook, Webpack, WordPress, Elementor, JQuery, GSAP, Jest, Playwright."
+        },
+        {
+          "title": "Design Réactif",
+          "body": "Création d'expériences fluides sur tous les appareils grâce aux grilles flexibles, aux mises en page adaptatives et aux media queries. Approche mobile-first, typographie évolutive et images responsives garantissent accessibilité et cohérence visuelle."
+        },
+        {
+          "title": "Architecture de Composants",
+          "body": "Développement d’applications modulaires et évolutives avec des composants réutilisables. Structuration des interfaces pour plus de flexibilité, séparation des préoccupations et gestion efficace de l’état, en suivant les meilleures pratiques et modèles de conception modernes."
+        },
+        {
+          "title": "Implémentation UI/UX",
+          "body": "Conception d'interfaces intuitives, axées sur l’ergonomie, l’accessibilité et l’esthétique. Expériences fluides grâce à une navigation claire, des mises en page réfléchies et des interactions engageantes, alliant fonctionnalité et attrait visuel."
+        },
+        {
+          "title": "Optimisation des Performances",
+          "body": "Mise en œuvre du lazy loading, du code splitting et de la mise en cache pour des applications web rapides et efficaces. Optimisation des images avec des formats modernes et compression, réduction des fichiers via minification, bundling et tree shaking. Les outils de profilage permettent d’affiner les performances et la réactivité."
+        },
+        {
+          "title": "Compatibilité Multinavigateur",
+          "body": "Assurer une expérience homogène sur tous les navigateurs majeurs grâce à un code standardisé, à la détection des fonctionnalités et à la dégradation progressive. Gestion des incohérences avec polyfills, fallbacks et tests approfondis pour garantir l’intégrité fonctionnelle et visuelle."
+        },
+        {
+          "title": "Analyse et Suivi",
+          "body": "Intégration d’outils d’analyse pour collecter des données exploitables sur le comportement des utilisateurs et les performances. Utilisation de heatmaps, tracking d’événements et A/B testing pour optimiser l’expérience utilisateur et les taux de conversion."
+        }
+      ]
+    },
+    "backend": {
+      "title": "Développement Backend",
+      "body": "Conception d’architectures serveur robustes et évolutives garantissant performance, sécurité et fiabilité. Assurer une communication fluide entre le frontend et le backend pour une expérience utilisateur sans friction.",
+      "list": [
+        {
+          "title": "Stack Technologique",
+          "body": "NodeJS, Jest, ExpressJS, EJS, Python, Django, Java, PHP, Linux, Mongoose, MongoDB, SQL, PostgreSQL, REST APIs, Postman."
+        },
+        {
+          "title": "Conception d'API",
+          "body": "Développement d’API performantes et maintenables avec une structure claire, des endpoints optimisés et une authentification sécurisée. Intégration de REST et GraphQL pour un échange fluide des données. Priorisation de la performance, du versioning et de la documentation pour une intégration durable."
+        },
+        {
+          "title": "Fondamentaux des Bases de Données",
+          "body": "Conception de structures de bases de données optimisées, évolutives et normalisées pour garantir l’intégrité et la performance des données. Utilisation des index, optimisation des requêtes et gestion des relations pour des récupérations rapides. Gestion des bases SQL et NoSQL selon les besoins du projet."
+        },
+        {
+          "title": "Logique Côté Serveur",
+          "body": "Développement de logique serveur efficace et sécurisée pour le traitement des données, l’authentification et l’exécution des règles métier. Optimisation avec des opérations asynchrones, la mise en cache et l’équilibrage de charge. Assurer une communication fluide entre le backend, la base de données et les applications clientes."
+        },
+        {
+          "title": "Architecture & Modèles de Conception",
+          "body": "Mise en place d’architectures logicielles évolutives et maintenables en utilisant des modèles de conception éprouvés. Code propre, séparation des responsabilités et réutilisabilité assurées via MVC, microservices et structures modulaires."
+        },
+        {
+          "title": "Sécurité & Bonnes Pratiques",
+          "body": "Implémentation de l’authentification, de l’autorisation et du chiffrement des données pour sécuriser les informations sensibles. Réduction des vulnérabilités grâce aux bonnes pratiques de code, à la validation des entrées et à la limitation des requêtes API. Conformité aux normes de sécurité pour protéger les applications contre les cyberattaques."
+        },
+        {
+          "title": "Optimisation des Performances",
+          "body": "Amélioration des temps de réponse serveur avec des requêtes SQL optimisées, des stratégies de mise en cache et un traitement asynchrone. Utilisation du load balancing, de la limitation du trafic et des tâches en arrière-plan pour maximiser l’évolutivité et la rapidité des applications."
+        }
+      ]
+    },
+    "devops": {
+      "title": "DevOps, Infrastructure & Assurance Qualité",
+      "body": "Mise en œuvre de pratiques DevOps avancées et de tests rigoureux pour garantir la fiabilité, l’évolutivité et la haute performance des applications.",
+      "list": [
+        {
+          "title": "Gestion de Version avec Git",
+          "body": "Gestion efficace du code avec Git pour assurer collaboration, traçabilité et retour en arrière fluide. Stratégies de branches, pull requests et revues de code pour maintenir un workflow structuré et optimisé."
+        },
+        {
+          "title": "Intégration et Déploiement Continus",
+          "body": "Automatisation des processus de build, test et déploiement pour une livraison rapide et fiable. Intégration continue pour détecter les problèmes en amont et déploiement continu pour des mises à jour fluides. Optimisation des workflows pour une meilleure efficacité et évolutivité."
+        },
+        {
+          "title": "Frameworks de Tests",
+          "body": "Garantir la fiabilité des applications grâce aux tests unitaires, d’intégration et end-to-end. Automatisation des tests pour détecter les erreurs dès les premières étapes du développement. Adoption du développement piloté par les tests (TDD) et des tests continus pour assurer une qualité logicielle optimale."
+        }
+      ]
+    }
   },
   "projectPage": {
-      "mainTitle": "Je donne vie à vos idées les plus audacieuses."
+    "mainTitle": "Je donne vie à vos idées les plus audacieuses."
   },
-
   "contactPage": {
-      "mainTitle": "Lançons une conversation !",
-      "body": "J'aimerais en apprendre davantage sur vous et sur ce que nous pouvons réaliser ensemble.",
-      "becomeClient": "Devenir un client"
-  } 
+    "mainTitle": "Lançons une conversation !",
+    "body": "J'aimerais en apprendre davantage sur vous et sur ce que nous pouvons réaliser ensemble.",
+    "becomeClient": "Devenir un client"
+  },
+  "resume": "Connectons-nous – Voir mon CV"
 }

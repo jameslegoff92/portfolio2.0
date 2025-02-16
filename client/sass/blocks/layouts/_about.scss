@@ -1,116 +1,150 @@
-@use '../../variables' as *;
+@use "../../variables" as *;
 
-.about-h1 {
-  top: 35px;
-  position: relative;
-  z-index: 2;
+.about-header {
+  padding: 1rem 0 2rem 0;
+  margin-bottom: clamp(2.5rem, 10vw, 300px);
 
-  @media screen and (min-width: $lg-screen) {
-    top: 150px;
+  @media screen and (min-width: $md-screen) {
+    margin-bottom: 200px;
   }
 }
 
-.about-img {
-  margin-top: -60px;
-  margin-left: auto;
-  margin-right: 20px;
-  width: 60%;
-  min-height: 800px;
-}
+.about-h1 {
+  width: 85%;
+  max-width: 800px;
+  margin-bottom: clamp(16px, 3vw, 40px);
 
-.about-img  img{
-  min-height: 800px;
+  @media screen and (min-width: $sm-screen) {
+    width: 70%;
+  }
 }
 
 .about-text {
-  max-width: 800px;
-  
+  width: 80%;
+  max-width: 600px;
 }
 
-.why {
+.about-img {
+  min-height: 700px;
+  margin: 0 auto;
+  width: 100%;
+}
 
-  &__heading {
-    margin-bottom: clamp($m-7, 3vw, $m-9);
+.about-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media screen and (min-width: $md-screen) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+    margin: 0 auto;
+    width: 87.2%;
+    max-width: 1000px;
   }
 
-  &__content {
-    margin-bottom: $m-9;
+  & > div {
+    @media screen and (min-width: $md-screen) {
+      width: 48%;
+    }
   }
 
-  &__subscript {
-    font-weight: 700;
-    margin-bottom: clamp($m-1, 2vw, $m-3);
-    
+  &__img {
+    @media screen and (min-width: $md-screen) {
+      order: 1;
+      width: 100%;
+    }
+  }
+
+  &__header {
+    @media screen and (min-width: $md-screen) {
+      width: 400px;
+    }
   }
 
   &__title {
-    line-height: 1.1;
-    width: 70%;
-    max-width: 600px;
-    margin-bottom: $m-3;
+    padding: 1rem 0;
   }
 
-  &__text {
-    max-width: 800px;
+  &__list {
+    padding: 32px 0;
+    @media screen and (min-width: $md-screen) {
+      width: 300px;
+    }
+  }
+
+  &__list-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__list-item {
+    position: relative;
+    cursor: pointer;
+  }
+
+  &__list-header {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 4px 0;
+  }
+
+  &__list-header:hover + .about-section__list-text {
+    cursor: pointer;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    z-index: 3;
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s;
+  }
+
+  &__list-title {
+  }
+
+  &__list-text {
+    background-color: var(--background-color);
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 9px 2px rgba(187, 187, 187, 1);
+    -moz-box-shadow: 0px 0px 9px 2px rgba(187, 187, 187, 1);
+    box-shadow: 0px 0px 9px 2px rgba(187, 187, 187, 1);
+    position: absolute;
+    opacity: 0; /* Start hidden */
+    visibility: hidden; /* Prevent interaction */
+    transform: translateY(-10px); /* Initial offset */
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s; /* Delay hiding */
+    padding: 8px 16px;
+    width: 500px;
+    line-height: 1.6;
   }
 }
 
-
-
-
-@keyframes slide {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
+.rectangle {
+  display: center;
+  align-items: center;
+  height: 2px;
+  width: 16px;
+  opacity: 30%;
+  background-color: var(--mobile-background-color);
 }
 
-.logos {
-  overflow: hidden;
-  padding: 60px 0;
-  background: transparent;
-  white-space: nowrap;
-  position: relative;
-}
-
-.logos:before,
-.logos:after {
-  position: absolute;
-  top: 0;
-  width: 250px;
-  height: 250px;
-  content: "";
-  z-index: 2;
-}
-
-// .logos:before {
-//   left: 0;
-//   @media screen and (min-width: $md-screen) {
-//     background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
-//   }
-// }
-
-// .logos:after {
-//   right: 0;
-
-//   @media screen and (min-width: $md-screen) {
-//     background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
-//   }
-// }
-
-.logos-slide {
-  display: inline-block;
-  animation: 20s slide infinite alternate;
-}
-
-.logos-slide img {
-  height: 250px;
-   margin: 0 40px;
+.section-mb {
+  margin-bottom: 124px;
 
   @media screen and (min-width: $md-screen) {
-    height: 400px;
-    
+    margin-bottom: 248px;
+  }
+}
+
+.flex-order-0 {
+  order: 0;
+}
+
+.pd-left {
+  @media screen and (min-width: $md-screen) {
+    padding-left: clamp(30px, 2vw, 88px);
   }
 }

@@ -1,9 +1,10 @@
 import { gsap } from "gsap";
 import {
-  expandImageRevealAnimation,
   navigationAnimation,
   revealAnimation,
   slideUpAnimation,
+  expandImageRevealAnimationScroll,
+  revealAnimationScroll,
 } from "./js/gsap";
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -11,11 +12,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const mastertimeline = gsap.timeline();
   mastertimeline
     .add(slideUpAnimation(".about-h1"), 0)
-    .add(expandImageRevealAnimation(".about-img"), 0)
-    .add(slideUpAnimation("#stats-wrapper"), 0)
-    .add(slideUpAnimation(".stats__location"), 0)
-    .add(revealAnimation("#gallery-wrapper"), 0)
-    .add(revealAnimation("#about-wrapper"), 0)
-    .add(revealAnimation("#skills-wrapper"), 0)
+    .add(slideUpAnimation(".about-text"), 0)
+    .add(slideUpAnimation("#resume-link"), 0)
+    .add(revealAnimation("#about-img-1"), 0)
+    .add(slideUpAnimation("#section-frontend"), 0)
     .add(revealAnimation("#footer-wrapper"), 0);
+
+   expandImageRevealAnimationScroll("#about-img-2");
+   revealAnimationScroll("#section-backend");
+   expandImageRevealAnimationScroll("#about-img-3");
+   revealAnimation("#section-devops");
 });

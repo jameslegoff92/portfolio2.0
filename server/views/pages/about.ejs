@@ -4,216 +4,128 @@
 
     <body id="body" class="body-js light-theme">
 
-      <div class="container">
+      <div class="container section-mb">
         <%- include('../partials/navigation.ejs', { url }) %>
 
           <!-- HERO SECTION -->
-          <h1 class="about-h1 h1 h1--responsive mb-2 hidden">
-            <%= t('aboutPage.mainTitle') %>
-          </h1>
-          <div class="about-img mb-5 hidden">
-            <img src="assets/focused-vintage-tall.webp" alt="">
-          </div>
-      </div>
-
-      <!-- RESUME / STATS -->
-      <div class="container">
-        <div id="stats-wrapper" class="stats mb-5 hidden">
-          <div>
-            <span class="stats__data text--bold">
-              3
-            </span>
-            <p class="stats__stat text--light">
-              <%= t("aboutPage.stats.statsExperience") %>
+          <div class="about-header">
+            <h1 class="about-h1 h1 h1--responsive hidden">
+              <%= t('aboutPage.mainTitle') %>
+            </h1>
+            <p class="about-text h3 h3--responsive hidden">
+              <%= t('aboutPage.mainText') %>
             </p>
+            <a id="resume-link" style="display: inline-block; font-size: 1.2rem; margin-top: 32px;" class="text text--link-alt hidden" href="https://drive.google.com/file/d/195H0H2HjbouDEde3e-iBUr_QR3ZP_Wsz/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+              <%= t('resume') %>
+            </a>
           </div>
-
-          <div>
-            <span class="stats__data text--bold">
-              6
-            </span>
-            <p class="stats__stat text--light">
-              <%= t("aboutPage.stats.statsCertificate") %>
-            </p>
-          </div>
-
-          <div>
-            <span class="stats__data text--bold">
-              4
-            </span>
-            <p class="stats__stat text--light">
-              <%= t("aboutPage.stats.statsProject") %>
-            </p>
-          </div>
-        </div>
-
-        <div class="stats__location hidden mb-7">
-          <span class="stats__data text--bold">
-            <%= t("aboutPage.stats.statsLocation") %>
-          </span>
-          <p class="stats__stat text--light  ">
-            <%= t("aboutPage.stats.statsLocal") %>
-          </p>
-        </div>
       </div>
 
-      <!-- GALLERY OF IMAGES -->
-      <div id="gallery-wrapper"  class="logos mb-7 hidden">
-        <div class="logos-slide">
-          <img src="assets/design-of-everyday-things.webp" />
-          <img src="assets/to-engineer.webp" />
-          <img src="assets/clean-code.webp" />
-          <img src="assets/laws-of-ux-cover-art.webp" />
-          <img src="assets/thinking-fast.webp" />
-          <img src="assets/art-of-war.webp" />
-          <img src="assets/before-you-know-it.webp" />
-          <img src="assets/design-of-everyday-things.webp" />
-          <img src="assets/to-engineer.webp" />
-          <img src="assets/clean-code.webp" />
-          <img src="assets/laws-of-ux-cover-art.webp" />
-          <img src="assets/thinking-fast.webp" />
-          <img src="assets/art-of-war.webp" />
-          <img src="assets/before-you-know-it.webp" />
+      <!-- FRONTEND DEVELOPMENT SECTION -->
+      <div class="about-section section-mb">
+        <div id="about-img-1" class="about-section__img hidden">
+          <img class="about-img" src="assets/about-img-1.webp" alt="">
         </div>
-      </div>
-
-      <!-- ABOUT ME SECTION -->
-      <div id="about-wrapper" class="container hidden">
-        <div class="about-text text text--responsive mb-9">
-          <p>
-            <%= t("aboutPage.introSection.aboutIntro") %>
-              <br><br>
-
-              <%= t("aboutPage.introSection.aboutBackground") %>
-          </p>
-        </div>
-
-
-        <!-- WHY ME SECTION -->
-        <div class="why">
-          <h2 class="h2 h2--responsive why__heading ">
-            <%= t("aboutPage.meSection.subtitle") %>
-          </h2>
-
-          <div>
-            <div class="why__content">
-              <span class="why__subscript h2 h2--responsive color-mustard">
-                01
-              </span>
-              <h3 class="why__title h2 h2--responsive">
-                <%= t("aboutPage.meSection.motivationTitle") %>
-              </h3>
-              <p class="why__text text--responsive">
-                <%= t("aboutPage.meSection.motivationBody") %>
-                  <br><br>
-                  <%= t("aboutPage.meSection.motivationBody1") %>
-              </p>
-            </div>
-
-            <div class="why__content">
-              <span class="why__subscript h2 h2--responsive color-orange">
-                02
-              </span>
-              <h3 class="why__title h2 h2--responsive">
-                <%= t("aboutPage.meSection.analyticalTitle") %>
-              </h3>
-              <p class="why__text text--responsive">
-                <%= t("aboutPage.meSection.analyticalBody") %>
-                  <br><br>
-                  <%= t("aboutPage.meSection.analyticalBody1") %>
-              </p>
-            </div>
-
-            <div class="why__content">
-              <span class="why__subscript h2 h2--responsive color-salmon">
-                03
-              </span>
-              <h3 class="why__title h2 h2--responsive">
-                <%= t("aboutPage.meSection.teamTitle") %>
-              </h3>
-              <p class="why__text text--responsive">
-                <%= t("aboutPage.meSection.teamBody") %>
-                  <br><br>
-                  <%= t("aboutPage.meSection.teamBody1") %>
-              </p>
-            </div>
+        <div id="section-frontend" class="container hidden">
+          <div class="about-section__header">
+            <h2 class="about-section__title h2-alt h2--responsive-alt">
+              <%= t('aboutPage.frontend.title') %>
+            </h2>
+            <p class="text text--responsive-alt">
+              <%= t('aboutPage.frontend.body') %>
+          </div>
+          <div class="about-section__list">
+            <% var list=t('aboutPage.frontend.list', { returnObjects: true }); %>
+              <% var listArr=Array.isArray(list) ? list : Object.values(list); %>
+              <div class="about-section__list-wrapper">
+                <% for (var i=0; i < list.length; i++) { %>
+                    <div class="about-section__list-item" >
+                      <div class="about-section__list-header">
+                        <div class="rectangle"></div>
+                        <h5 class="about-section__list-title h4 h4--responsive">
+                          <%= t('aboutPage.frontend.list.' + i + '.title' ) %>
+                        </h5>
+                      </div>
+                      <p class="about-section__list-text text">
+                        <%= t('aboutPage.frontend.list.' + i + '.body' ) %>
+                      </p>
+                    </div>
+                    <% } %>
+                </div>
           </div>
         </div>
       </div>
 
-      <!-- SKILLS SECTION -->
-      <div id="skills-wrapper" class="skills hidden">
-        <div class="container">
-          <h2 class="skills__heading h2--responsive">
-            <%= t("aboutPage.capabilitiesSection.subtitle") %>
-          </h2>
-
-          <div class="skills__wrapper">
-            <h3 class="skills__title h3--responsive"> Design </h3>
-            <ul>
-              <li class="skills__item text--responsive"> UI/UX </li>
-              <li class="skills__item text--responsive"> Figma </li>
-              <li class="skills__item text--responsive"> WordPress </li>
-              <li class="skills__item text--responsive"> Elementor </li>
-              <li class="skills__item text--responsive"> MidJourney </li>
-              <li class="skills__item text--responsive"> Illustrator </li>
-              <li class="skills__item text--responsive"> Photoshop </li>
-              <li class="skills__item text--responsive"> AfterEffects </li>
-            </ul>
+      <!-- BACKEND DEVELOPMENT SECTION -->
+      <div class="about-section section-mb">
+        <div class="about-section__img flex-order-0">
+          <img id="about-img-2" class="about-img hidden" src="assets/about-img-2.webp" alt="">
+        </div>
+        <div id="section-backend" class="container pd-left hidden">
+          <div class="about-section__header">
+            <h2 class="about-section__title h2-alt h2--responsive-alt">
+              <%= t('aboutPage.backend.title') %>
+            </h2>
+            <p class="text text--responsive-alt">
+              <%= t('aboutPage.backend.body') %>
           </div>
-
-          <div class="skills__wrapper">
-            <h3 class="skills__title h3--responsive"> Frontend </h3>
-            <ul>
-              <li class="skills__item text--responsive"> HTML5 </li>
-              <li class="skills__item text--responsive"> CSS3 </li>
-              <li class="skills__item text--responsive"> CSS Architecture </li>
-              <li class="skills__item text--responsive"> CSS Frameworks </li>
-              <li class="skills__item text--responsive"> SASS </li>
-              <li class="skills__item text--responsive"> JavaScript </li>
-              <li class="skills__item text--responsive"> React </li>
-              <li class="skills__item text--responsive"> NPM </li>
-              <li class="skills__item text--responsive"> Webpack </li>
-              <li class="skills__item text--responsive"> Tailwind </li>
-              <li class="skills__item text--responsive"> Linters and Formatters </li>
-              <li class="skills__item text--responsive"> GSAP </li>
-            </ul>
-          </div>
-
-          <div class="skills__wrapper">
-            <h3 class="skills__title h3--responsive"> Backend </h3>
-            <ul>
-              <li class="skills__item text--responsive"> NodeJS </li>
-              <li class="skills__item text--responsive"> Java </li>
-              <li class="skills__item text--responsive"> Python </li>
-              <li class="skills__item text--responsive"> Github </li>
-              <li class="skills__item text--responsive"> MySQL </li>
-              <li class="skills__item text--responsive"> MongoDB </li>
-              <li class="skills__item text--responsive"> REST </li>
-              <li class="skills__item text--responsive"> Linux </li>
-              <li class="skills__item text--responsive"> Github Actions </li>
-              <li class="skills__item text--responsive"> Amazon RDS </li>
-            </ul>
-          </div>
-
-          <div class="skills__wrapper">
-            <h3 class="skills__title h3--responsive">
-              <%= t("aboutPage.capabilitiesSection.inProgress") %>
-            </h3>
-            <ul>
-              <li class="skills__item text--responsive"> Testing (Jest, Cypress, Selenium) </li>
-              <li class="skills__item text--responsive"> Three.JS </li>
-              <li class="skills__item text--responsive"> Docker </li>
-              <li class="skills__item text--responsive"> Jenkins </li>
-              <li class="skills__item text--responsive"> Amazon Web Services </li>
-              <li class="skills__item text--responsive"> CI/CD </li>
-              <li class="skills__item text--responsive"> Kubernetes </li>
-              <li class="skills__item text--responsive"> PWAs </li>
-              <li class="skills__item text--responsive"> Static Site Generators </li>
-            </ul>
+          <div class="about-section__list">
+            <% var list=t('aboutPage.backend.list', { returnObjects: true }); %>
+              <% var listArr=Array.isArray(list) ? list : Object.values(list); %>
+              <div class="about-section__list-wrapper">
+                <% for (var i=0; i < list.length; i++) { %>
+                    <div class="about-section__list-item" >
+                      <div class="about-section__list-header">
+                        <div class="rectangle"></div>
+                        <h5 class="about-section__list-title h4 h4--responsive">
+                          <%= t('aboutPage.backend.list.' + i + '.title' ) %>
+                        </h5>
+                      </div>
+                      <p class="about-section__list-text text">
+                        <%= t('aboutPage.backend.list.' + i + '.body' ) %>
+                      </p>
+                    </div>
+                    <% } %>
+                </div>
           </div>
         </div>
       </div>
+
+      <!-- DEVOPS AND INFRASTRUCTURE SECTION -->
+      <div class="about-section section-mb">
+        <div class="about-section__img">
+          <img id="about-img-3" class="about-img hidden" src="assets/about-img-3.webp" alt="">
+        </div>
+        <div id="section-devops" class="container hidden">
+          <div class="about-section__header">
+            <h2 class="about-section__title h2-alt h2--responsive-alt">
+              <%= t('aboutPage.devops.title') %>
+            </h2>
+            <p class="text text--responsive-alt">
+              <%= t('aboutPage.devops.body') %>
+          </div>
+          <div class="about-section__list">
+            <% var list=t('aboutPage.devops.list', { returnObjects: true }); %>
+              <% var listArr=Array.isArray(list) ? list : Object.values(list); %>
+              <div class="about-section__list-wrapper">
+                <% for (var i=0; i < list.length; i++) { %>
+                    <div class="about-section__list-item" >
+                      <div class="about-section__list-header">
+                        <div class="rectangle"></div>
+                        <h5 class="about-section__list-title h4 h4--responsive">
+                          <%= t('aboutPage.devops.list.' + i + '.title' ) %>
+                        </h5>
+                      </div>
+                      <p class="about-section__list-text text">
+                        <%= t('aboutPage.devops.list.' + i + '.body' ) %>
+                      </p>
+                    </div>
+                    <% } %>
+                </div>
+          </div>
+        </div>
+      </div>
+
 
       <!-- FOOTER SECTION -->
       <div id="footer-wrapper" class="container footer hidden">
