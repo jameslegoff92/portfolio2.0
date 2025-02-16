@@ -99,10 +99,10 @@
   "projectPage": {
     "mainTitle": "Je donne vie à vos idées les plus audacieuses."
   },
-
   "contactPage": {
     "mainTitle": "Lançons une conversation !",
     "body": "J'aimerais en apprendre davantage sur vous et sur ce que nous pouvons réaliser ensemble.",
     "becomeClient": "Devenir un client"
-  }
+  },
+  "resume": "Connectons-nous – Voir mon CV"
 }
