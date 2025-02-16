@@ -9,10 +9,10 @@
 
           <!-- HERO SECTION -->
           <div class="about-header">
-            <h1 class="about-h1 h1 h1--responsive">
+            <h1 class="about-h1 h1 h1--responsive hidden">
               <%= t('aboutPage.mainTitle') %>
             </h1>
-            <p class="about-text h3 h3--responsive">
+            <p class="about-text h3 h3--responsive hidden">
               <%= t('aboutPage.mainText') %>
             </p>
           </div>
@@ -20,10 +20,10 @@
 
       <!-- FRONTEND DEVELOPMENT SECTION -->
       <div class="about-section section-mb">
-        <div class="about-section__img">
+        <div id="about-img-1" class="about-section__img hidden">
           <img class="about-img" src="assets/about-img-1.webp" alt="">
         </div>
-        <div class="container">
+        <div id="section-frontend" class="container hidden">
           <div class="about-section__header">
             <h2 class="about-section__title h2-alt h2--responsive-alt">
               <%= t('aboutPage.frontend.title') %>
@@ -56,9 +56,9 @@
       <!-- BACKEND DEVELOPMENT SECTION -->
       <div class="about-section section-mb">
         <div class="about-section__img flex-order-0">
-          <img class="about-img" src="assets/about-img-2.webp" alt="">
+          <img id="about-img-2" class="about-img hidden" src="assets/about-img-2.webp" alt="">
         </div>
-        <div class="container pd-left">
+        <div id="section-backend" class="container pd-left hidden">
           <div class="about-section__header">
             <h2 class="about-section__title h2-alt h2--responsive-alt">
               <%= t('aboutPage.backend.title') %>
@@ -91,9 +91,9 @@
       <!-- DEVOPS AND INFRASTRUCTURE SECTION -->
       <div class="about-section section-mb">
         <div class="about-section__img">
-          <img class="about-img" src="assets/about-img-3.webp" alt="">
+          <img id="about-img-3" class="about-img hidden" src="assets/about-img-3.webp" alt="">
         </div>
-        <div class="container">
+        <div id="section-devops" class="container hidden">
           <div class="about-section__header">
             <h2 class="about-section__title h2-alt h2--responsive-alt">
               <%= t('aboutPage.devops.title') %>
