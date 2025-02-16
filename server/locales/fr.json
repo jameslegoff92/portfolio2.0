@@ -7,91 +7,91 @@
     "Contact": "Contact"
   },
   "aboutPage": {
-    "mainTitle": "Transforming ideas into powerful digital solutions",
-    "mainText": "Blending design and technology to craft seamless digital experiences that drive results.",
+    "mainTitle": "Transformer des idées en solutions digitales",
+    "mainText": "Fusionner le design et la technologie pour créer des solutions digitales fluides qui génèrent des résultats.",
     "frontend": {
-      "title": "Frontend Development",
-      "body": "I believe performance and user experience go hand in hand. I build dynamic, responsive interfaces that look great and work seamlessly across all devices, ensuring a high-quality user experience.",
+      "title": "Développement Frontend",
+      "body": "Performance et expérience utilisateur vont de pair. Je conçois des interfaces dynamiques et réactives, optimisées pour tous les appareils, garantissant une expérience utilisateur fluide et de haute qualité.",
       "list": [
         {
-          "title": "Tech Stack",
-          "body": "Figma, HTML, CSS,  Sass, TailwindCSS Javascript, Typescript, ReactJS, NextJS, Shadcn/ui, MUI, Storybook, Webpack, WordPress, Elementor, JQuery, GSAP."
+          "title": "Stack Technologique",
+          "body": "Figma, HTML, CSS, Sass, TailwindCSS, JavaScript, TypeScript, ReactJS, NextJS, Shadcn/ui, MUI, Storybook, Webpack, WordPress, Elementor, JQuery, GSAP, Jest, Playwright."
         },
         {
-          "title": "Responsive Design",
-          "body": "Crafting flexible layouts that adapt gracefully to any screen size, ensuring optimal viewing on desktops, tablets, and mobile devices."
+          "title": "Design Réactif",
+          "body": "Création d'expériences fluides sur tous les appareils grâce aux grilles flexibles, aux mises en page adaptatives et aux media queries. Approche mobile-first, typographie évolutive et images responsives garantissent accessibilité et cohérence visuelle."
         },
         {
-          "title": "Component Architecture",
-          "body": "Developing a modular system of reusable UI elements that streamline maintenance, scalability, and collaborative development."
+          "title": "Architecture de Composants",
+          "body": "Développement d’applications modulaires et évolutives avec des composants réutilisables. Structuration des interfaces pour plus de flexibilité, séparation des préoccupations et gestion efficace de l’état, en suivant les meilleures pratiques et modèles de conception modernes."
         },
         {
-          "title": "UI/UX Implementation",
-          "body": "Translating design visions into interactive, pixel-perfect interfaces that marry aesthetics with functionality."
+          "title": "Implémentation UI/UX",
+          "body": "Conception d'interfaces intuitives, axées sur l’ergonomie, l’accessibilité et l’esthétique. Expériences fluides grâce à une navigation claire, des mises en page réfléchies et des interactions engageantes, alliant fonctionnalité et attrait visuel."
         },
         {
-          "title": "Performance Optimization",
-          "body": "Employing cutting-edge techniques and best practices to guarantee fast load times and smooth, efficient user interactions."
+          "title": "Optimisation des Performances",
+          "body": "Mise en œuvre du lazy loading, du code splitting et de la mise en cache pour des applications web rapides et efficaces. Optimisation des images avec des formats modernes et compression, réduction des fichiers via minification, bundling et tree shaking. Les outils de profilage permettent d’affiner les performances et la réactivité."
         },
         {
-          "title": "Cross-Browser Compatibility",
-          "body": "Ensuring that every digital experience is consistently robust and visually coherent across all modern browsers."
+          "title": "Compatibilité Multinavigateur",
+          "body": "Assurer une expérience homogène sur tous les navigateurs majeurs grâce à un code standardisé, à la détection des fonctionnalités et à la dégradation progressive. Gestion des incohérences avec polyfills, fallbacks et tests approfondis pour garantir l’intégrité fonctionnelle et visuelle."
         },
         {
-          "title": "Analytics",
-          "body": "Implementing robust analytics strategies to monitor user engagement and behavior. I integrate tools such as Google Analytics to track website performance, measure key metrics, and inform data-driven design and development decisions."
+          "title": "Analyse et Suivi",
+          "body": "Intégration d’outils d’analyse pour collecter des données exploitables sur le comportement des utilisateurs et les performances. Utilisation de heatmaps, tracking d’événements et A/B testing pour optimiser l’expérience utilisateur et les taux de conversion."
         }
       ]
     },
     "backend": {
-      "title": "Backend Development",
-      "body": "I focus on building a strong backend foundation for seamless digital experiences. I apply best practices to create reliable server-side systems that manage data, support user interactions, and integrate smoothly with the frontend.",
+      "title": "Développement Backend",
+      "body": "Conception d’architectures serveur robustes et évolutives garantissant performance, sécurité et fiabilité. Assurer une communication fluide entre le frontend et le backend pour une expérience utilisateur sans friction.",
       "list": [
         {
-          "title": "Tech Stack",
-          "body": "NodeJS, ExpressJS, EJS, Python, Django, Java, PHP, Linux, Mongoose, MongoDB, SQL, PostgreSQL, REST APIs, and Postman."
+          "title": "Stack Technologique",
+          "body": "NodeJS, Jest, ExpressJS, EJS, Python, Django, Java, PHP, Linux, Mongoose, MongoDB, SQL, PostgreSQL, REST APIs, Postman."
         },
         {
-          "title": "API Design",
-          "body": "I focus on designing clear, well-documented APIs that serve as the critical bridge between frontend and backend systems. My growing expertise with RESTful conventions and modern frameworks ensures secure and efficient data exchanges."
+          "title": "Conception d'API",
+          "body": "Développement d’API performantes et maintenables avec une structure claire, des endpoints optimisés et une authentification sécurisée. Intégration de REST et GraphQL pour un échange fluide des données. Priorisation de la performance, du versioning et de la documentation pour une intégration durable."
         },
         {
-          "title": "Database Fundamentals",
-          "body": "I am committed to developing a comprehensive understanding of both relational and NoSQL databases. My work emphasizes designing effective data structures, optimizing queries, and ensuring that data is stored and retrieved with maximum efficiency."
+          "title": "Fondamentaux des Bases de Données",
+          "body": "Conception de structures de bases de données optimisées, évolutives et normalisées pour garantir l’intégrité et la performance des données. Utilisation des index, optimisation des requêtes et gestion des relations pour des récupérations rapides. Gestion des bases SQL et NoSQL selon les besoins du projet."
         },
         {
-          "title": "Server-side Logic",
-          "body": "I write clean, maintainable code to manage business processes and data flows. By leveraging popular backend frameworks, I build scalable logic that prioritizes both performance and readability."
+          "title": "Logique Côté Serveur",
+          "body": "Développement de logique serveur efficace et sécurisée pour le traitement des données, l’authentification et l’exécution des règles métier. Optimisation avec des opérations asynchrones, la mise en cache et l’équilibrage de charge. Assurer une communication fluide entre le backend, la base de données et les applications clientes."
         },
         {
-          "title": "Architecture & Design Patterns",
-          "body": "I focus on structuring my applications using proven architectural patterns to enhance modularity, scalability, and maintainability. I incorporate the Model-View-Controller (MVC) pattern to separate concerns and streamline development, while applying Object-Oriented Programming (OOP) principles to create reusable, robust components."
+          "title": "Architecture & Modèles de Conception",
+          "body": "Mise en place d’architectures logicielles évolutives et maintenables en utilisant des modèles de conception éprouvés. Code propre, séparation des responsabilités et réutilisabilité assurées via MVC, microservices et structures modulaires."
         },
         {
-          "title": "Security & Best Practices",
-          "body": "I place a strong emphasis on security fundamentals such as authentication, encryption, and secure data handling. I continually refine my skills to implement measures that protect user data and comply with industry standards."
+          "title": "Sécurité & Bonnes Pratiques",
+          "body": "Implémentation de l’authentification, de l’autorisation et du chiffrement des données pour sécuriser les informations sensibles. Réduction des vulnérabilités grâce aux bonnes pratiques de code, à la validation des entrées et à la limitation des requêtes API. Conformité aux normes de sécurité pour protéger les applications contre les cyberattaques."
         },
         {
-          "title": "Performance Optimization",
-          "body": "I actively explore various techniques and tools to monitor and enhance backend performance, ensuring that applications remain responsive and efficient under varying loads."
+          "title": "Optimisation des Performances",
+          "body": "Amélioration des temps de réponse serveur avec des requêtes SQL optimisées, des stratégies de mise en cache et un traitement asynchrone. Utilisation du load balancing, de la limitation du trafic et des tâches en arrière-plan pour maximiser l’évolutivité et la rapidité des applications."
         }
       ]
     },
     "devops": {
-      "title": "DevOps, Infrastructure & Quality Assurance",
-      "body": "My strategy integrates robust DevOps practices, seamless infrastructure management, and rigorous quality assurance to ensure that my applications are reliable, scalable, and high-performing.",
+      "title": "DevOps, Infrastructure & Assurance Qualité",
+      "body": "Mise en œuvre de pratiques DevOps avancées et de tests rigoureux pour garantir la fiabilité, l’évolutivité et la haute performance des applications.",
       "list": [
         {
-          "title": "Version Control with Git",
-          "body": "I leverage Git to manage code changes effectively, enabling smooth collaboration and continuous integration throughout the development process."
+          "title": "Gestion de Version avec Git",
+          "body": "Gestion efficace du code avec Git pour assurer collaboration, traçabilité et retour en arrière fluide. Stratégies de branches, pull requests et revues de code pour maintenir un workflow structuré et optimisé."
         },
         {
-          "title": "Continuous Integration & Deployment",
-          "body": "Utilizing GitHub Actions, I automate testing and deployment pipelines to validate code changes and deploy them seamlessly. I host my applications on platforms like Heroku to ensure scalability and consistent performance."
+          "title": "Intégration et Déploiement Continus",
+          "body": "Automatisation des processus de build, test et déploiement pour une livraison rapide et fiable. Intégration continue pour détecter les problèmes en amont et déploiement continu pour des mises à jour fluides. Optimisation des workflows pour une meilleure efficacité et évolutivité."
         },
         {
-          "title": "Testing Frameworks",
-          "body": "To maintain high code quality, I implement comprehensive testing strategies. By using Jest for unit testing and Cypress for end-to-end testing, I ensure that every component of the application functions as intended and meets rigorous standards."
+          "title": "Frameworks de Tests",
+          "body": "Garantir la fiabilité des applications grâce aux tests unitaires, d’intégration et end-to-end. Automatisation des tests pour détecter les erreurs dès les premières étapes du développement. Adoption du développement piloté par les tests (TDD) et des tests continus pour assurer une qualité logicielle optimale."
         }
       ]
     }
