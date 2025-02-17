@@ -17,13 +17,13 @@
   }
 
   &__wrapper {
-    padding: 0 $m-2;
+    padding: 0 $m-2 0 $m-2;
+    display: flex;
+    flex-direction: column;
+    gap: $m-1;
 
     @media screen and (min-width: $lg-screen) {
       padding: $m-1 0 0 0;
-      display: flex;
-      flex-direction: column;
-      gap: $m-1;
     }
   }
 
@@ -152,9 +152,10 @@
 }
 
 .project-link {
+  color: var(--mobile-background-color);
   font-style: italic;
-  font-size: 16px;
-  margin-top: 4px;
+  font-size: 1rem;
+  margin-top: 0.25rem;
   font-weight: 500;
   opacity: 1;
   transition: opacity 0.5s ease;
@@ -172,4 +173,9 @@
   display: flex;
   align-items: center;
   gap: 32px;
+}
+
+.cv-link {
+  font-size: 1.2rem;
+  margin-top: 32px;
 }

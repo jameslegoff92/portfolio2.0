@@ -15,7 +15,10 @@
             <p class="about-text h3 h3--responsive hidden">
               <%= t('aboutPage.mainText') %>
             </p>
-            <a id="resume-link" style="display: inline-block; font-size: 1.2rem; margin-top: 32px;" class="text text--link-alt hidden" href="https://drive.google.com/file/d/195H0H2HjbouDEde3e-iBUr_QR3ZP_Wsz/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+            <a style="display: inline-block; font-size: 1.2rem; margin-top: 32px;"
+              class="resume-link text hidden"
+              href="https://drive.google.com/file/d/195H0H2HjbouDEde3e-iBUr_QR3ZP_Wsz/view?usp=drive_link"
+              target="_blank" rel="noopener noreferrer">
               <%= t('resume') %>
             </a>
           </div>
@@ -37,9 +40,9 @@
           <div class="about-section__list">
             <% var list=t('aboutPage.frontend.list', { returnObjects: true }); %>
               <% var listArr=Array.isArray(list) ? list : Object.values(list); %>
-              <div class="about-section__list-wrapper">
-                <% for (var i=0; i < list.length; i++) { %>
-                    <div class="about-section__list-item" >
+                <div class="about-section__list-wrapper">
+                  <% for (var i=0; i < list.length; i++) { %>
+                    <div class="about-section__list-item">
                       <div class="about-section__list-header">
                         <div class="rectangle"></div>
                         <h5 class="about-section__list-title h4 h4--responsive">
@@ -72,9 +75,9 @@
           <div class="about-section__list">
             <% var list=t('aboutPage.backend.list', { returnObjects: true }); %>
               <% var listArr=Array.isArray(list) ? list : Object.values(list); %>
-              <div class="about-section__list-wrapper">
-                <% for (var i=0; i < list.length; i++) { %>
-                    <div class="about-section__list-item" >
+                <div class="about-section__list-wrapper">
+                  <% for (var i=0; i < list.length; i++) { %>
+                    <div class="about-section__list-item">
                       <div class="about-section__list-header">
                         <div class="rectangle"></div>
                         <h5 class="about-section__list-title h4 h4--responsive">
@@ -107,9 +110,9 @@
           <div class="about-section__list">
             <% var list=t('aboutPage.devops.list', { returnObjects: true }); %>
               <% var listArr=Array.isArray(list) ? list : Object.values(list); %>
-              <div class="about-section__list-wrapper">
-                <% for (var i=0; i < list.length; i++) { %>
-                    <div class="about-section__list-item" >
+                <div class="about-section__list-wrapper">
+                  <% for (var i=0; i < list.length; i++) { %>
+                    <div class="about-section__list-item">
                       <div class="about-section__list-header">
                         <div class="rectangle"></div>
                         <h5 class="about-section__list-title h4 h4--responsive">
