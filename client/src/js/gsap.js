@@ -67,6 +67,12 @@ export const mainHeadingAnimation = () => {
     { autoAlpha: 1, duration: 0.2, y: 0, ease: "power2.out" },
     "-=0.1"
   );
+  tl.fromTo(
+    "#open-mobile-nav",
+    { autoAlpha: 0, y: 20 },
+    { autoAlpha: 1, duration: 0.2, y: 0, ease: "power2.out" },
+    "-=0.1"
+  );
 };
 
 export function animationScale(item = null) {

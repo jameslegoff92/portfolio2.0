@@ -20,6 +20,10 @@
   font-size: clamp($fs-2, 1.5vw, 18px);
 
   @media screen and (min-width: $md-screen) {
+    width: 80%;
+  }
+
+  @media screen and (min-width: 900px) {
     width: 95%;
   }
 }
@@ -38,6 +42,29 @@
   padding: 0.125rem;
   text-decoration: none;
   transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out; /* Add opacity transition */
+}
+
+.resume-link {
+  position: relative;
+  color: var(--mobile-background-color);
+  padding: 0.125rem;
+  text-decoration: none;
+}
+
+.resume-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: var(--mobile-background-color);
+  transition: width 0.2s ease; /* Adjust duration as needed */
+}
+
+.resume-link:hover::after {
+  width: 100%;
+  cursor: pointer;
 }
 
 .text--link::after {

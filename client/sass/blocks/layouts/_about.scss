@@ -2,6 +2,7 @@
 
 .about-header {
   padding: 1rem 0 2rem 0;
+  position: relative;
   margin-bottom: clamp(2.5rem, 10vw, 300px);
 
   @media screen and (min-width: $md-screen) {
@@ -24,10 +25,17 @@
   max-width: 600px;
 }
 
+.about-spline-1 {
+  position: absolute;
+  z-index: -5
+}
+
 .about-img {
   min-height: 700px;
   margin: 0 auto;
   width: 100%;
+
+
 }
 
 .about-section {
@@ -117,8 +125,11 @@
     transform: translateY(-10px); /* Initial offset */
     transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s; /* Delay hiding */
     padding: 8px 16px;
-    width: 500px;
     line-height: 1.6;
+
+    @media screen and (min-width: $lg-screen) {
+      width: 450px;
+    }
   }
 }
 
