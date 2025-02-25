@@ -16,7 +16,11 @@
               <%= t('aboutPage.mainText') %>
             </p>
             <a style="display: inline-block; font-size: 1.2rem; margin-top: 32px;" class="resume-link text hidden"
+            <% if (query === 'fr') { %>
+              href="https://drive.google.com/file/d/1vvLLgEqTR_QMx-DUBvdEiOes3Npfp_qF/view?usp=drive_link"
+            <% } else { %> 
               href="https://drive.google.com/file/d/195H0H2HjbouDEde3e-iBUr_QR3ZP_Wsz/view?usp=drive_link"
+            <% } %>
               target="_blank" rel="noopener noreferrer">
               <%= t('resume') %>
             </a>
