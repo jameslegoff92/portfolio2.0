@@ -24,4 +24,16 @@ document.addEventListener("DOMContentLoaded", () => {
    revealAnimationScroll("#section-backend", "75%");
    expandImageRevealAnimationScroll("#about-img-3");
    revealAnimationScroll("#section-devops", "75%");
+
+   const button = document.getElementById('resume-gtag');
+   if (button) {
+     button.addEventListener('click', function() {
+       gtag('event', 'click', {
+         event_category: 'button',
+         event_label: 'Resume button clicked',
+         value: 1
+       });
+       console.log('Google Analytics event sent: Button Click');
+     });
+    }
 });
