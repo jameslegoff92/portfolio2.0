@@ -15,17 +15,21 @@
             <p class="about-text h3 h3--responsive hidden">
               <%= t('aboutPage.mainText') %>
             </p>
-            <a style="display: inline-block; font-size: 1.2rem; margin-top: 32px;"
-              class="resume-link text hidden"
+            <a style="display: inline-block; font-size: 1.2rem; margin-top: 32px;" class="resume-link text hidden"
+            <% if (query === 'fr') { %>
+              href="https://drive.google.com/file/d/1vvLLgEqTR_QMx-DUBvdEiOes3Npfp_qF/view?usp=drive_link"
+            <% } else { %> 
               href="https://drive.google.com/file/d/195H0H2HjbouDEde3e-iBUr_QR3ZP_Wsz/view?usp=drive_link"
+            <% } %>
               target="_blank" rel="noopener noreferrer">
               <%= t('resume') %>
             </a>
+              <spline-viewer id="spline-1" class="about-header__3d-object hidden" url="https://prod.spline.design/4w6qF3tBpxaySwJL/scene.splinecode"></spline-viewer>
           </div>
       </div>
 
       <!-- FRONTEND DEVELOPMENT SECTION -->
-      <div class="about-section section-mb">
+      <div class="about-section about-section-frontend section-mb">
         <div id="about-img-1" class="about-section__img hidden">
           <img class="about-img" src="assets/about-img-1.webp" alt="">
         </div>
@@ -57,10 +61,12 @@
                 </div>
           </div>
         </div>
+        <spline-viewer class="about-section-frontend__3d-object-2"
+          url="https://prod.spline.design/TnOQ8Ep1DwVwzLrZ/scene.splinecode"></spline-viewer>
       </div>
 
       <!-- BACKEND DEVELOPMENT SECTION -->
-      <div class="about-section section-mb">
+      <div class="about-section about-section-backend section-mb">
         <div class="about-section__img flex-order-0">
           <img id="about-img-2" class="about-img hidden" src="assets/about-img-2.webp" alt="">
         </div>
@@ -92,10 +98,12 @@
                 </div>
           </div>
         </div>
+        <spline-viewer class="about-section-backend__3d-object-3"
+          url="https://prod.spline.design/ZxKigB-BP0jBao6l/scene.splinecode"></spline-viewer>
       </div>
 
       <!-- DEVOPS AND INFRASTRUCTURE SECTION -->
-      <div class="about-section section-mb">
+      <div class="about-section about-section-devops section-mb">
         <div class="about-section__img">
           <img id="about-img-3" class="about-img hidden" src="assets/about-img-3.webp" alt="">
         </div>
@@ -127,6 +135,7 @@
                 </div>
           </div>
         </div>
+        <spline-viewer class="about-section-devops__3d-object-4" url="https://prod.spline.design/rzTkBKJRkFVDp-mA/scene.splinecode"></spline-viewer>
       </div>
 
 

@@ -42,7 +42,7 @@ i18next
   .use(Backend) // to load translation files
   .use(middleware.LanguageDetector) // to detect user language
   .init({
-    fallbackLng: "fr",
+    fallbackLng: "en",
     backend: {
       loadPath: __dirname + "/locales/{{lng}}.json",
     },

@@ -8,6 +8,36 @@
   @media screen and (min-width: $md-screen) {
     margin-bottom: 200px;
   }
+
+  &__3d-object {
+    position: absolute;
+    top: -250px;
+    right: -20%;
+    z-index: -2;
+    display: block;
+    height: 100vh;
+    width: 100%;
+    max-width: 800px;
+
+    @media screen and (min-width: 450px) {
+      top: -500px;
+      right: -30%;
+    }
+    @media screen and (min-width: $sm-screen) {
+      top: -500px;
+      right: -30%;
+    }
+
+    @media screen and (min-width: $md-screen) {
+      top: -450px;
+      right: -30%;
+    }
+
+    @media screen and (min-width: $lg-screen) {
+      top: -400px;
+      right: -20%;
+    }
+  }
 }
 
 .about-h1 {
@@ -27,15 +57,13 @@
 
 .about-spline-1 {
   position: absolute;
-  z-index: -5
+  z-index: -5;
 }
 
 .about-img {
   min-height: 700px;
   margin: 0 auto;
   width: 100%;
-
-
 }
 
 .about-section {
@@ -129,6 +157,106 @@
 
     @media screen and (min-width: $lg-screen) {
       width: 450px;
+    }
+  }
+}
+
+.about-section-frontend {
+  position: relative;
+  &__3d-object-2 {
+    position: absolute;
+    right: -20%;
+    top: 800px;
+    z-index: -2;
+    display: block;
+    height: 100vh;
+    width: 100%;
+    max-width: 800px;
+
+    @media screen and (min-width: 450px) {
+      top: 350px;
+    }
+    @media screen and (min-width: $sm-screen) {
+      top: 500px;
+    }
+
+    @media screen and (min-width: $md-screen) {
+      top: 100px;
+      right: 30%;
+    }
+
+    @media screen and (min-width: $lg-screen) {
+      left: -30%;
+      bottom: -800px;
+    }
+  }
+}
+
+.about-section-backend {
+  position: relative;
+
+  &__3d-object-3 {
+    position: absolute;
+    right: -20%;
+    top: 800px;
+    z-index: -2;
+    display: block;
+    height: 100vh;
+    width: 100%;
+    max-width: 800px;
+
+    @media screen and (min-width: 450px) {
+      top: 350px;
+    }
+
+    @media screen and (min-width: $sm-screen) {
+      top: 500px;
+    }
+
+    @media screen and (min-width: $md-screen) {
+      top: 100px;
+      right: -30%;
+    }
+
+    @media screen and (min-width: $lg-screen) {
+    }
+  }
+}
+
+.about-section-devops {
+  position: relative;
+
+  &__3d-object-4 {
+    position: absolute;
+    right: -20%;
+    top: 800px;
+    z-index: -2;
+    display: block;
+    height: 500px;
+    width: 100%;
+    max-width: 800px;
+
+    @media screen and (min-width: 450px) {
+      top: 900px;
+    }
+
+    @media screen and (min-width: $sm-screen) {
+      top: 90%;
+      height: 600px;
+    }
+
+    @media screen and (min-width: $md-screen) {
+      top: 600px;
+      left: -20%;
+      height: 700px;
+
+    }
+
+    @media screen and (min-width: $lg-screen) {
+      left: -10%;
+      top: 500px;
+      height: 800px;
+      
     }
   }
 }
