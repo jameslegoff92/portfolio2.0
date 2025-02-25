@@ -214,11 +214,13 @@ export const revealAnimation = (element) => {
   logger.debug("After reveal animation");
 };
 
-export const revealAnimationScroll = (element) => {
+export const revealAnimationScroll = (element, start="95%") => {
   if (!element) {
     return console.warn("Provide a string selector for the element to animate");
   }
+
   gsap.registerPlugin(ScrollTrigger);
+  const startingPoint = start;
 
   gsap.fromTo(
     element,
@@ -229,7 +231,7 @@ export const revealAnimationScroll = (element) => {
       ease: "power2.out",
       scrollTrigger: {
         trigger: element, // Element that triggers the animation
-        start: "top 95%", // When the top of ".box-3" hits the 75% viewport height
+        start: `top ${startingPoint}`, // When the top of ".box-3" hits the 75% viewport height
         // markers: true,
         toggleActions: "play none none none",
       },

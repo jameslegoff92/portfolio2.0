@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
    expandImageRevealAnimationScroll("#about-img-2");
-   revealAnimationScroll("#section-backend");
+   revealAnimationScroll("#section-backend", "75%");
    expandImageRevealAnimationScroll("#about-img-3");
-   revealAnimation("#section-devops");
+   revealAnimationScroll("#section-devops", "75%");
 });
