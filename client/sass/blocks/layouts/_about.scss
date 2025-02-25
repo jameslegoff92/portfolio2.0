@@ -237,22 +237,22 @@
     max-width: 800px;
 
     @media screen and (min-width: 450px) {
-      top: 350px;
-    }
-
-    @media screen and (min-width: $sm-screen) {
       top: 500px;
     }
 
+    @media screen and (min-width: $sm-screen) {
+      top: 650px;
+    }
+
     @media screen and (min-width: $md-screen) {
-      top: 100px;
-      left: -30%;
+      top: 200px;
+      left: -20%;
 
     }
 
     @media screen and (min-width: $lg-screen) {
-      left: -30%;
-      bottom: -800px;
+      left: -10%;
+      top: 200px;
     }
   }
 }
