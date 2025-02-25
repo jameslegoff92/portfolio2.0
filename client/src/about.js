@@ -13,10 +13,12 @@ document.addEventListener("DOMContentLoaded", () => {
   mastertimeline
     .add(slideUpAnimation(".about-h1"), 0)
     .add(slideUpAnimation(".about-text"), 0)
+    .add(revealAnimation("#spline-1"), 0)
     .add(slideUpAnimation(".resume-link"), 0)
     .add(revealAnimation("#about-img-1"), 0)
     .add(slideUpAnimation("#section-frontend"), 0)
     .add(revealAnimation("#footer-wrapper"), 0);
+
 
    expandImageRevealAnimationScroll("#about-img-2");
    revealAnimationScroll("#section-backend");

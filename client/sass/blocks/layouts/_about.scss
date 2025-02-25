@@ -232,27 +232,31 @@
     top: 800px;
     z-index: -2;
     display: block;
-    height: 100vh;
+    height: 500px;
     width: 100%;
     max-width: 800px;
 
     @media screen and (min-width: 450px) {
-      top: 500px;
+      top: 900px;
     }
 
     @media screen and (min-width: $sm-screen) {
-      top: 650px;
+      top: 90%;
+      height: 600px;
     }
 
     @media screen and (min-width: $md-screen) {
-      top: 200px;
+      top: 600px;
       left: -20%;
+      height: 700px;
 
     }
 
     @media screen and (min-width: $lg-screen) {
       left: -10%;
-      top: 200px;
+      top: 500px;
+      height: 800px;
+      
     }
   }
 }
