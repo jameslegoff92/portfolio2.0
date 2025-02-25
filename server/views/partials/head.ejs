@@ -10,4 +10,8 @@
   <script defer src="theme-control.js"> </script>
   <link rel="icon" href="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f680.png">
   <link id="maincss" rel="stylesheet" href="css/main.css"/>  
+  <% if (typeof path !== 'undefined' && path === '/about') { %>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.69/build/spline-viewer.js"></script>
+   
+  <% } %>
 </head>
